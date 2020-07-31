@@ -7,7 +7,7 @@ use Handtuchsystem\Models\Question;
  */
 function questions_title()
 {
-    return __('Ask the Heaven');
+    return __('Ask a supporter');
 }
 
 /**
