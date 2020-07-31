@@ -1,23 +1,23 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Translation;
+namespace Handtuchsystem\Test\Unit\Helpers\Translation;
 
-use Engelsystem\Helpers\Translation\GettextTranslator;
-use Engelsystem\Helpers\Translation\TranslationNotFound;
-use Engelsystem\Helpers\Translation\Translator;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Helpers\Translation\GettextTranslator;
+use Handtuchsystem\Helpers\Translation\TranslationNotFound;
+use Handtuchsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use stdClass;
 
 class TranslatorTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Helpers\Translation\Translator::__construct
-     * @covers \Engelsystem\Helpers\Translation\Translator::getLocale
-     * @covers \Engelsystem\Helpers\Translation\Translator::getLocales
-     * @covers \Engelsystem\Helpers\Translation\Translator::hasLocale
-     * @covers \Engelsystem\Helpers\Translation\Translator::setLocale
-     * @covers \Engelsystem\Helpers\Translation\Translator::setLocales
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::__construct
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::getLocale
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::getLocales
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::hasLocale
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::setLocale
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::setLocales
      */
     public function testInit()
     {
@@ -49,7 +49,7 @@ class TranslatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Translation\Translator::translate
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::translate
      */
     public function testTranslate()
     {
@@ -71,7 +71,7 @@ class TranslatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Translation\Translator::translatePlural
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::translatePlural
      */
     public function testTranslatePlural()
     {
@@ -90,9 +90,9 @@ class TranslatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Translation\Translator::translatePlural
-     * @covers \Engelsystem\Helpers\Translation\Translator::translateText
-     * @covers \Engelsystem\Helpers\Translation\Translator::replaceText
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::translatePlural
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::translateText
+     * @covers \Handtuchsystem\Helpers\Translation\Translator::replaceText
      */
     public function testReplaceText()
     {

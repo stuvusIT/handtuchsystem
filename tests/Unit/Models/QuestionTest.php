@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Engelsystem\Test\Unit\Models;
+namespace Handtuchsystem\Test\Unit\Models;
 
-use Engelsystem\Models\Question;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\Question;
+use Handtuchsystem\Models\User\User;
 use Illuminate\Support\Str;
 
 class QuestionTest extends ModelTest
@@ -47,7 +47,7 @@ class QuestionTest extends ModelTest
     }
 
     /**
-     * @covers \Engelsystem\Models\Question::answerer
+     * @covers \Handtuchsystem\Models\Question::answerer
      */
     public function testAnswerer(): void
     {
@@ -63,7 +63,7 @@ class QuestionTest extends ModelTest
     }
 
     /**
-     * @covers \Engelsystem\Models\Question::unanswered
+     * @covers \Handtuchsystem\Models\Question::unanswered
      */
     public function testUnanswered(): void
     {
@@ -80,7 +80,7 @@ class QuestionTest extends ModelTest
     }
 
     /**
-     * @covers \Engelsystem\Models\Question::answered
+     * @covers \Handtuchsystem\Models\Question::answered
      */
     public function testAnswered(): void
     {

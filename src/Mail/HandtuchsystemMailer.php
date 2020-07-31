@@ -1,13 +1,13 @@
 <?php
 
-namespace Engelsystem\Mail;
+namespace Handtuchsystem\Mail;
 
-use Engelsystem\Helpers\Translation\Translator;
-use Engelsystem\Models\User\User;
-use Engelsystem\Renderer\Renderer;
+use Handtuchsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Renderer\Renderer;
 use Swift_Mailer as SwiftMailer;
 
-class EngelsystemMailer extends Mailer
+class HandtuchsystemMailer extends Mailer
 {
     /** @var Renderer|null */
     protected $view;

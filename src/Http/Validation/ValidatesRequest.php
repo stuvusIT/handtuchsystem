@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Http\Validation;
+namespace Handtuchsystem\Http\Validation;
 
-use Engelsystem\Http\Exceptions\ValidationException;
-use Engelsystem\Http\Request;
+use Handtuchsystem\Http\Exceptions\ValidationException;
+use Handtuchsystem\Http\Request;
 
 trait ValidatesRequest
 {

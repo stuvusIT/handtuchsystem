@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Http;
+namespace Handtuchsystem\Http;
 
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Container\ServiceProvider;
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;

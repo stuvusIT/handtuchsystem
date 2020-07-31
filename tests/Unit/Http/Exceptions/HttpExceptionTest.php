@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Exceptions;
+namespace Handtuchsystem\Test\Unit\Http\Exceptions;
 
-use Engelsystem\Http\Exceptions\HttpException;
+use Handtuchsystem\Http\Exceptions\HttpException;
 use PHPUnit\Framework\TestCase;
 
 class HttpExceptionTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Exceptions\HttpException::__construct
-     * @covers \Engelsystem\Http\Exceptions\HttpException::getHeaders
-     * @covers \Engelsystem\Http\Exceptions\HttpException::getStatusCode
+     * @covers \Handtuchsystem\Http\Exceptions\HttpException::__construct
+     * @covers \Handtuchsystem\Http\Exceptions\HttpException::getHeaders
+     * @covers \Handtuchsystem\Http\Exceptions\HttpException::getStatusCode
      */
     public function testConstruct()
     {

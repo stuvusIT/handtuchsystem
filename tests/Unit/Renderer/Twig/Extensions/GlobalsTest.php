@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Models\User\User;
-use Engelsystem\Renderer\Twig\Extensions\Globals;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Renderer\Twig\Extensions\Globals;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class GlobalsTest extends ExtensionTest
 {
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Globals::__construct
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Globals::getGlobals
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Globals::__construct
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Globals::getGlobals
      */
     public function testGetGlobals()
     {

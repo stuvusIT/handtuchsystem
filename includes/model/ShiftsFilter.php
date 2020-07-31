@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem;
+namespace Handtuchsystem;
 
 /**
  * BO Class that stores all parameters used to filter shifts for users.

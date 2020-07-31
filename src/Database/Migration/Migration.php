@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Database\Migration;
+namespace Handtuchsystem\Database\Migration;
 
 use Illuminate\Database\Schema\Builder as SchemaBuilder;
 

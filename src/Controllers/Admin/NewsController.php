@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Controllers\Admin;
+namespace Handtuchsystem\Controllers\Admin;
 
-use Engelsystem\Controllers\BaseController;
-use Engelsystem\Controllers\HasUserNotifications;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Redirector;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Models\News;
+use Handtuchsystem\Controllers\BaseController;
+use Handtuchsystem\Controllers\HasUserNotifications;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Redirector;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Models\News;
 use Psr\Log\LoggerInterface;
 
 class NewsController extends BaseController

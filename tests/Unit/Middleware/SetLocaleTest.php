@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Helpers\Translation\Translator;
-use Engelsystem\Middleware\SetLocale;
+use Handtuchsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Middleware\SetLocale;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
@@ -14,8 +14,8 @@ use Symfony\Component\HttpFoundation\Session\Session;
 class SetLocaleTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\SetLocale::__construct
-     * @covers \Engelsystem\Middleware\SetLocale::process
+     * @covers \Handtuchsystem\Middleware\SetLocale::__construct
+     * @covers \Handtuchsystem\Middleware\SetLocale::process
      */
     public function testRegister()
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Database\Migration;
+namespace Handtuchsystem\Database\Migration;
 
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Database\Database;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Database\Database;
 use Illuminate\Database\Schema\Builder as SchemaBuilder;
 
 class MigrationServiceProvider extends ServiceProvider

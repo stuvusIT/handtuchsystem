@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers;
+namespace Handtuchsystem\Test\Unit\Controllers;
 
-use Engelsystem\Test\Unit\Controllers\Stub\HasUserNotificationsImplementation;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Test\Unit\Controllers\Stub\HasUserNotificationsImplementation;
+use Handtuchsystem\Test\Unit\TestCase;
 use Illuminate\Support\Collection;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Session\Storage\MockArraySessionStorage;
@@ -11,8 +11,8 @@ use Symfony\Component\HttpFoundation\Session\Storage\MockArraySessionStorage;
 class HasUserNotificationsTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Controllers\HasUserNotifications::getNotifications
-     * @covers \Engelsystem\Controllers\HasUserNotifications::addNotification
+     * @covers \Handtuchsystem\Controllers\HasUserNotifications::getNotifications
+     * @covers \Handtuchsystem\Controllers\HasUserNotifications::addNotification
      */
     public function testNotifications()
     {

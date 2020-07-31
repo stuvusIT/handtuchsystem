@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers;
+namespace Handtuchsystem\Test\Unit\Helpers;
 
-use Engelsystem\Application;
-use Engelsystem\Helpers\Version;
-use Engelsystem\Helpers\VersionServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Application;
+use Handtuchsystem\Helpers\Version;
+use Handtuchsystem\Helpers\VersionServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 
 class VersionServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Helpers\VersionServiceProvider::register
+     * @covers \Handtuchsystem\Helpers\VersionServiceProvider::register
      */
     public function testRegister()
     {

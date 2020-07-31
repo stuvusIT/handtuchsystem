@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Exceptions;
+namespace Handtuchsystem\Exceptions;
 
-use Engelsystem\Exceptions\Handlers\HandlerInterface;
-use Engelsystem\Exceptions\Handlers\Legacy;
-use Engelsystem\Http\Request;
+use Handtuchsystem\Exceptions\Handlers\HandlerInterface;
+use Handtuchsystem\Exceptions\Handlers\Legacy;
+use Handtuchsystem\Http\Request;
 use ErrorException;
 use Throwable;
 

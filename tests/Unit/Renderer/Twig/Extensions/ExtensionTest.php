@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
 use Exception;

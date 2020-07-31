@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\Application;
-use Engelsystem\Config\Config;
+use Handtuchsystem\Application;
+use Handtuchsystem\Config\Config;
 
 /**
  * Include the autoloader

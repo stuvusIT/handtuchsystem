@@ -2,11 +2,11 @@
 <?php
 
 use Composer\Autoload\ClassLoader;
-use Engelsystem\Application;
-use Engelsystem\Database\Migration\Migrate;
-use Engelsystem\Database\Migration\MigrationServiceProvider;
-use Engelsystem\Exceptions\Handler;
-use Engelsystem\Exceptions\Handlers\NullHandler;
+use Handtuchsystem\Application;
+use Handtuchsystem\Database\Migration\Migrate;
+use Handtuchsystem\Database\Migration\MigrationServiceProvider;
+use Handtuchsystem\Exceptions\Handler;
+use Handtuchsystem\Exceptions\Handlers\NullHandler;
 
 require_once __DIR__ . '/../includes/application.php';
 

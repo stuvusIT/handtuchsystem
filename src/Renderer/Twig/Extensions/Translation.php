@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Renderer\Twig\Extensions;
 
-use Engelsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Helpers\Translation\Translator;
 use Twig\Extension\AbstractExtension as TwigExtension;
 use Twig\TwigFilter;
 use Twig\TwigFunction;

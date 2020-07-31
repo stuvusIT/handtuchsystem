@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Models;
+namespace Handtuchsystem\Test\Unit\Models;
 
-use Engelsystem\Models\LogEntry;
+use Handtuchsystem\Models\LogEntry;
 use Psr\Log\LogLevel;
 
 class LogEntryTest extends ModelTest
 {
     /**
-     * @covers \Engelsystem\Models\LogEntry::filter
+     * @covers \Handtuchsystem\Models\LogEntry::filter
      */
     public function testFilter()
     {

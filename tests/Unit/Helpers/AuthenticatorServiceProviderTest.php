@@ -1,19 +1,19 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers;
+namespace Handtuchsystem\Test\Unit\Helpers;
 
-use Engelsystem\Application;
-use Engelsystem\Config\Config;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Helpers\AuthenticatorServiceProvider;
-use Engelsystem\Http\Request;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Application;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Helpers\AuthenticatorServiceProvider;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use Psr\Http\Message\ServerRequestInterface;
 
 class AuthenticatorServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Helpers\AuthenticatorServiceProvider::register()
+     * @covers \Handtuchsystem\Helpers\AuthenticatorServiceProvider::register()
      */
     public function testRegister()
     {

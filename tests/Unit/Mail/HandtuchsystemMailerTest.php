@@ -1,26 +1,26 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Mail;
+namespace Handtuchsystem\Test\Unit\Mail;
 
-use Engelsystem\Helpers\Translation\Translator;
-use Engelsystem\Mail\EngelsystemMailer;
-use Engelsystem\Models\User\Contact;
-use Engelsystem\Models\User\Settings;
-use Engelsystem\Models\User\User;
-use Engelsystem\Renderer\Renderer;
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Mail\HandtuchsystemMailer;
+use Handtuchsystem\Models\User\Contact;
+use Handtuchsystem\Models\User\Settings;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Renderer\Renderer;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 use Swift_Mailer as SwiftMailer;
 use Swift_Message as SwiftMessage;
 
-class EngelsystemMailerTest extends TestCase
+class HandtuchsystemMailerTest extends TestCase
 {
     use HasDatabase;
 
     /**
-     * @covers \Engelsystem\Mail\EngelsystemMailer::__construct
-     * @covers \Engelsystem\Mail\EngelsystemMailer::sendView
+     * @covers \Handtuchsystem\Mail\HandtuchsystemMailer::__construct
+     * @covers \Handtuchsystem\Mail\HandtuchsystemMailer::sendView
      */
     public function testSendView()
     {
@@ -28,8 +28,8 @@ class EngelsystemMailerTest extends TestCase
         $view = $this->createMock(Renderer::class);
         /** @var SwiftMailer|MockObject $swiftMailer */
         $swiftMailer = $this->createMock(SwiftMailer::class);
-        /** @var EngelsystemMailer|MockObject $mailer */
-        $mailer = $this->getMockBuilder(EngelsystemMailer::class)
+        /** @var HandtuchsystemMailer|MockObject $mailer */
+        $mailer = $this->getMockBuilder(HandtuchsystemMailer::class)
             ->setConstructorArgs(['mailer' => $swiftMailer, 'view' => $view])
             ->onlyMethods(['send'])
             ->getMock();
@@ -41,7 +41,7 @@ class EngelsystemMailerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Mail\EngelsystemMailer::sendViewTranslated
+     * @covers \Handtuchsystem\Mail\HandtuchsystemMailer::sendViewTranslated
      */
     public function testSendViewTranslated()
     {
@@ -70,8 +70,8 @@ class EngelsystemMailerTest extends TestCase
         /** @var Translator|MockObject $translator */
         $translator = $this->createMock(Translator::class);
 
-        /** @var EngelsystemMailer|MockObject $mailer */
-        $mailer = $this->getMockBuilder(EngelsystemMailer::class)
+        /** @var HandtuchsystemMailer|MockObject $mailer */
+        $mailer = $this->getMockBuilder(HandtuchsystemMailer::class)
             ->setConstructorArgs(['mailer' => $swiftMailer, 'view' => $view, 'translation' => $translator])
             ->onlyMethods(['sendView'])
             ->getMock();
@@ -95,9 +95,9 @@ class EngelsystemMailerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Mail\EngelsystemMailer::getSubjectPrefix
-     * @covers \Engelsystem\Mail\EngelsystemMailer::send
-     * @covers \Engelsystem\Mail\EngelsystemMailer::setSubjectPrefix
+     * @covers \Handtuchsystem\Mail\HandtuchsystemMailer::getSubjectPrefix
+     * @covers \Handtuchsystem\Mail\HandtuchsystemMailer::send
+     * @covers \Handtuchsystem\Mail\HandtuchsystemMailer::setSubjectPrefix
      */
     public function testSend()
     {
@@ -112,7 +112,7 @@ class EngelsystemMailerTest extends TestCase
         $this->setExpects($message, 'setSubject', ['[Mail test] Foo Bar'], $message);
         $this->setExpects($message, 'setBody', ['Lorem Ipsum!'], $message);
 
-        $mailer = new EngelsystemMailer($swiftMailer);
+        $mailer = new HandtuchsystemMailer($swiftMailer);
         $mailer->setFromAddress('foo@bar.baz');
         $mailer->setFromName('Lorem Ipsum');
         $mailer->setSubjectPrefix('Mail test');

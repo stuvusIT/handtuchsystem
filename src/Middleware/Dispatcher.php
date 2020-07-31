@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Middleware;
+namespace Handtuchsystem\Middleware;
 
-use Engelsystem\Application;
+use Handtuchsystem\Application;
 use InvalidArgumentException;
 use LogicException;
 use Psr\Http\Message\ResponseInterface;

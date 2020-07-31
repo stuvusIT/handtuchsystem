@@ -1,12 +1,12 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Exceptions\Handlers;
+namespace Handtuchsystem\Test\Unit\Exceptions\Handlers;
 
-use Engelsystem\Application;
-use Engelsystem\Exceptions\Handlers\Whoops;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Request;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Application;
+use Handtuchsystem\Exceptions\Handlers\Whoops;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Test\Unit\TestCase;
 use Exception;
 use PHPUnit\Framework\MockObject\MockObject;
 use Whoops\Handler\JsonResponseHandler;
@@ -17,11 +17,11 @@ use Whoops\RunInterface as WhoopsRunnerInterface;
 class WhoopsTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Exceptions\Handlers\Whoops::__construct
-     * @covers \Engelsystem\Exceptions\Handlers\Whoops::render
-     * @covers \Engelsystem\Exceptions\Handlers\Whoops::getPrettyPageHandler
-     * @covers \Engelsystem\Exceptions\Handlers\Whoops::getJsonResponseHandler
-     * @covers \Engelsystem\Exceptions\Handlers\Whoops::getData
+     * @covers \Handtuchsystem\Exceptions\Handlers\Whoops::__construct
+     * @covers \Handtuchsystem\Exceptions\Handlers\Whoops::render
+     * @covers \Handtuchsystem\Exceptions\Handlers\Whoops::getPrettyPageHandler
+     * @covers \Handtuchsystem\Exceptions\Handlers\Whoops::getJsonResponseHandler
+     * @covers \Handtuchsystem\Exceptions\Handlers\Whoops::getData
      */
     public function testRender()
     {

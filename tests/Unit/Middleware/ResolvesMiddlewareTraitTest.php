@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Application;
-use Engelsystem\Middleware\CallableHandler;
-use Engelsystem\Test\Unit\Middleware\Stub\HasStaticMethod;
-use Engelsystem\Test\Unit\Middleware\Stub\ResolvesMiddlewareTraitImplementation;
+use Handtuchsystem\Application;
+use Handtuchsystem\Middleware\CallableHandler;
+use Handtuchsystem\Test\Unit\Middleware\Stub\HasStaticMethod;
+use Handtuchsystem\Test\Unit\Middleware\Stub\ResolvesMiddlewareTraitImplementation;
 use InvalidArgumentException;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -14,8 +14,8 @@ use Psr\Http\Server\MiddlewareInterface;
 class ResolvesMiddlewareTraitTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\ResolvesMiddlewareTrait::isMiddleware
-     * @covers \Engelsystem\Middleware\ResolvesMiddlewareTrait::resolveMiddleware
+     * @covers \Handtuchsystem\Middleware\ResolvesMiddlewareTrait::isMiddleware
+     * @covers \Handtuchsystem\Middleware\ResolvesMiddlewareTrait::resolveMiddleware
      */
     public function testResolveMiddleware()
     {
@@ -50,7 +50,7 @@ class ResolvesMiddlewareTraitTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\ResolvesMiddlewareTrait::resolveMiddleware
+     * @covers \Handtuchsystem\Middleware\ResolvesMiddlewareTrait::resolveMiddleware
      */
     public function testResolveMiddlewareNoContainer()
     {

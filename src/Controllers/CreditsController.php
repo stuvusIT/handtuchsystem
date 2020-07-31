@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Controllers;
+namespace Handtuchsystem\Controllers;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Helpers\Version;
-use Engelsystem\Http\Response;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Helpers\Version;
+use Handtuchsystem\Http\Response;
 
 class CreditsController extends BaseController
 {

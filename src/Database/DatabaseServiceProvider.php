@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Database;
+namespace Handtuchsystem\Database;
 
 use Carbon\Carbon;
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Container\ServiceProvider;
 use Exception;
 use Illuminate\Database\Capsule\Manager as CapsuleManager;
 use Illuminate\Database\Connection as DatabaseConnection;

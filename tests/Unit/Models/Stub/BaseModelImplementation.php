@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Models\Stub;
+namespace Handtuchsystem\Test\Unit\Models\Stub;
 
-use Engelsystem\Models\BaseModel;
+use Handtuchsystem\Models\BaseModel;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
 
 /**

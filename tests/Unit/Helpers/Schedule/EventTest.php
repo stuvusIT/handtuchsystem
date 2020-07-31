@@ -1,39 +1,39 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Schedule;
+namespace Handtuchsystem\Test\Unit\Helpers\Schedule;
 
 use Carbon\Carbon;
-use Engelsystem\Helpers\Schedule\Event;
-use Engelsystem\Helpers\Schedule\Room;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Helpers\Schedule\Event;
+use Handtuchsystem\Helpers\Schedule\Room;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class EventTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Helpers\Schedule\Event::__construct
-     * @covers \Engelsystem\Helpers\Schedule\Event::getGuid
-     * @covers \Engelsystem\Helpers\Schedule\Event::getId
-     * @covers \Engelsystem\Helpers\Schedule\Event::getRoom
-     * @covers \Engelsystem\Helpers\Schedule\Event::getTitle
-     * @covers \Engelsystem\Helpers\Schedule\Event::getSubtitle
-     * @covers \Engelsystem\Helpers\Schedule\Event::getType
-     * @covers \Engelsystem\Helpers\Schedule\Event::getDate
-     * @covers \Engelsystem\Helpers\Schedule\Event::getStart
-     * @covers \Engelsystem\Helpers\Schedule\Event::getDuration
-     * @covers \Engelsystem\Helpers\Schedule\Event::getDurationSeconds
-     * @covers \Engelsystem\Helpers\Schedule\Event::getAbstract
-     * @covers \Engelsystem\Helpers\Schedule\Event::getSlug
-     * @covers \Engelsystem\Helpers\Schedule\Event::getTrack
-     * @covers \Engelsystem\Helpers\Schedule\Event::getLogo
-     * @covers \Engelsystem\Helpers\Schedule\Event::getPersons
-     * @covers \Engelsystem\Helpers\Schedule\Event::getLanguage
-     * @covers \Engelsystem\Helpers\Schedule\Event::getDescription
-     * @covers \Engelsystem\Helpers\Schedule\Event::getRecording
-     * @covers \Engelsystem\Helpers\Schedule\Event::getLinks
-     * @covers \Engelsystem\Helpers\Schedule\Event::getAttachments
-     * @covers \Engelsystem\Helpers\Schedule\Event::getUrl
-     * @covers \Engelsystem\Helpers\Schedule\Event::getVideoDownloadUrl
-     * @covers \Engelsystem\Helpers\Schedule\Event::getEndDate
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::__construct
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getGuid
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getId
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getRoom
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getTitle
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getSubtitle
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getType
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getDate
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getStart
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getDuration
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getDurationSeconds
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getAbstract
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getSlug
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getTrack
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getLogo
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getPersons
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getLanguage
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getDescription
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getRecording
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getLinks
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getAttachments
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getUrl
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getVideoDownloadUrl
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getEndDate
      */
     public function testCreate()
     {
@@ -79,30 +79,30 @@ class EventTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Schedule\Event::__construct
-     * @covers \Engelsystem\Helpers\Schedule\Event::getGuid
-     * @covers \Engelsystem\Helpers\Schedule\Event::getId
-     * @covers \Engelsystem\Helpers\Schedule\Event::getRoom
-     * @covers \Engelsystem\Helpers\Schedule\Event::getTitle
-     * @covers \Engelsystem\Helpers\Schedule\Event::setTitle
-     * @covers \Engelsystem\Helpers\Schedule\Event::getSubtitle
-     * @covers \Engelsystem\Helpers\Schedule\Event::getType
-     * @covers \Engelsystem\Helpers\Schedule\Event::getDate
-     * @covers \Engelsystem\Helpers\Schedule\Event::getStart
-     * @covers \Engelsystem\Helpers\Schedule\Event::getDuration
-     * @covers \Engelsystem\Helpers\Schedule\Event::getDurationSeconds
-     * @covers \Engelsystem\Helpers\Schedule\Event::getAbstract
-     * @covers \Engelsystem\Helpers\Schedule\Event::getSlug
-     * @covers \Engelsystem\Helpers\Schedule\Event::getTrack
-     * @covers \Engelsystem\Helpers\Schedule\Event::getLogo
-     * @covers \Engelsystem\Helpers\Schedule\Event::getPersons
-     * @covers \Engelsystem\Helpers\Schedule\Event::getLanguage
-     * @covers \Engelsystem\Helpers\Schedule\Event::getDescription
-     * @covers \Engelsystem\Helpers\Schedule\Event::getRecording
-     * @covers \Engelsystem\Helpers\Schedule\Event::getLinks
-     * @covers \Engelsystem\Helpers\Schedule\Event::getAttachments
-     * @covers \Engelsystem\Helpers\Schedule\Event::getUrl
-     * @covers \Engelsystem\Helpers\Schedule\Event::getVideoDownloadUrl
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::__construct
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getGuid
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getId
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getRoom
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getTitle
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::setTitle
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getSubtitle
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getType
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getDate
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getStart
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getDuration
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getDurationSeconds
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getAbstract
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getSlug
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getTrack
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getLogo
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getPersons
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getLanguage
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getDescription
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getRecording
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getLinks
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getAttachments
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getUrl
+     * @covers \Handtuchsystem\Helpers\Schedule\Event::getVideoDownloadUrl
      */
     public function testCreateNotDefault()
     {

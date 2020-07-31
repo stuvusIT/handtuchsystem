@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\User\User;
 
 /**
  * @param User $user

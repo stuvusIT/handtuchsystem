@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Mail;
+namespace Handtuchsystem\Test\Unit\Mail;
 
-use Engelsystem\Application;
-use Engelsystem\Config\Config;
-use Engelsystem\Mail\EngelsystemMailer;
-use Engelsystem\Mail\Mailer;
-use Engelsystem\Mail\MailerServiceProvider;
-use Engelsystem\Mail\Transport\LogTransport;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Application;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Mail\HandtuchsystemMailer;
+use Handtuchsystem\Mail\Mailer;
+use Handtuchsystem\Mail\MailerServiceProvider;
+use Handtuchsystem\Mail\Transport\LogTransport;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use InvalidArgumentException;
 use Psr\Log\LoggerInterface;
 use Swift_Mailer as SwiftMailer;
@@ -20,11 +20,11 @@ class MailerServiceProviderTest extends ServiceProviderTest
 {
     /** @var array */
     protected $defaultConfig = [
-        'app_name' => 'Engelsystem App',
+        'app_name' => 'Handtuchsystem App',
         'email'    => [
             'driver'   => 'mail',
             'from'     => [
-                'name'    => 'Engelsystem',
+                'name'    => 'Handtuchsystem',
                 'address' => 'foo@bar.batz',
             ],
             'sendmail' => '/opt/bin/sendmail -bs',
@@ -44,7 +44,7 @@ class MailerServiceProviderTest extends ServiceProviderTest
     ];
 
     /**
-     * @covers \Engelsystem\Mail\MailerServiceProvider::register
+     * @covers \Handtuchsystem\Mail\MailerServiceProvider::register
      */
     public function testRegister()
     {
@@ -55,12 +55,12 @@ class MailerServiceProviderTest extends ServiceProviderTest
 
         $this->assertExistsInContainer(['mailer.transport', Transport::class], $app);
         $this->assertExistsInContainer(['mailer.swift', SwiftMailer::class], $app);
-        $this->assertExistsInContainer(['mailer', EngelsystemMailer::class, Mailer::class], $app);
+        $this->assertExistsInContainer(['mailer', HandtuchsystemMailer::class, Mailer::class], $app);
 
-        /** @var EngelsystemMailer $mailer */
+        /** @var HandtuchsystemMailer $mailer */
         $mailer = $app->get('mailer');
-        $this->assertEquals('Engelsystem App', $mailer->getSubjectPrefix());
-        $this->assertEquals('Engelsystem', $mailer->getFromName());
+        $this->assertEquals('Handtuchsystem App', $mailer->getSubjectPrefix());
+        $this->assertEquals('Handtuchsystem', $mailer->getFromName());
         $this->assertEquals('foo@bar.batz', $mailer->getFromAddress());
 
         /** @var SendmailTransport $transport */
@@ -85,7 +85,7 @@ class MailerServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers       \Engelsystem\Mail\MailerServiceProvider::getTransport
+     * @covers       \Handtuchsystem\Mail\MailerServiceProvider::getTransport
      * @param string $class
      * @param array  $emailConfig
      * @dataProvider provideTransports
@@ -102,7 +102,7 @@ class MailerServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Mail\MailerServiceProvider::getTransport
+     * @covers \Handtuchsystem\Mail\MailerServiceProvider::getTransport
      */
     public function testGetTransportNotFound()
     {
@@ -114,7 +114,7 @@ class MailerServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Mail\MailerServiceProvider::getSmtpTransport
+     * @covers \Handtuchsystem\Mail\MailerServiceProvider::getSmtpTransport
      */
     public function testGetSmtpTransport()
     {

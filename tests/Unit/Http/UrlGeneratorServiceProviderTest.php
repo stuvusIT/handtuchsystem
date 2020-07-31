@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
-use Engelsystem\Http\UrlGenerator;
-use Engelsystem\Http\UrlGeneratorInterface;
-use Engelsystem\Http\UrlGeneratorServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Http\UrlGenerator;
+use Handtuchsystem\Http\UrlGeneratorInterface;
+use Handtuchsystem\Http\UrlGeneratorServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class UrlGeneratorServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Http\UrlGeneratorServiceProvider::register()
+     * @covers \Handtuchsystem\Http\UrlGeneratorServiceProvider::register()
      */
     public function testRegister()
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Middleware\SendResponseHandler;
+use Handtuchsystem\Middleware\SendResponseHandler;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
@@ -12,7 +12,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 class SendResponseHandlerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\SendResponseHandler::process
+     * @covers \Handtuchsystem\Middleware\SendResponseHandler::process
      */
     public function testRegister()
     {

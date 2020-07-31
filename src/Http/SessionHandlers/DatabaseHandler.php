@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Http\SessionHandlers;
+namespace Handtuchsystem\Http\SessionHandlers;
 
-use Engelsystem\Database\Database;
+use Handtuchsystem\Database\Database;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 
 class DatabaseHandler extends AbstractHandler

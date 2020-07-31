@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Http\Validation;
+namespace Handtuchsystem\Http\Validation;
 
 use Illuminate\Support\Str;
 use InvalidArgumentException;
@@ -37,7 +37,7 @@ class Validator
 
         foreach ($rules as $key => $values) {
             $v = new RespectValidator();
-            $v->with('\\Engelsystem\\Http\\Validation\\Rules', true);
+            $v->with('\\Handtuchsystem\\Http\\Validation\\Rules', true);
 
             $value = isset($data[$key]) ? $data[$key] : null;
             $values = explode('|', $values);

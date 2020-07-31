@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Database\Db;
+use Handtuchsystem\Database\Db;
 
 /**
  * Returns the number of angels currently working.

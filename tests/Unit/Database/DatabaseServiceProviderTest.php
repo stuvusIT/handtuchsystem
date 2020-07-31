@@ -1,13 +1,13 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Database;
+namespace Handtuchsystem\Test\Unit\Database;
 
-use Engelsystem\Application;
-use Engelsystem\Config\Config;
-use Engelsystem\Database\Database;
-use Engelsystem\Database\DatabaseServiceProvider;
-use Engelsystem\Database\Db;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Application;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Database\Database;
+use Handtuchsystem\Database\DatabaseServiceProvider;
+use Handtuchsystem\Database\Db;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use Exception;
 use Illuminate\Database\Capsule\Manager as CapsuleManager;
 use Illuminate\Database\Connection;
@@ -18,7 +18,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 class DatabaseServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Database\DatabaseServiceProvider::register()
+     * @covers \Handtuchsystem\Database\DatabaseServiceProvider::register()
      */
     public function testRegister()
     {
@@ -51,8 +51,8 @@ class DatabaseServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Database\DatabaseServiceProvider::exitOnError()
-     * @covers \Engelsystem\Database\DatabaseServiceProvider::register()
+     * @covers \Handtuchsystem\Database\DatabaseServiceProvider::exitOnError()
+     * @covers \Handtuchsystem\Database\DatabaseServiceProvider::register()
      */
     public function testRegisterError()
     {

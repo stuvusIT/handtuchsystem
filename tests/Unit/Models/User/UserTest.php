@@ -1,19 +1,19 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Models\User;
+namespace Handtuchsystem\Test\Unit\Models\User;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
-use Engelsystem\Models\BaseModel;
-use Engelsystem\Models\News;
-use Engelsystem\Models\NewsComment;
-use Engelsystem\Models\Question;
-use Engelsystem\Models\User\Contact;
-use Engelsystem\Models\User\HasUserModel;
-use Engelsystem\Models\User\PersonalData;
-use Engelsystem\Models\User\Settings;
-use Engelsystem\Models\User\State;
-use Engelsystem\Models\User\User;
-use Engelsystem\Test\Unit\Models\ModelTest;
+use Handtuchsystem\Models\BaseModel;
+use Handtuchsystem\Models\News;
+use Handtuchsystem\Models\NewsComment;
+use Handtuchsystem\Models\Question;
+use Handtuchsystem\Models\User\Contact;
+use Handtuchsystem\Models\User\HasUserModel;
+use Handtuchsystem\Models\User\PersonalData;
+use Handtuchsystem\Models\User\Settings;
+use Handtuchsystem\Models\User\State;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Test\Unit\Models\ModelTest;
 use Exception;
 use Illuminate\Support\Str;
 
@@ -70,10 +70,10 @@ class UserTest extends ModelTest
     }
 
     /**
-     * @covers       \Engelsystem\Models\User\User::contact
-     * @covers       \Engelsystem\Models\User\User::personalData
-     * @covers       \Engelsystem\Models\User\User::settings
-     * @covers       \Engelsystem\Models\User\User::state
+     * @covers       \Handtuchsystem\Models\User\User::contact
+     * @covers       \Handtuchsystem\Models\User\User::personalData
+     * @covers       \Handtuchsystem\Models\User\User::settings
+     * @covers       \Handtuchsystem\Models\User\User::state
      *
      * @dataProvider hasOneRelationsProvider
      *
@@ -97,7 +97,7 @@ class UserTest extends ModelTest
     }
 
     /**
-     * @covers       \Engelsystem\Models\User\User::news()
+     * @covers       \Handtuchsystem\Models\User\User::news()
      *
      * @dataProvider hasManyRelationsProvider
      *
@@ -150,7 +150,7 @@ class UserTest extends ModelTest
     /**
      * Tests that accessing the NewsComments of an User works.
      *
-     * @covers \Engelsystem\Models\User\User::newsComments
+     * @covers \Handtuchsystem\Models\User\User::newsComments
      */
     public function testNewsComments(): void
     {
@@ -164,7 +164,7 @@ class UserTest extends ModelTest
     }
 
     /**
-     * @covers \Engelsystem\Models\User\User::questionsAsked
+     * @covers \Handtuchsystem\Models\User\User::questionsAsked
      */
     public function testQuestionsAsked(): void
     {
@@ -184,7 +184,7 @@ class UserTest extends ModelTest
     }
 
     /**
-     * @covers \Engelsystem\Models\User\User::questionsAnswered
+     * @covers \Handtuchsystem\Models\User\User::questionsAnswered
      */
     public function testQuestionsAnswered(): void
     {

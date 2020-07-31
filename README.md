@@ -3,17 +3,17 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/20b3b0b4e93344a29da6bec77f329e7a)](https://www.codacy.com/app/engelsystem/engelsystem)
 [![GPL](https://img.shields.io/github/license/engelsystem/engelsystem.svg?maxAge=2592000)](LICENSE)
 
-# Engelsystem
+# Handtuchsystem
 Please visit [engelsystem.de](https://engelsystem.de) for a feature list.
 
 To report bugs use [engelsystem/issues](https://github.com/engelsystem/engelsystem/issues).
 
-Since the Engelsystem is open source, you can help improving it.
+Since the Handtuchsystem is open source, you can help improving it.
 We really love to get pull requests containing fixes or improvements.
 Please read the [CONTRIBUTING.md](CONTRIBUTING.md) and [DEVELOPMENT.md](DEVELOPMENT.md) before you start.
 
 ## Installation
-The Engelsystem may be installed manually or by using the provided [docker setup](#docker).
+The Handtuchsystem may be installed manually or by using the provided [docker setup](#docker).
 
 ### Requirements
  * PHP >= 7.3
@@ -45,7 +45,7 @@ The Engelsystem may be installed manually or by using the provided [docker setup
  * To import the database the ```bin/migrate``` script has to be called. If you are not allowed to execute scripts, then execute the ```install-<version>.sql``` script. Download at [Releases](https://github.com/engelsystem/engelsystem/releases) page.
  * In the browser, login with credentials ```admin``` : ```asdfasdf``` and change the password.
 
-The Engelsystem can now be used.
+The Handtuchsystem can now be used.
 
 ### Session Settings
  * Make sure the config allows for sessions.
@@ -71,11 +71,11 @@ docker exec -it engelsystem_es_php_fpm_1 bin/migrate
 
 ### Scripts
 #### bin/deploy.sh
-The `bin/deploy.sh` script can be used to deploy the Engelsystem. It uses rsync to deploy the application to a server over ssh.
+The `bin/deploy.sh` script can be used to deploy the Handtuchsystem. It uses rsync to deploy the application to a server over ssh.
 
 For usage see `./bin/deploy.sh -h`
 
 #### bin/migrate
-The `bin/migrate` script can be used to import and update the database of the Engelsystem.
+The `bin/migrate` script can be used to import and update the database of the Handtuchsystem.
 
 For more information on how to use it call `./bin/migrate help`

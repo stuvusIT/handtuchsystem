@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Middleware\SessionHandler;
+use Handtuchsystem\Middleware\SessionHandler;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
@@ -13,8 +13,8 @@ use Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage;
 class SessionHandlerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\SessionHandler::__construct
-     * @covers \Engelsystem\Middleware\SessionHandler::process
+     * @covers \Handtuchsystem\Middleware\SessionHandler::__construct
+     * @covers \Handtuchsystem\Middleware\SessionHandler::process
      */
     public function testProcess()
     {

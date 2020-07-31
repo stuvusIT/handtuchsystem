@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Controllers\Admin;
+namespace Handtuchsystem\Controllers\Admin;
 
-use Engelsystem\Controllers\BaseController;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Models\LogEntry;
+use Handtuchsystem\Controllers\BaseController;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Models\LogEntry;
 
 class LogsController extends BaseController
 {

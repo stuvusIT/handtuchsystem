@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware\Stub;
+namespace Handtuchsystem\Test\Unit\Middleware\Stub;
 
 use Exception;
 use Psr\Http\Message\ResponseInterface;

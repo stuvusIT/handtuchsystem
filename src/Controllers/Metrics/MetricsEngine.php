@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Controllers\Metrics;
+namespace Handtuchsystem\Controllers\Metrics;
 
-use Engelsystem\Renderer\EngineInterface;
+use Handtuchsystem\Renderer\EngineInterface;
 
 class MetricsEngine implements EngineInterface
 {

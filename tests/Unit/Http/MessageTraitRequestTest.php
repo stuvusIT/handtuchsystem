@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
-use Engelsystem\Test\Unit\Http\Stub\MessageTraitRequestImplementation;
+use Handtuchsystem\Test\Unit\Http\Stub\MessageTraitRequestImplementation;
 use Nyholm\Psr7\Stream;
 use PHPUnit\Framework\TestCase;
 
@@ -12,7 +12,7 @@ class MessageTraitRequestTest extends TestCase
     use ArraySubsetAsserts;
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::withProtocolVersion
+     * @covers \Handtuchsystem\Http\MessageTrait::withProtocolVersion
      */
     public function testWithProtocolVersion()
     {
@@ -23,7 +23,7 @@ class MessageTraitRequestTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::getHeaders
+     * @covers \Handtuchsystem\Http\MessageTrait::getHeaders
      */
     public function testGetHeaders()
     {
@@ -35,7 +35,7 @@ class MessageTraitRequestTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::withBody
+     * @covers \Handtuchsystem\Http\MessageTrait::withBody
      */
     public function testWithBody()
     {

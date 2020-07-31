@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation\Stub;
+namespace Handtuchsystem\Test\Unit\Http\Validation\Stub;
 
-use Engelsystem\Controllers\BaseController;
-use Engelsystem\Http\Request;
+use Handtuchsystem\Controllers\BaseController;
+use Handtuchsystem\Http\Request;
 
 class ValidatesRequestImplementation extends BaseController
 {

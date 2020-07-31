@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Database\DB;
+use Handtuchsystem\Database\DB;
 
 /**
  * Entity needed angeltypes describes how many angels of given type are needed for a shift or in a room.

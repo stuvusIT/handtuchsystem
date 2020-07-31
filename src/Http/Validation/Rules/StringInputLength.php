@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Http\Validation\Rules;
+namespace Handtuchsystem\Http\Validation\Rules;
 
 use DateTime;
 use Illuminate\Support\Str;

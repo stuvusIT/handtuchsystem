@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Http\Exceptions;
+namespace Handtuchsystem\Http\Exceptions;
 
-use Engelsystem\Http\Validation\Validator;
+use Handtuchsystem\Http\Validation\Validator;
 use RuntimeException;
 use Throwable;
 

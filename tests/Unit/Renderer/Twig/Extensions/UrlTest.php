@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
-use Engelsystem\Http\UrlGenerator;
-use Engelsystem\Renderer\Twig\Extensions\Url;
+use Handtuchsystem\Http\UrlGenerator;
+use Handtuchsystem\Renderer\Twig\Extensions\Url;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class UrlTest extends ExtensionTest
 {
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Url::__construct
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Url::getFunctions
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Url::__construct
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Url::getFunctions
      */
     public function testGetGlobals()
     {
@@ -44,7 +44,7 @@ class UrlTest extends ExtensionTest
      * @param string $urlTo
      * @param array  $parameters
      *
-     * @covers       \Engelsystem\Renderer\Twig\Extensions\Url::getUrl
+     * @covers       \Handtuchsystem\Renderer\Twig\Extensions\Url::getUrl
      */
     public function testGetUrl($url, $urlTo, $return, $parameters = [])
     {

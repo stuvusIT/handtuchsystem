@@ -1,7 +1,7 @@
 <?php
 
 use Carbon\Carbon;
-use Engelsystem\Models\EventConfig;
+use Handtuchsystem\Models\EventConfig;
 
 /**
  * @return string

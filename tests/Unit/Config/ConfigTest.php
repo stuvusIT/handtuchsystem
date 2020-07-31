@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Config;
+namespace Handtuchsystem\Test\Unit\Config;
 
-use Engelsystem\Config\Config;
+use Handtuchsystem\Config\Config;
 use PHPUnit\Framework\TestCase;
 
 class ConfigTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Config\Config::get
+     * @covers \Handtuchsystem\Config\Config::get
      */
     public function testGet()
     {
@@ -24,7 +24,7 @@ class ConfigTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Config\Config::set
+     * @covers \Handtuchsystem\Config\Config::set
      */
     public function testSet()
     {
@@ -34,15 +34,15 @@ class ConfigTest extends TestCase
         $this->assertEquals('FooBar', $config->get('test'));
 
         $config->set([
-            'name' => 'Engelsystem',
+            'name' => 'Handtuchsystem',
             'mail' => ['user' => 'test'],
         ]);
-        $this->assertEquals('Engelsystem', $config->get('name'));
+        $this->assertEquals('Handtuchsystem', $config->get('name'));
         $this->assertEquals(['user' => 'test'], $config->get('mail'));
     }
 
     /**
-     * @covers \Engelsystem\Config\Config::has
+     * @covers \Handtuchsystem\Config\Config::has
      */
     public function testHas()
     {
@@ -55,7 +55,7 @@ class ConfigTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Config\Config::remove
+     * @covers \Handtuchsystem\Config\Config::remove
      */
     public function testRemove()
     {
@@ -67,7 +67,7 @@ class ConfigTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Config\Config::__get
+     * @covers \Handtuchsystem\Config\Config::__get
      */
     public function testMagicGet()
     {
@@ -78,7 +78,7 @@ class ConfigTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Config\Config::__set
+     * @covers \Handtuchsystem\Config\Config::__set
      */
     public function testMagicSet()
     {
@@ -89,7 +89,7 @@ class ConfigTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Config\Config::__isset
+     * @covers \Handtuchsystem\Config\Config::__isset
      */
     public function testMagicIsset()
     {
@@ -102,7 +102,7 @@ class ConfigTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Config\Config::__unset
+     * @covers \Handtuchsystem\Config\Config::__unset
      */
     public function testMagicUnset()
     {

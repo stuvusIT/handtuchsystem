@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Http\Exceptions;
+namespace Handtuchsystem\Http\Exceptions;
 
 class HttpTemporaryRedirect extends HttpRedirect
 {

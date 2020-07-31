@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Application;
-use Engelsystem\Middleware\Dispatcher;
-use Engelsystem\Test\Unit\Middleware\Stub\NotARealMiddleware;
+use Handtuchsystem\Application;
+use Handtuchsystem\Middleware\Dispatcher;
+use Handtuchsystem\Test\Unit\Middleware\Stub\NotARealMiddleware;
 use InvalidArgumentException;
 use LogicException;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -18,7 +18,7 @@ use ReflectionClass as Reflection;
 class DispatcherTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\Dispatcher::__construct
+     * @covers \Handtuchsystem\Middleware\Dispatcher::__construct
      */
     public function testInit()
     {
@@ -36,7 +36,7 @@ class DispatcherTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\Dispatcher::process
+     * @covers \Handtuchsystem\Middleware\Dispatcher::process
      */
     public function testProcess()
     {
@@ -67,7 +67,7 @@ class DispatcherTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\Dispatcher::handle
+     * @covers \Handtuchsystem\Middleware\Dispatcher::handle
      */
     public function testHandle()
     {
@@ -89,7 +89,7 @@ class DispatcherTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\Dispatcher::handle
+     * @covers \Handtuchsystem\Middleware\Dispatcher::handle
      */
     public function testHandleNext()
     {
@@ -116,7 +116,7 @@ class DispatcherTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\Dispatcher::handle
+     * @covers \Handtuchsystem\Middleware\Dispatcher::handle
      */
     public function testHandleNoMiddleware()
     {
@@ -130,7 +130,7 @@ class DispatcherTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\Dispatcher::handle
+     * @covers \Handtuchsystem\Middleware\Dispatcher::handle
      */
     public function testHandleNoRealMiddleware()
     {
@@ -144,7 +144,7 @@ class DispatcherTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\Dispatcher::handle
+     * @covers \Handtuchsystem\Middleware\Dispatcher::handle
      */
     public function testHandleCallResolve()
     {
@@ -179,7 +179,7 @@ class DispatcherTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\Dispatcher::setContainer
+     * @covers \Handtuchsystem\Middleware\Dispatcher::setContainer
      */
     public function testSetContainer()
     {

@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\UserHintsRenderer;
+use Handtuchsystem\UserHintsRenderer;
 
 /**
  * @param string $page

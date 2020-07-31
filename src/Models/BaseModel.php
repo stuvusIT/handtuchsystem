@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Models;
+namespace Handtuchsystem\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Migrations;
+namespace Handtuchsystem\Migrations;
 
 use Carbon\Carbon;
-use Engelsystem\Database\Migration\Migration;
-use Engelsystem\Models\EventConfig;
+use Handtuchsystem\Database\Migration\Migration;
+use Handtuchsystem\Models\EventConfig;
 use Illuminate\Database\QueryException;
 use Illuminate\Database\Schema\Blueprint;
 

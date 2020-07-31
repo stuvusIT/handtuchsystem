@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Renderer;
+namespace Handtuchsystem\Renderer;
 
 abstract class Engine implements EngineInterface
 {

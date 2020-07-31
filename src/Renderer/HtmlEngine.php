@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Renderer;
+namespace Handtuchsystem\Renderer;
 
 class HtmlEngine extends Engine
 {

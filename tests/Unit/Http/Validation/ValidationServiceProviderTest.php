@@ -1,18 +1,18 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation;
+namespace Handtuchsystem\Test\Unit\Http\Validation;
 
-use Engelsystem\Application;
-use Engelsystem\Http\Validation\ValidationServiceProvider;
-use Engelsystem\Http\Validation\Validator;
-use Engelsystem\Test\Unit\Http\Validation\Stub\ValidatesRequestImplementation;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Application;
+use Handtuchsystem\Http\Validation\ValidationServiceProvider;
+use Handtuchsystem\Http\Validation\Validator;
+use Handtuchsystem\Test\Unit\Http\Validation\Stub\ValidatesRequestImplementation;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use stdClass;
 
 class ValidationServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Http\Validation\ValidationServiceProvider::register
+     * @covers \Handtuchsystem\Http\Validation\ValidationServiceProvider::register
      */
     public function testRegister()
     {

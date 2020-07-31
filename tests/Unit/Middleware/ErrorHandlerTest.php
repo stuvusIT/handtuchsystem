@@ -1,20 +1,20 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Http\Exceptions\HttpException;
-use Engelsystem\Http\Exceptions\ValidationException;
-use Engelsystem\Http\Psr7ServiceProvider;
-use Engelsystem\Http\RedirectServiceProvider;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Http\ResponseServiceProvider;
-use Engelsystem\Http\UrlGeneratorServiceProvider;
-use Engelsystem\Http\Validation\Validator;
-use Engelsystem\Middleware\ErrorHandler;
-use Engelsystem\Test\Unit\Middleware\Stub\ReturnResponseMiddlewareHandler;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Http\Exceptions\HttpException;
+use Handtuchsystem\Http\Exceptions\ValidationException;
+use Handtuchsystem\Http\Psr7ServiceProvider;
+use Handtuchsystem\Http\RedirectServiceProvider;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Http\ResponseServiceProvider;
+use Handtuchsystem\Http\UrlGeneratorServiceProvider;
+use Handtuchsystem\Http\Validation\Validator;
+use Handtuchsystem\Middleware\ErrorHandler;
+use Handtuchsystem\Test\Unit\Middleware\Stub\ReturnResponseMiddlewareHandler;
+use Handtuchsystem\Test\Unit\TestCase;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Http\Message\ResponseInterface;
@@ -28,9 +28,9 @@ use Twig\Loader\LoaderInterface as TwigLoader;
 class ErrorHandlerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\ErrorHandler::__construct
-     * @covers \Engelsystem\Middleware\ErrorHandler::process
-     * @covers \Engelsystem\Middleware\ErrorHandler::selectView
+     * @covers \Handtuchsystem\Middleware\ErrorHandler::__construct
+     * @covers \Handtuchsystem\Middleware\ErrorHandler::process
+     * @covers \Handtuchsystem\Middleware\ErrorHandler::selectView
      */
     public function testProcess()
     {
@@ -115,7 +115,7 @@ class ErrorHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\ErrorHandler::process
+     * @covers \Handtuchsystem\Middleware\ErrorHandler::process
      */
     public function testProcessHttpException()
     {
@@ -158,8 +158,8 @@ class ErrorHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\ErrorHandler::process
-     * @covers \Engelsystem\Middleware\ErrorHandler::redirectBack
+     * @covers \Handtuchsystem\Middleware\ErrorHandler::process
+     * @covers \Handtuchsystem\Middleware\ErrorHandler::redirectBack
      */
     public function testProcessValidationException()
     {
@@ -223,7 +223,7 @@ class ErrorHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\ErrorHandler::process
+     * @covers \Handtuchsystem\Middleware\ErrorHandler::process
      */
     public function testProcessModelNotFoundException()
     {
@@ -267,7 +267,7 @@ class ErrorHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\ErrorHandler::process
+     * @covers \Handtuchsystem\Middleware\ErrorHandler::process
      */
     public function testProcessContentTypeSniffer()
     {

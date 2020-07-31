@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Exceptions\Handlers;
+namespace Handtuchsystem\Exceptions\Handlers;
 
-use Engelsystem\Http\Request;
+use Handtuchsystem\Http\Request;
 use Psr\Log\LoggerInterface;
 use Throwable;
 

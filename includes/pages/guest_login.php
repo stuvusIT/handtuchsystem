@@ -1,12 +1,12 @@
 <?php
 
 use Carbon\Carbon;
-use Engelsystem\Database\DB;
-use Engelsystem\Models\User\Contact;
-use Engelsystem\Models\User\PersonalData;
-use Engelsystem\Models\User\Settings;
-use Engelsystem\Models\User\State;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Database\DB;
+use Handtuchsystem\Models\User\Contact;
+use Handtuchsystem\Models\User\PersonalData;
+use Handtuchsystem\Models\User\Settings;
+use Handtuchsystem\Models\User\State;
+use Handtuchsystem\Models\User\User;
 
 /**
  * @return string

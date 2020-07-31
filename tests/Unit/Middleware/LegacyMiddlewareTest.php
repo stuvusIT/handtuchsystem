@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Helpers\Translation\Translator;
-use Engelsystem\Http\Request;
-use Engelsystem\Middleware\LegacyMiddleware;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Middleware\LegacyMiddleware;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
@@ -17,8 +17,8 @@ use Symfony\Component\HttpFoundation\ParameterBag;
 class LegacyMiddlewareTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\LegacyMiddleware::__construct
-     * @covers \Engelsystem\Middleware\LegacyMiddleware::process
+     * @covers \Handtuchsystem\Middleware\LegacyMiddleware::__construct
+     * @covers \Handtuchsystem\Middleware\LegacyMiddleware::process
      */
     public function testRegister()
     {

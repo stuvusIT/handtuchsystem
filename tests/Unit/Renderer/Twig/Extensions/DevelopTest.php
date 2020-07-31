@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Renderer\Twig\Extensions\Develop;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Renderer\Twig\Extensions\Develop;
 use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Component\VarDumper\VarDumper;
 
 class DevelopTest extends ExtensionTest
 {
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Develop::__construct
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Develop::getFunctions
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Develop::__construct
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Develop::getFunctions
      */
     public function testGetGlobals()
     {
@@ -28,8 +28,8 @@ class DevelopTest extends ExtensionTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Develop::dump
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Develop::setDumper
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Develop::dump
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Develop::setDumper
      */
     public function testDump()
     {
@@ -47,7 +47,7 @@ class DevelopTest extends ExtensionTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Develop::dd
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Develop::dd
      */
     public function testDD()
     {

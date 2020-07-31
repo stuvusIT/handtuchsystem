@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Http;
+namespace Handtuchsystem\Http;
 
 /**
  * Provides URLs

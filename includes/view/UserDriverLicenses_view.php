@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\User\User;
 
 /**
  * Edit a user's driving license information.

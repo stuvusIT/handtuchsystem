@@ -1,12 +1,12 @@
 <?php
 
-namespace Engelsystem\Exceptions;
+namespace Handtuchsystem\Exceptions;
 
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Exceptions\Handlers\HandlerInterface;
-use Engelsystem\Exceptions\Handlers\Legacy;
-use Engelsystem\Exceptions\Handlers\LegacyDevelopment;
-use Engelsystem\Exceptions\Handlers\Whoops;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Exceptions\Handlers\HandlerInterface;
+use Handtuchsystem\Exceptions\Handlers\Legacy;
+use Handtuchsystem\Exceptions\Handlers\LegacyDevelopment;
+use Handtuchsystem\Exceptions\Handlers\Whoops;
 use Psr\Log\LoggerInterface;
 use Whoops\Run as WhoopsRunner;
 

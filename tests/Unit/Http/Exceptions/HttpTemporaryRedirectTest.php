@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Exceptions;
+namespace Handtuchsystem\Test\Unit\Http\Exceptions;
 
-use Engelsystem\Http\Exceptions\HttpRedirect;
-use Engelsystem\Http\Exceptions\HttpTemporaryRedirect;
+use Handtuchsystem\Http\Exceptions\HttpRedirect;
+use Handtuchsystem\Http\Exceptions\HttpTemporaryRedirect;
 use PHPUnit\Framework\TestCase;
 
 class HttpTemporaryRedirectTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Exceptions\HttpTemporaryRedirect::__construct
+     * @covers \Handtuchsystem\Http\Exceptions\HttpTemporaryRedirect::__construct
      */
     public function testConstruct()
     {

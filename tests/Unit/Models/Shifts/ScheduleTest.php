@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Models\Shifts;
+namespace Handtuchsystem\Test\Unit\Models\Shifts;
 
-use Engelsystem\Models\Shifts\Schedule;
-use Engelsystem\Models\Shifts\ScheduleShift;
-use Engelsystem\Test\Unit\Models\ModelTest;
+use Handtuchsystem\Models\Shifts\Schedule;
+use Handtuchsystem\Models\Shifts\ScheduleShift;
+use Handtuchsystem\Test\Unit\Models\ModelTest;
 
 class ScheduleTest extends ModelTest
 {
     /**
-     * @covers \Engelsystem\Models\Shifts\Schedule::scheduleShifts
+     * @covers \Handtuchsystem\Models\Shifts\Schedule::scheduleShifts
      */
     public function testScheduleShifts()
     {

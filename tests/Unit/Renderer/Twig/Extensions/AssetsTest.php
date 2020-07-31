@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
-use Engelsystem\Http\UrlGenerator;
-use Engelsystem\Renderer\Twig\Extensions\Assets;
+use Handtuchsystem\Http\UrlGenerator;
+use Handtuchsystem\Renderer\Twig\Extensions\Assets;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class AssetsTest extends ExtensionTest
 {
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Assets::__construct
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Assets::getFunctions
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Assets::__construct
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Assets::getFunctions
      */
     public function testGetGlobals()
     {
@@ -24,7 +24,7 @@ class AssetsTest extends ExtensionTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Assets::getAsset
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Assets::getAsset
      */
     public function testGetAsset()
     {

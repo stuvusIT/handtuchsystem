@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Logger;
+namespace Handtuchsystem\Logger;
 
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Helpers\Authenticator;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Helpers\Authenticator;
 use Psr\Log\LoggerInterface;
 
 class LoggerServiceProvider extends ServiceProvider

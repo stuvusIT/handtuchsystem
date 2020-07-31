@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\Models\User\User;
-use Engelsystem\ShiftSignupState;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\ShiftSignupState;
 use Illuminate\Database\Eloquent\Collection;
 
 /**

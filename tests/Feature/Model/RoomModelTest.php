@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Feature\Model;
+namespace Handtuchsystem\Test\Feature\Model;
 
-use Engelsystem\Test\Feature\ApplicationFeatureTest;
+use Handtuchsystem\Test\Feature\ApplicationFeatureTest;
 
 class RoomModelTest extends ApplicationFeatureTest
 {

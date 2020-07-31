@@ -1,22 +1,22 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers;
+namespace Handtuchsystem\Test\Unit\Controllers;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
-use Engelsystem\Config\Config;
-use Engelsystem\Controllers\PasswordResetController;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Exceptions\HttpNotFound;
-use Engelsystem\Http\Exceptions\ValidationException;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Http\Validation\Validator;
-use Engelsystem\Mail\EngelsystemMailer;
-use Engelsystem\Models\User\PasswordReset;
-use Engelsystem\Models\User\User;
-use Engelsystem\Renderer\Renderer;
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Controllers\PasswordResetController;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Exceptions\HttpNotFound;
+use Handtuchsystem\Http\Exceptions\ValidationException;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Http\Validation\Validator;
+use Handtuchsystem\Mail\HandtuchsystemMailer;
+use Handtuchsystem\Models\User\PasswordReset;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Renderer\Renderer;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Log\Test\TestLogger;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -31,8 +31,8 @@ class PasswordResetControllerTest extends TestCase
     protected $args = [];
 
     /**
-     * @covers \Engelsystem\Controllers\PasswordResetController::reset
-     * @covers \Engelsystem\Controllers\PasswordResetController::__construct
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::reset
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::__construct
      */
     public function testReset(): void
     {
@@ -43,7 +43,7 @@ class PasswordResetControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\PasswordResetController::postReset
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::postReset
      */
     public function testPostReset(): void
     {
@@ -57,7 +57,7 @@ class PasswordResetControllerTest extends TestCase
         );
         /** @var TestLogger $log */
         $log = $this->args['log'];
-        /** @var EngelsystemMailer|MockObject $mailer */
+        /** @var HandtuchsystemMailer|MockObject $mailer */
         $mailer = $this->args['mailer'];
         $this->setExpects($mailer, 'sendViewTranslated');
 
@@ -68,7 +68,7 @@ class PasswordResetControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\PasswordResetController::postReset
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::postReset
      */
     public function testPostResetInvalidRequest(): void
     {
@@ -81,7 +81,7 @@ class PasswordResetControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\PasswordResetController::postReset
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::postReset
      */
     public function testPostResetNoUser(): void
     {
@@ -97,8 +97,8 @@ class PasswordResetControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\PasswordResetController::resetPassword
-     * @covers \Engelsystem\Controllers\PasswordResetController::requireToken
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::resetPassword
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::requireToken
      */
     public function testResetPassword(): void
     {
@@ -114,8 +114,8 @@ class PasswordResetControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\PasswordResetController::resetPassword
-     * @covers \Engelsystem\Controllers\PasswordResetController::requireToken
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::resetPassword
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::requireToken
      */
     public function testResetPasswordNoToken(): void
     {
@@ -127,7 +127,7 @@ class PasswordResetControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\PasswordResetController::postResetPassword
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::postResetPassword
      */
     public function testPostResetPassword(): void
     {
@@ -159,8 +159,8 @@ class PasswordResetControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\PasswordResetController::postResetPassword
-     * @covers \Engelsystem\Controllers\PasswordResetController::showView
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::postResetPassword
+     * @covers \Handtuchsystem\Controllers\PasswordResetController::showView
      */
     public function testPostResetPasswordNotMatching(): void
     {
@@ -195,8 +195,8 @@ class PasswordResetControllerTest extends TestCase
     {
         $response = new Response();
         $session = new Session(new MockArraySessionStorage());
-        /** @var EngelsystemMailer|MockObject $mailer */
-        $mailer = $this->createMock(EngelsystemMailer::class);
+        /** @var HandtuchsystemMailer|MockObject $mailer */
+        $mailer = $this->createMock(HandtuchsystemMailer::class);
         $log = new TestLogger();
         $renderer = $this->createMock(Renderer::class);
         $response->setRenderer($renderer);
@@ -221,7 +221,7 @@ class PasswordResetControllerTest extends TestCase
     {
         /** @var Response $response */
         /** @var Session $session */
-        /** @var EngelsystemMailer|MockObject $mailer */
+        /** @var HandtuchsystemMailer|MockObject $mailer */
         /** @var TestLogger $log */
         /** @var Renderer|MockObject $renderer */
         list($response, $session, $mailer, $log, $renderer) = array_values($this->getControllerArgs());

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Engelsystem\Test\Unit\Models;
+namespace Handtuchsystem\Test\Unit\Models;
 
-use Engelsystem\Models\News;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\News;
+use Handtuchsystem\Models\User\User;
 
 /**
  * This class provides tests for the News model.
@@ -42,7 +42,7 @@ class NewsTest extends ModelTest
     /**
      * Tests that creating a News item with default values works.
      *
-     * @covers \Engelsystem\Models\News
+     * @covers \Handtuchsystem\Models\News
      */
     public function testCreateDefault(): void
     {
@@ -58,7 +58,7 @@ class NewsTest extends ModelTest
     /**
      * Tests that accessing the NewsComments of a News works.
      *
-     * @covers \Engelsystem\Models\News::comments
+     * @covers \Handtuchsystem\Models\News::comments
      */
     public function testNewsComments(): void
     {
@@ -73,7 +73,7 @@ class NewsTest extends ModelTest
     /**
      * Tests that creating a News item with all fill values works.
      *
-     * @covers \Engelsystem\Models\News
+     * @covers \Handtuchsystem\Models\News
      */
     public function testCreate(): void
     {

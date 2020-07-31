@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers;
+namespace Handtuchsystem\Test\Unit\Controllers;
 
-use Engelsystem\Controllers\DesignController;
-use Engelsystem\Http\Response;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Controllers\DesignController;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Test\Unit\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class DesignControllerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Controllers\DesignController::__construct
-     * @covers \Engelsystem\Controllers\DesignController::index
+     * @covers \Handtuchsystem\Controllers\DesignController::__construct
+     * @covers \Handtuchsystem\Controllers\DesignController::index
      */
     public function testIndex()
     {

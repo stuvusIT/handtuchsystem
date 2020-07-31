@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Container;
+namespace Handtuchsystem\Test\Unit\Container;
 
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Test\Unit\Container\Stub\ServiceProviderImplementation;
-use Engelsystem\Test\Unit\ServiceProviderTest as ServiceProviderTestCase;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Test\Unit\Container\Stub\ServiceProviderImplementation;
+use Handtuchsystem\Test\Unit\ServiceProviderTest as ServiceProviderTestCase;
 
 class ServiceProviderTest extends ServiceProviderTestCase
 {
     /**
-     * @covers \Engelsystem\Container\ServiceProvider::__construct
-     * @covers \Engelsystem\Container\ServiceProvider::register
-     * @covers \Engelsystem\Container\ServiceProvider::boot
+     * @covers \Handtuchsystem\Container\ServiceProvider::__construct
+     * @covers \Handtuchsystem\Container\ServiceProvider::register
+     * @covers \Handtuchsystem\Container\ServiceProvider::boot
      */
     public function testRegister()
     {

@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\Application;
-use Engelsystem\Middleware\Dispatcher;
+use Handtuchsystem\Application;
+use Handtuchsystem\Middleware\Dispatcher;
 use Psr\Http\Message\ServerRequestInterface;
 
 require_once realpath(__DIR__ . '/../includes/engelsystem.php');

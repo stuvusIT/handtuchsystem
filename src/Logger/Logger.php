@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Logger;
+namespace Handtuchsystem\Logger;
 
-use Engelsystem\Models\LogEntry;
+use Handtuchsystem\Models\LogEntry;
 use Psr\Log\AbstractLogger;
 use Psr\Log\InvalidArgumentException;
 use Psr\Log\LogLevel;

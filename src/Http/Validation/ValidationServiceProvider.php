@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Http\Validation;
+namespace Handtuchsystem\Http\Validation;
 
-use Engelsystem\Application;
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Controllers\BaseController;
+use Handtuchsystem\Application;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Controllers\BaseController;
 
 class ValidationServiceProvider extends ServiceProvider
 {

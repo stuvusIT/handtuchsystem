@@ -1,12 +1,12 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\SessionHandlers\DatabaseHandler;
-use Engelsystem\Http\SessionServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\SessionHandlers\DatabaseHandler;
+use Handtuchsystem\Http\SessionServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
@@ -17,8 +17,8 @@ use Symfony\Component\HttpFoundation\Session\Storage\SessionStorageInterface as 
 class SessionServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Http\SessionServiceProvider::getSessionStorage()
-     * @covers \Engelsystem\Http\SessionServiceProvider::register()
+     * @covers \Handtuchsystem\Http\SessionServiceProvider::getSessionStorage()
+     * @covers \Handtuchsystem\Http\SessionServiceProvider::register()
      */
     public function testRegister()
     {
@@ -123,7 +123,7 @@ class SessionServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Http\SessionServiceProvider::isCli()
+     * @covers \Handtuchsystem\Http\SessionServiceProvider::isCli()
      */
     public function testIsCli()
     {

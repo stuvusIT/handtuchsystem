@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation\Rules;
+namespace Handtuchsystem\Test\Unit\Http\Validation\Rules;
 
-use Engelsystem\Test\Unit\Http\Validation\Rules\Stub\UsesStringInputLength;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Test\Unit\Http\Validation\Rules\Stub\UsesStringInputLength;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class StringInputLengthTest extends TestCase
 {
     /**
-     * @covers       \Engelsystem\Http\Validation\Rules\StringInputLength::validate
-     * @covers       \Engelsystem\Http\Validation\Rules\StringInputLength::isDateTime
+     * @covers       \Handtuchsystem\Http\Validation\Rules\StringInputLength::validate
+     * @covers       \Handtuchsystem\Http\Validation\Rules\StringInputLength::isDateTime
      * @dataProvider validateProvider
      * @param mixed $input
      * @param mixed $expectedInput

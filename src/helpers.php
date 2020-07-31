@@ -1,14 +1,14 @@
 <?php
 
-use Engelsystem\Application;
-use Engelsystem\Config\Config;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Helpers\Translation\Translator;
-use Engelsystem\Http\Redirector;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Http\UrlGeneratorInterface;
-use Engelsystem\Renderer\Renderer;
+use Handtuchsystem\Application;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Http\Redirector;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Http\UrlGeneratorInterface;
+use Handtuchsystem\Renderer\Renderer;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 /**

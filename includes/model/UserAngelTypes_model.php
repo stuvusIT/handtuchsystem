@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\Database\DB;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Database\DB;
+use Handtuchsystem\Models\User\User;
 
 /**
  * User angeltypes model

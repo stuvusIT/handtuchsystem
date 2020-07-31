@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Controllers;
+namespace Handtuchsystem\Controllers;
 
 use Carbon\Carbon;
-use Engelsystem\Config\Config;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Redirector;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Redirector;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Models\User\User;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class AuthController extends BaseController

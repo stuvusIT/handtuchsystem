@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Container\Container;
-use Engelsystem\Http\Response;
-use Engelsystem\Middleware\CallableHandler;
-use Engelsystem\Test\Unit\Middleware\Stub\HasStaticMethod;
+use Handtuchsystem\Container\Container;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Middleware\CallableHandler;
+use Handtuchsystem\Test\Unit\Middleware\Stub\HasStaticMethod;
 use InvalidArgumentException;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -28,8 +28,8 @@ class CallableHandlerTest extends TestCase
 
     /**
      * @dataProvider provideCallable
-     * @covers       \Engelsystem\Middleware\CallableHandler::__construct
-     * @covers       \Engelsystem\Middleware\CallableHandler::getCallable
+     * @covers       \Handtuchsystem\Middleware\CallableHandler::__construct
+     * @covers       \Handtuchsystem\Middleware\CallableHandler::getCallable
      * @param callable $callable
      */
     public function testInit($callable)
@@ -40,7 +40,7 @@ class CallableHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\CallableHandler::process
+     * @covers \Handtuchsystem\Middleware\CallableHandler::process
      */
     public function testProcess()
     {
@@ -60,7 +60,7 @@ class CallableHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\CallableHandler::handle
+     * @covers \Handtuchsystem\Middleware\CallableHandler::handle
      */
     public function testHandler()
     {
@@ -79,7 +79,7 @@ class CallableHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\CallableHandler::execute
+     * @covers \Handtuchsystem\Middleware\CallableHandler::execute
      */
     public function testExecute()
     {

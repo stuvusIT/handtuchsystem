@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Container;
+namespace Handtuchsystem\Container;
 
 use Illuminate\Container\Container as IlluminateContainer;
 use Psr\Container\ContainerInterface;

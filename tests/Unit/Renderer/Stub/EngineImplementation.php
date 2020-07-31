@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Stub;
+namespace Handtuchsystem\Test\Unit\Renderer\Stub;
 
-use Engelsystem\Renderer\Engine;
+use Handtuchsystem\Renderer\Engine;
 
 class EngineImplementation extends Engine
 {

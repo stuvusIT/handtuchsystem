@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Exceptions;
+namespace Handtuchsystem\Test\Unit\Http\Exceptions;
 
-use Engelsystem\Http\Exceptions\HttpAuthExpired;
+use Handtuchsystem\Http\Exceptions\HttpAuthExpired;
 use PHPUnit\Framework\TestCase;
 
 class HttpAuthExpiredTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Exceptions\HttpAuthExpired::__construct
+     * @covers \Handtuchsystem\Http\Exceptions\HttpAuthExpired::__construct
      */
     public function testConstruct()
     {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer;
+namespace Handtuchsystem\Test\Unit\Renderer;
 
-use Engelsystem\Test\Unit\Renderer\Stub\EngineImplementation;
+use Handtuchsystem\Test\Unit\Renderer\Stub\EngineImplementation;
 use PHPUnit\Framework\TestCase;
 
 class EngineTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Renderer\Engine::share
+     * @covers \Handtuchsystem\Renderer\Engine::share
      */
     public function testShare()
     {

@@ -1,20 +1,20 @@
 <?php
 
-namespace Engelsystem\Renderer;
+namespace Handtuchsystem\Renderer;
 
-use Engelsystem\Config\Config as EngelsystemConfig;
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Renderer\Twig\Extensions\Assets;
-use Engelsystem\Renderer\Twig\Extensions\Authentication;
-use Engelsystem\Renderer\Twig\Extensions\Config;
-use Engelsystem\Renderer\Twig\Extensions\Csrf;
-use Engelsystem\Renderer\Twig\Extensions\Develop;
-use Engelsystem\Renderer\Twig\Extensions\Globals;
-use Engelsystem\Renderer\Twig\Extensions\Legacy;
-use Engelsystem\Renderer\Twig\Extensions\Markdown;
-use Engelsystem\Renderer\Twig\Extensions\Session;
-use Engelsystem\Renderer\Twig\Extensions\Translation;
-use Engelsystem\Renderer\Twig\Extensions\Url;
+use Handtuchsystem\Config\Config as HandtuchsystemConfig;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Renderer\Twig\Extensions\Assets;
+use Handtuchsystem\Renderer\Twig\Extensions\Authentication;
+use Handtuchsystem\Renderer\Twig\Extensions\Config;
+use Handtuchsystem\Renderer\Twig\Extensions\Csrf;
+use Handtuchsystem\Renderer\Twig\Extensions\Develop;
+use Handtuchsystem\Renderer\Twig\Extensions\Globals;
+use Handtuchsystem\Renderer\Twig\Extensions\Legacy;
+use Handtuchsystem\Renderer\Twig\Extensions\Markdown;
+use Handtuchsystem\Renderer\Twig\Extensions\Session;
+use Handtuchsystem\Renderer\Twig\Extensions\Translation;
+use Handtuchsystem\Renderer\Twig\Extensions\Url;
 use Symfony\Component\VarDumper\VarDumper;
 use Twig\Environment as Twig;
 use Twig\Extension\CoreExtension as TwigCore;
@@ -65,7 +65,7 @@ class TwigServiceProvider extends ServiceProvider
     protected function registerTwigEngine()
     {
         $viewsPath = $this->app->get('path.views');
-        /** @var EngelsystemConfig $config */
+        /** @var HandtuchsystemConfig $config */
         $config = $this->app->get('config');
 
         $twigLoader = $this->app->make(TwigLoader::class, ['paths' => $viewsPath]);

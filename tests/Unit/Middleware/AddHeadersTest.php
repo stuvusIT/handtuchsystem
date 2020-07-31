@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
-use Engelsystem\Config\Config;
-use Engelsystem\Http\Response;
-use Engelsystem\Middleware\AddHeaders;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Middleware\AddHeaders;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ServerRequestInterface;
@@ -16,8 +16,8 @@ class AddHeadersTest extends TestCase
     use ArraySubsetAsserts;
 
     /**
-     * @covers \Engelsystem\Middleware\AddHeaders::__construct
-     * @covers \Engelsystem\Middleware\AddHeaders::process
+     * @covers \Handtuchsystem\Middleware\AddHeaders::__construct
+     * @covers \Handtuchsystem\Middleware\AddHeaders::process
      */
     public function testRegister()
     {

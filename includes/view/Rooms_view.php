@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\ShiftCalendarRenderer;
-use Engelsystem\ShiftsFilterRenderer;
+use Handtuchsystem\ShiftCalendarRenderer;
+use Handtuchsystem\ShiftsFilterRenderer;
 
 /**
  *

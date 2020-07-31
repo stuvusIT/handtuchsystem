@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Http\SessionHandlers;
+namespace Handtuchsystem\Http\SessionHandlers;
 
 use SessionHandlerInterface;
 

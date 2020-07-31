@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers;
+namespace Handtuchsystem\Test\Unit\Controllers;
 
-use Engelsystem\Controllers\ApiController;
-use Engelsystem\Http\Response;
+use Handtuchsystem\Controllers\ApiController;
+use Handtuchsystem\Http\Response;
 use PHPUnit\Framework\TestCase;
 
 class ApiControllerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Controllers\ApiController::__construct
-     * @covers \Engelsystem\Controllers\ApiController::index
+     * @covers \Handtuchsystem\Controllers\ApiController::__construct
+     * @covers \Handtuchsystem\Controllers\ApiController::index
      */
     public function testIndex()
     {

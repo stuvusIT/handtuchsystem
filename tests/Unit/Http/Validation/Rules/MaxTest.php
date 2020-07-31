@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation\Rules;
+namespace Handtuchsystem\Test\Unit\Http\Validation\Rules;
 
-use Engelsystem\Http\Validation\Rules\Max;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Http\Validation\Rules\Max;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class MaxTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Validation\Rules\Max
+     * @covers \Handtuchsystem\Http\Validation\Rules\Max
      */
     public function testValidate()
     {

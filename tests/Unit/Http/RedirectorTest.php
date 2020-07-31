@@ -1,19 +1,19 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
-use Engelsystem\Http\Redirector;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Http\UrlGeneratorInterface;
+use Handtuchsystem\Http\Redirector;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Http\UrlGeneratorInterface;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 class RedirectorTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Redirector::__construct
-     * @covers \Engelsystem\Http\Redirector::to
+     * @covers \Handtuchsystem\Http\Redirector::__construct
+     * @covers \Handtuchsystem\Http\Redirector::to
      */
     public function testTo()
     {
@@ -34,8 +34,8 @@ class RedirectorTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Redirector::back
-     * @covers \Engelsystem\Http\Redirector::getPreviousUrl
+     * @covers \Handtuchsystem\Http\Redirector::back
+     * @covers \Handtuchsystem\Http\Redirector::getPreviousUrl
      */
     public function testBack()
     {

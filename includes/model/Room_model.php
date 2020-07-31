@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\Database\DB;
-use Engelsystem\ValidationResult;
+use Handtuchsystem\Database\DB;
+use Handtuchsystem\ValidationResult;
 
 /**
  * Validate a name for a room.

@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
-use Engelsystem\Application;
-use Engelsystem\Http\HttpClientServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Application;
+use Handtuchsystem\Http\HttpClientServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use GuzzleHttp\Client as GuzzleClient;
 
 class HttpClientServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Http\HttpClientServiceProvider::register
+     * @covers \Handtuchsystem\Http\HttpClientServiceProvider::register
      */
     public function testRegister()
     {

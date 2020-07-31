@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
-use Engelsystem\Renderer\Twig\Extensions\Csrf;
+use Handtuchsystem\Renderer\Twig\Extensions\Csrf;
 use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class CsrfTest extends ExtensionTest
 {
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Csrf::getFunctions
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Csrf::getFunctions
      */
     public function testGetGlobals()
     {
@@ -24,7 +24,7 @@ class CsrfTest extends ExtensionTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Csrf::getCsrfField
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Csrf::getCsrfField
      */
     public function testGetCsrfField()
     {
@@ -45,8 +45,8 @@ class CsrfTest extends ExtensionTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Csrf::__construct
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Csrf::getCsrfToken
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Csrf::__construct
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Csrf::getCsrfToken
      */
     public function testGetCsrfToken()
     {

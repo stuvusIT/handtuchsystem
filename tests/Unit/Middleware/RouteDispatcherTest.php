@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Http\Request;
-use Engelsystem\Middleware\RouteDispatcher;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Middleware\RouteDispatcher;
 use FastRoute\Dispatcher as FastRouteDispatcher;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -16,8 +16,8 @@ use Psr\Http\Server\RequestHandlerInterface;
 class RouteDispatcherTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\RouteDispatcher::__construct
-     * @covers \Engelsystem\Middleware\RouteDispatcher::process
+     * @covers \Handtuchsystem\Middleware\RouteDispatcher::__construct
+     * @covers \Handtuchsystem\Middleware\RouteDispatcher::process
      */
     public function testProcess()
     {
@@ -53,7 +53,7 @@ class RouteDispatcherTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\RouteDispatcher::process
+     * @covers \Handtuchsystem\Middleware\RouteDispatcher::process
      */
     public function testProcessNotFound()
     {
@@ -90,7 +90,7 @@ class RouteDispatcherTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\RouteDispatcher::process
+     * @covers \Handtuchsystem\Middleware\RouteDispatcher::process
      */
     public function testProcessNotAllowed()
     {

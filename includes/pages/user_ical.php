@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Http\Exceptions\HttpForbidden;
+use Handtuchsystem\Http\Exceptions\HttpForbidden;
 
 /**
  * Controller for ical output of users own shifts or any user_shifts filter.

@@ -1,12 +1,12 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers;
+namespace Handtuchsystem\Test\Unit\Helpers;
 
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Models\User\User;
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\Helpers\Stub\UserModelImplementation;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\Helpers\Stub\UserModelImplementation;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Http\Message\ServerRequestInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -16,8 +16,8 @@ class AuthenticatorTest extends ServiceProviderTest
     use HasDatabase;
 
     /**
-     * @covers \Engelsystem\Helpers\Authenticator::__construct
-     * @covers \Engelsystem\Helpers\Authenticator::user
+     * @covers \Handtuchsystem\Helpers\Authenticator::__construct
+     * @covers \Handtuchsystem\Helpers\Authenticator::user
      */
     public function testUser()
     {
@@ -60,7 +60,7 @@ class AuthenticatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Authenticator::apiUser
+     * @covers \Handtuchsystem\Helpers\Authenticator::apiUser
      */
     public function testApiUser()
     {
@@ -104,7 +104,7 @@ class AuthenticatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Authenticator::can
+     * @covers \Handtuchsystem\Helpers\Authenticator::can
      */
     public function testCan()
     {
@@ -153,7 +153,7 @@ class AuthenticatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Authenticator::authenticate
+     * @covers \Handtuchsystem\Helpers\Authenticator::authenticate
      */
     public function testAuthenticate()
     {
@@ -186,7 +186,7 @@ class AuthenticatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Authenticator::verifyPassword
+     * @covers \Handtuchsystem\Helpers\Authenticator::verifyPassword
      */
     public function testVerifyPassword()
     {
@@ -216,7 +216,7 @@ class AuthenticatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Authenticator::setPassword
+     * @covers \Handtuchsystem\Helpers\Authenticator::setPassword
      */
     public function testSetPassword()
     {
@@ -240,8 +240,8 @@ class AuthenticatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Authenticator::setPasswordAlgorithm
-     * @covers \Engelsystem\Helpers\Authenticator::getPasswordAlgorithm
+     * @covers \Handtuchsystem\Helpers\Authenticator::setPasswordAlgorithm
+     * @covers \Handtuchsystem\Helpers\Authenticator::getPasswordAlgorithm
      */
     public function testPasswordAlgorithm()
     {

@@ -1,9 +1,9 @@
 <?php
 
 use Carbon\Carbon;
-use Engelsystem\Database\DB;
-use Engelsystem\Models\User\User;
-use Engelsystem\ValidationResult;
+use Handtuchsystem\Database\DB;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\ValidationResult;
 use Illuminate\Database\Query\JoinClause;
 
 /**

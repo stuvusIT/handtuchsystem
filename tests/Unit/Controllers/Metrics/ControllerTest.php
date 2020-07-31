@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers\Metrics;
+namespace Handtuchsystem\Test\Unit\Controllers\Metrics;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
-use Engelsystem\Config\Config;
-use Engelsystem\Controllers\Metrics\Controller;
-use Engelsystem\Controllers\Metrics\MetricsEngine;
-use Engelsystem\Controllers\Metrics\Stats;
-use Engelsystem\Helpers\Version;
-use Engelsystem\Http\Exceptions\HttpForbidden;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Controllers\Metrics\Controller;
+use Handtuchsystem\Controllers\Metrics\MetricsEngine;
+use Handtuchsystem\Controllers\Metrics\Stats;
+use Handtuchsystem\Helpers\Version;
+use Handtuchsystem\Http\Exceptions\HttpForbidden;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Test\Unit\TestCase;
 use Illuminate\Support\Collection;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Log\LogLevel;
@@ -22,9 +22,9 @@ class ControllerTest extends TestCase
     use ArraySubsetAsserts;
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Controller::__construct
-     * @covers \Engelsystem\Controllers\Metrics\Controller::metrics
-     * @covers \Engelsystem\Controllers\Metrics\Controller::formatStats
+     * @covers \Handtuchsystem\Controllers\Metrics\Controller::__construct
+     * @covers \Handtuchsystem\Controllers\Metrics\Controller::metrics
+     * @covers \Handtuchsystem\Controllers\Metrics\Controller::formatStats
      */
     public function testMetrics()
     {
@@ -159,8 +159,8 @@ class ControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Controller::checkAuth
-     * @covers \Engelsystem\Controllers\Metrics\Controller::stats
+     * @covers \Handtuchsystem\Controllers\Metrics\Controller::checkAuth
+     * @covers \Handtuchsystem\Controllers\Metrics\Controller::stats
      */
     public function testStats()
     {
@@ -206,7 +206,7 @@ class ControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Controller::checkAuth
+     * @covers \Handtuchsystem\Controllers\Metrics\Controller::checkAuth
      */
     public function testCheckAuth()
     {

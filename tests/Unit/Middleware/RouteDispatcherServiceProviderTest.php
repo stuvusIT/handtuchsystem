@@ -1,12 +1,12 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Middleware\LegacyMiddleware;
-use Engelsystem\Middleware\RouteDispatcher;
-use Engelsystem\Middleware\RouteDispatcherServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Middleware\LegacyMiddleware;
+use Handtuchsystem\Middleware\RouteDispatcher;
+use Handtuchsystem\Middleware\RouteDispatcherServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use FastRoute\Dispatcher as FastRouteDispatcher;
 use Illuminate\Contracts\Container\ContextualBindingBuilder;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -15,7 +15,7 @@ use Psr\Http\Server\MiddlewareInterface;
 class RouteDispatcherServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Middleware\RouteDispatcherServiceProvider::register()
+     * @covers \Handtuchsystem\Middleware\RouteDispatcherServiceProvider::register()
      */
     public function testRegister()
     {

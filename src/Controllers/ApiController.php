@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Controllers;
+namespace Handtuchsystem\Controllers;
 
-use Engelsystem\Http\Response;
+use Handtuchsystem\Http\Response;
 
 class ApiController extends BaseController
 {

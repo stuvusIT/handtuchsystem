@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Database\Migration;
+namespace Handtuchsystem\Test\Unit\Database\Migration;
 
-use Engelsystem\Application;
-use Engelsystem\Database\Migration\Migrate;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Application;
+use Handtuchsystem\Database\Migration\Migrate;
+use Handtuchsystem\Test\Unit\TestCase;
 use Exception;
 use Illuminate\Database\Capsule\Manager as CapsuleManager;
 use Illuminate\Database\Schema\Builder as SchemaBuilder;
@@ -15,11 +15,11 @@ use PHPUnit\Framework\MockObject\MockObject;
 class MigrateTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Database\Migration\Migrate::__construct
-     * @covers \Engelsystem\Database\Migration\Migrate::getMigrations
-     * @covers \Engelsystem\Database\Migration\Migrate::run
-     * @covers \Engelsystem\Database\Migration\Migrate::setOutput
-     * @covers \Engelsystem\Database\Migration\Migrate::mergeMigrations
+     * @covers \Handtuchsystem\Database\Migration\Migrate::__construct
+     * @covers \Handtuchsystem\Database\Migration\Migrate::getMigrations
+     * @covers \Handtuchsystem\Database\Migration\Migrate::run
+     * @covers \Handtuchsystem\Database\Migration\Migrate::setOutput
+     * @covers \Handtuchsystem\Database\Migration\Migrate::mergeMigrations
      */
     public function testRun()
     {
@@ -120,7 +120,7 @@ class MigrateTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Database\Migration\Migrate::run
+     * @covers \Handtuchsystem\Database\Migration\Migrate::run
      */
     public function testRunExceptionUnlockTable()
     {
@@ -163,14 +163,14 @@ class MigrateTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Database\Migration\Migrate::getMigrated
-     * @covers \Engelsystem\Database\Migration\Migrate::getMigrationFiles
-     * @covers \Engelsystem\Database\Migration\Migrate::getTableQuery
-     * @covers \Engelsystem\Database\Migration\Migrate::initMigration
-     * @covers \Engelsystem\Database\Migration\Migrate::migrate
-     * @covers \Engelsystem\Database\Migration\Migrate::setMigrated
-     * @covers \Engelsystem\Database\Migration\Migrate::lockTable
-     * @covers \Engelsystem\Database\Migration\Migrate::unlockTable
+     * @covers \Handtuchsystem\Database\Migration\Migrate::getMigrated
+     * @covers \Handtuchsystem\Database\Migration\Migrate::getMigrationFiles
+     * @covers \Handtuchsystem\Database\Migration\Migrate::getTableQuery
+     * @covers \Handtuchsystem\Database\Migration\Migrate::initMigration
+     * @covers \Handtuchsystem\Database\Migration\Migrate::migrate
+     * @covers \Handtuchsystem\Database\Migration\Migrate::setMigrated
+     * @covers \Handtuchsystem\Database\Migration\Migrate::lockTable
+     * @covers \Handtuchsystem\Database\Migration\Migrate::unlockTable
      */
     public function testRunIntegration()
     {

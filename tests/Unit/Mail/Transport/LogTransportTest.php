@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Mail\Transport;
+namespace Handtuchsystem\Test\Unit\Mail\Transport;
 
-use Engelsystem\Mail\Transport\LogTransport;
+use Handtuchsystem\Mail\Transport\LogTransport;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -11,8 +11,8 @@ use Swift_Mime_SimpleMessage as SimpleMessage;
 class LogTransportTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Mail\Transport\LogTransport::__construct
-     * @covers \Engelsystem\Mail\Transport\LogTransport::send
+     * @covers \Handtuchsystem\Mail\Transport\LogTransport::__construct
+     * @covers \Handtuchsystem\Mail\Transport\LogTransport::send
      */
     public function testSend()
     {

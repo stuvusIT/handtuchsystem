@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\User\User;
 
 /**
  * Sign off from an user from a shift with admin permissions, asking for ack.

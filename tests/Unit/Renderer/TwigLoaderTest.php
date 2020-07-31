@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer;
+namespace Handtuchsystem\Test\Unit\Renderer;
 
-use Engelsystem\Renderer\TwigLoader;
+use Handtuchsystem\Renderer\TwigLoader;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass as Reflection;
 
 class TwigLoaderTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Renderer\TwigLoader::findTemplate
+     * @covers \Handtuchsystem\Renderer\TwigLoader::findTemplate
      */
     public function testFindTemplate()
     {

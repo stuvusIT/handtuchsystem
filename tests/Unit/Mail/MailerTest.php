@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Mail;
+namespace Handtuchsystem\Test\Unit\Mail;
 
-use Engelsystem\Mail\Mailer;
+use Handtuchsystem\Mail\Mailer;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Swift_Mailer as SwiftMailer;
@@ -11,11 +11,11 @@ use Swift_Message as SwiftMessage;
 class MailerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Mail\Mailer::__construct
-     * @covers \Engelsystem\Mail\Mailer::getFromAddress
-     * @covers \Engelsystem\Mail\Mailer::getFromName
-     * @covers \Engelsystem\Mail\Mailer::setFromAddress
-     * @covers \Engelsystem\Mail\Mailer::setFromName
+     * @covers \Handtuchsystem\Mail\Mailer::__construct
+     * @covers \Handtuchsystem\Mail\Mailer::getFromAddress
+     * @covers \Handtuchsystem\Mail\Mailer::getFromName
+     * @covers \Handtuchsystem\Mail\Mailer::setFromAddress
+     * @covers \Handtuchsystem\Mail\Mailer::setFromName
      */
     public function testInitAndSettersAndGetters()
     {
@@ -32,7 +32,7 @@ class MailerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Mail\Mailer::send
+     * @covers \Handtuchsystem\Mail\Mailer::send
      */
     public function testSend()
     {

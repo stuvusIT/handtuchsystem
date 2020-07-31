@@ -1,4 +1,4 @@
-# Engelsystem PHP FPM development image including Xdebug
+# Handtuchsystem PHP FPM development image including Xdebug
 FROM php:7-fpm-alpine AS es_php_fpm
 WORKDIR /var/www
 RUN apk add --no-cache icu-dev $PHPIZE_DEPS && \
@@ -13,7 +13,7 @@ ENV TRUSTED_PROXIES 10.0.0.0/8,::ffff:10.0.0.0/8,\
                     192.168.0.0/16,::ffff:192.168.0.0/16,\
                     ::1/128,fc00::/7,fec0::/10
 
-# Engelsystem development workspace
+# Handtuchsystem development workspace
 # Contains all tools required to build / manage the system
 FROM es_php_fpm AS es_workspace
 RUN apk add --no-cache composer gettext nodejs npm yarn

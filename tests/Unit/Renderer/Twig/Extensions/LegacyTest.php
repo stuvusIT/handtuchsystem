@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
-use Engelsystem\Http\Request;
-use Engelsystem\Renderer\Twig\Extensions\Legacy;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Renderer\Twig\Extensions\Legacy;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class LegacyTest extends ExtensionTest
 {
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Legacy::getFunctions
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Legacy::getFunctions
      */
     public function testGetFunctions()
     {
@@ -30,8 +30,8 @@ class LegacyTest extends ExtensionTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Legacy::__construct
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Legacy::getPage
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Legacy::__construct
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Legacy::getPage
      */
     public function testIsAuthenticated()
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Migrations;
+namespace Handtuchsystem\Migrations;
 
-use Engelsystem\Database\Migration\Migration;
+use Handtuchsystem\Database\Migration\Migration;
 
 class AddSomeFeature extends Migration
 {

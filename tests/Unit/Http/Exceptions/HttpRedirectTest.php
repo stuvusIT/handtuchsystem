@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Exceptions;
+namespace Handtuchsystem\Test\Unit\Http\Exceptions;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
-use Engelsystem\Http\Exceptions\HttpRedirect;
+use Handtuchsystem\Http\Exceptions\HttpRedirect;
 use PHPUnit\Framework\TestCase;
 
 class HttpRedirectTest extends TestCase
@@ -11,7 +11,7 @@ class HttpRedirectTest extends TestCase
     use ArraySubsetAsserts;
 
     /**
-     * @covers \Engelsystem\Http\Exceptions\HttpRedirect::__construct
+     * @covers \Handtuchsystem\Http\Exceptions\HttpRedirect::__construct
      */
     public function testConstruct()
     {

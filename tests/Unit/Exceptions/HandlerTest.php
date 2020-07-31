@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Exceptions;
+namespace Handtuchsystem\Test\Unit\Exceptions;
 
-use Engelsystem\Exceptions\Handler;
-use Engelsystem\Exceptions\Handlers\HandlerInterface;
-use Engelsystem\Http\Request;
+use Handtuchsystem\Exceptions\Handler;
+use Handtuchsystem\Exceptions\Handlers\HandlerInterface;
+use Handtuchsystem\Http\Request;
 use ErrorException;
 use Exception;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -13,7 +13,7 @@ use PHPUnit\Framework\TestCase;
 class HandlerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Exceptions\Handler::__construct()
+     * @covers \Handtuchsystem\Exceptions\Handler::__construct()
      */
     public function testCreate()
     {
@@ -27,7 +27,7 @@ class HandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Exceptions\Handler::errorHandler()
+     * @covers \Handtuchsystem\Exceptions\Handler::errorHandler()
      */
     public function testErrorHandler()
     {
@@ -44,7 +44,7 @@ class HandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Exceptions\Handler::exceptionHandler()
+     * @covers \Handtuchsystem\Exceptions\Handler::exceptionHandler()
      */
     public function testExceptionHandler()
     {
@@ -80,7 +80,7 @@ class HandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Exceptions\Handler::register()
+     * @covers \Handtuchsystem\Exceptions\Handler::register()
      */
     public function testRegister()
     {
@@ -99,8 +99,8 @@ class HandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Exceptions\Handler::getEnvironment()
-     * @covers \Engelsystem\Exceptions\Handler::setEnvironment()
+     * @covers \Handtuchsystem\Exceptions\Handler::getEnvironment()
+     * @covers \Handtuchsystem\Exceptions\Handler::setEnvironment()
      */
     public function testEnvironment()
     {
@@ -114,8 +114,8 @@ class HandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Exceptions\Handler::getHandler()
-     * @covers \Engelsystem\Exceptions\Handler::setHandler()
+     * @covers \Handtuchsystem\Exceptions\Handler::getHandler()
+     * @covers \Handtuchsystem\Exceptions\Handler::setHandler()
      */
     public function testHandler()
     {
@@ -133,8 +133,8 @@ class HandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Exceptions\Handler::getRequest()
-     * @covers \Engelsystem\Exceptions\Handler::setRequest()
+     * @covers \Handtuchsystem\Exceptions\Handler::getRequest()
+     * @covers \Handtuchsystem\Exceptions\Handler::setRequest()
      */
     public function testRequest()
     {

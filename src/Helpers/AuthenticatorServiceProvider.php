@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Helpers;
+namespace Handtuchsystem\Helpers;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Container\ServiceProvider;
 
 class AuthenticatorServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Migrations;
+namespace Handtuchsystem\Migrations;
 
 use Illuminate\Database\Schema\Blueprint;
 use stdClass;

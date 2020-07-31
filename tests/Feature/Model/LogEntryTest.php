@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Feature\Model;
+namespace Handtuchsystem\Test\Feature\Model;
 
-use Engelsystem\Models\LogEntry;
+use Handtuchsystem\Models\LogEntry;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LogLevel;
 
 class LogEntryTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Models\LogEntry::filter
+     * @covers \Handtuchsystem\Models\LogEntry::filter
      */
     public function testFilter()
     {

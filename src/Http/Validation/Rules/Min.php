@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Http\Validation\Rules;
+namespace Handtuchsystem\Http\Validation\Rules;
 
 use Respect\Validation\Rules\Min as RespectMin;
 

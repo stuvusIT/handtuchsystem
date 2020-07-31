@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Renderer;
+namespace Handtuchsystem\Renderer;
 
 use Psr\Log\LoggerAwareTrait;
 

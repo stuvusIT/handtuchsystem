@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation\Rules\Stub;
+namespace Handtuchsystem\Test\Unit\Http\Validation\Rules\Stub;
 
-use Engelsystem\Http\Validation\Rules\StringInputLength;
+use Handtuchsystem\Http\Validation\Rules\StringInputLength;
 
 class UsesStringInputLength extends ParentClassImplementation
 {

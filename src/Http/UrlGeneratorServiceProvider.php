@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Http;
+namespace Handtuchsystem\Http;
 
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Container\ServiceProvider;
 
 class UrlGeneratorServiceProvider extends ServiceProvider
 {

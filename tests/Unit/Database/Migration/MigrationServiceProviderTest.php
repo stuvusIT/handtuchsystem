@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Database\Migration;
+namespace Handtuchsystem\Test\Unit\Database\Migration;
 
-use Engelsystem\Database\Database;
-use Engelsystem\Database\Migration\Migrate;
-use Engelsystem\Database\Migration\MigrationServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Database\Database;
+use Handtuchsystem\Database\Migration\Migrate;
+use Handtuchsystem\Database\Migration\MigrationServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Schema\Builder as SchemaBuilder;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -13,7 +13,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 class MigrationServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Database\Migration\MigrationServiceProvider::register()
+     * @covers \Handtuchsystem\Database\Migration\MigrationServiceProvider::register()
      */
     public function testRegister()
     {

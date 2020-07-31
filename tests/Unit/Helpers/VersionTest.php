@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers;
+namespace Handtuchsystem\Test\Unit\Helpers;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Helpers\Version;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Helpers\Version;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 
 class VersionTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Helpers\Version::__construct
-     * @covers \Engelsystem\Helpers\Version::getVersion
+     * @covers \Handtuchsystem\Helpers\Version::__construct
+     * @covers \Handtuchsystem\Helpers\Version::getVersion
      */
     public function testGetVersion()
     {

@@ -1,7 +1,7 @@
 <?php
 
 use Carbon\Carbon;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\User\User;
 
 /**
  * @return string

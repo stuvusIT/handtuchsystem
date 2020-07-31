@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\Models\Message;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\Message;
+use Handtuchsystem\Models\User\User;
 
 /**
  * @return string

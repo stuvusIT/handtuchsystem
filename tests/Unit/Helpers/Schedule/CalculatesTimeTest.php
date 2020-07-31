@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Schedule;
+namespace Handtuchsystem\Test\Unit\Helpers\Schedule;
 
-use Engelsystem\Helpers\Schedule\CalculatesTime;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Helpers\Schedule\CalculatesTime;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class CalculatesTimeTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Helpers\Schedule\CalculatesTime::secondsFromTime
+     * @covers \Handtuchsystem\Helpers\Schedule\CalculatesTime::secondsFromTime
      */
     public function testSecondsFromTime()
     {

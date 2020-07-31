@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Mail\Transport;
+namespace Handtuchsystem\Test\Unit\Mail\Transport;
 
-use Engelsystem\Test\Unit\Mail\Transport\Stub\TransportImplementation;
+use Handtuchsystem\Test\Unit\Mail\Transport\Stub\TransportImplementation;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Swift_Events_EventListener;
@@ -11,11 +11,11 @@ use Swift_Mime_SimpleMessage as SimpleMessage;
 class TransportTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Mail\Transport\Transport::isStarted
-     * @covers \Engelsystem\Mail\Transport\Transport::ping
-     * @covers \Engelsystem\Mail\Transport\Transport::registerPlugin
-     * @covers \Engelsystem\Mail\Transport\Transport::start
-     * @covers \Engelsystem\Mail\Transport\Transport::stop
+     * @covers \Handtuchsystem\Mail\Transport\Transport::isStarted
+     * @covers \Handtuchsystem\Mail\Transport\Transport::ping
+     * @covers \Handtuchsystem\Mail\Transport\Transport::registerPlugin
+     * @covers \Handtuchsystem\Mail\Transport\Transport::start
+     * @covers \Handtuchsystem\Mail\Transport\Transport::stop
      */
     public function testMethods()
     {
@@ -34,7 +34,7 @@ class TransportTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Mail\Transport\Transport::allRecipients
+     * @covers \Handtuchsystem\Mail\Transport\Transport::allRecipients
      */
     public function testAllRecipients()
     {
@@ -70,8 +70,8 @@ class TransportTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Mail\Transport\Transport::formatTo
-     * @covers \Engelsystem\Mail\Transport\Transport::getTo
+     * @covers \Handtuchsystem\Mail\Transport\Transport::formatTo
+     * @covers \Handtuchsystem\Mail\Transport\Transport::getTo
      */
     public function testGetTo()
     {

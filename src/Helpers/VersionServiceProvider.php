@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Helpers;
+namespace Handtuchsystem\Helpers;
 
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Container\ServiceProvider;
 
 class VersionServiceProvider extends ServiceProvider
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Translation;
+namespace Handtuchsystem\Test\Unit\Helpers\Translation;
 
-use Engelsystem\Helpers\Translation\GettextTranslator;
-use Engelsystem\Helpers\Translation\TranslationNotFound;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Helpers\Translation\GettextTranslator;
+use Handtuchsystem\Helpers\Translation\TranslationNotFound;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use Gettext\Translation;
 use Gettext\Translations;
 
 class GettextTranslatorTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Helpers\Translation\GettextTranslator::assertHasTranslation()
+     * @covers \Handtuchsystem\Helpers\Translation\GettextTranslator::assertHasTranslation()
      */
     public function testNoTranslation()
     {
@@ -27,7 +27,7 @@ class GettextTranslatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Translation\GettextTranslator::translate()
+     * @covers \Handtuchsystem\Helpers\Translation\GettextTranslator::translate()
      */
     public function testTranslate()
     {
@@ -38,7 +38,7 @@ class GettextTranslatorTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Translation\GettextTranslator::translatePlural
+     * @covers \Handtuchsystem\Helpers\Translation\GettextTranslator::translatePlural
      */
     public function testTranslatePlural()
     {

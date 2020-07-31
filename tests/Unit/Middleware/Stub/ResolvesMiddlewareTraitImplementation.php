@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware\Stub;
+namespace Handtuchsystem\Test\Unit\Middleware\Stub;
 
-use Engelsystem\Application;
-use Engelsystem\Middleware\ResolvesMiddlewareTrait;
+use Handtuchsystem\Application;
+use Handtuchsystem\Middleware\ResolvesMiddlewareTrait;
 use InvalidArgumentException;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;

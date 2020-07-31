@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Mail\Transport;
+namespace Handtuchsystem\Mail\Transport;
 
 use Swift_Events_EventListener;
 use Swift_Mime_SimpleMessage as SimpleMessage;

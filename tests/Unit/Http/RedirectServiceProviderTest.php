@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
-use Engelsystem\Application;
-use Engelsystem\Http\RedirectServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Application;
+use Handtuchsystem\Http\RedirectServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 
 class RedirectServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Http\RedirectServiceProvider::register
+     * @covers \Handtuchsystem\Http\RedirectServiceProvider::register
      */
     public function testRegister()
     {

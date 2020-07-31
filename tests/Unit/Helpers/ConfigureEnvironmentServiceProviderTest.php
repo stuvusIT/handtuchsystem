@@ -1,19 +1,19 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers;
+namespace Handtuchsystem\Test\Unit\Helpers;
 
 use Carbon\CarbonTimeZone;
-use Engelsystem\Config\Config;
-use Engelsystem\Exceptions\Handler;
-use Engelsystem\Helpers\ConfigureEnvironmentServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Exceptions\Handler;
+use Handtuchsystem\Helpers\ConfigureEnvironmentServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class ConfigureEnvironmentServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Helpers\ConfigureEnvironmentServiceProvider::register
-     * @covers \Engelsystem\Helpers\ConfigureEnvironmentServiceProvider::setupDevErrorHandler
+     * @covers \Handtuchsystem\Helpers\ConfigureEnvironmentServiceProvider::register
+     * @covers \Handtuchsystem\Helpers\ConfigureEnvironmentServiceProvider::setupDevErrorHandler
      */
     public function testRegister()
     {

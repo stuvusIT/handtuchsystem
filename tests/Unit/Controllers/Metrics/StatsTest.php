@@ -1,20 +1,20 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers\Metrics;
+namespace Handtuchsystem\Test\Unit\Controllers\Metrics;
 
 use Carbon\Carbon;
-use Engelsystem\Controllers\Metrics\Stats;
-use Engelsystem\Models\LogEntry;
-use Engelsystem\Models\Message;
-use Engelsystem\Models\News;
-use Engelsystem\Models\Question;
-use Engelsystem\Models\User\PasswordReset;
-use Engelsystem\Models\User\PersonalData;
-use Engelsystem\Models\User\Settings;
-use Engelsystem\Models\User\State;
-use Engelsystem\Models\User\User;
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Controllers\Metrics\Stats;
+use Handtuchsystem\Models\LogEntry;
+use Handtuchsystem\Models\Message;
+use Handtuchsystem\Models\News;
+use Handtuchsystem\Models\Question;
+use Handtuchsystem\Models\User\PasswordReset;
+use Handtuchsystem\Models\User\PersonalData;
+use Handtuchsystem\Models\User\Settings;
+use Handtuchsystem\Models\User\State;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\TestCase;
 use Illuminate\Support\Str;
 use Psr\Log\LogLevel;
 
@@ -23,8 +23,8 @@ class StatsTest extends TestCase
     use HasDatabase;
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::__construct
-     * @covers \Engelsystem\Controllers\Metrics\Stats::newUsers
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::__construct
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::newUsers
      */
     public function testNewUsers()
     {
@@ -35,7 +35,7 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::vouchers
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::vouchers
      */
     public function testVouchers()
     {
@@ -46,7 +46,7 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::tshirts
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::tshirts
      */
     public function testTshirts()
     {
@@ -57,8 +57,8 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::tshirtSizes
-     * @covers \Engelsystem\Controllers\Metrics\Stats::raw
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::tshirtSizes
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::raw
      */
     public function testTshirtSizes()
     {
@@ -74,7 +74,7 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::languages
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::languages
      */
     public function testLanguages()
     {
@@ -90,7 +90,7 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::themes
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::themes
      */
     public function testThemes()
     {
@@ -108,7 +108,7 @@ class StatsTest extends TestCase
 
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::announcements
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::announcements
      */
     public function testAnnouncements()
     {
@@ -126,7 +126,7 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::questions
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::questions
      */
     public function testQuestions()
     {
@@ -144,7 +144,7 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::arrivedUsers
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::arrivedUsers
      */
     public function testArrivedUsers()
     {
@@ -155,7 +155,7 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::forceActiveUsers
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::forceActiveUsers
      */
     public function testForceActiveUsers()
     {
@@ -166,7 +166,7 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::messages
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::messages
      */
     public function testMessages()
     {
@@ -181,8 +181,8 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::sessions
-     * @covers \Engelsystem\Controllers\Metrics\Stats::getQuery
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::sessions
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::getQuery
      */
     public function testSessions()
     {
@@ -201,8 +201,8 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::databaseRead
-     * @covers \Engelsystem\Controllers\Metrics\Stats::databaseWrite
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::databaseRead
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::databaseWrite
      */
     public function testDatabase()
     {
@@ -218,7 +218,7 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::logEntries
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::logEntries
      */
     public function testLogEntries()
     {
@@ -236,7 +236,7 @@ class StatsTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Stats::passwordResets
+     * @covers \Handtuchsystem\Controllers\Metrics\Stats::passwordResets
      */
     public function testPasswordResets()
     {

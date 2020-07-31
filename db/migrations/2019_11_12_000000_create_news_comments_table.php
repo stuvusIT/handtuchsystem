@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Engelsystem\Migrations;
+namespace Handtuchsystem\Migrations;
 
-use Engelsystem\Database\Migration\Migration;
+use Handtuchsystem\Database\Migration\Migration;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Schema\Blueprint;
 use stdClass;

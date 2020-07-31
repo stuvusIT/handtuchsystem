@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem;
+namespace Handtuchsystem;
 
 /**
  * BO to represent if there are free slots on a shift for a given angeltype

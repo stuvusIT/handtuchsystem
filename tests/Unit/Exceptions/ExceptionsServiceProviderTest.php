@@ -1,24 +1,24 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Exceptions;
+namespace Handtuchsystem\Test\Unit\Exceptions;
 
-use Engelsystem\Exceptions\ExceptionsServiceProvider;
-use Engelsystem\Exceptions\Handler;
-use Engelsystem\Exceptions\Handlers\HandlerInterface;
-use Engelsystem\Exceptions\Handlers\Legacy;
-use Engelsystem\Exceptions\Handlers\LegacyDevelopment;
-use Engelsystem\Exceptions\Handlers\Whoops;
-use Engelsystem\Http\Request;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Exceptions\ExceptionsServiceProvider;
+use Handtuchsystem\Exceptions\Handler;
+use Handtuchsystem\Exceptions\Handlers\HandlerInterface;
+use Handtuchsystem\Exceptions\Handlers\Legacy;
+use Handtuchsystem\Exceptions\Handlers\LegacyDevelopment;
+use Handtuchsystem\Exceptions\Handlers\Whoops;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Log\LoggerInterface;
 
 class ExceptionsServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Exceptions\ExceptionsServiceProvider::addDevelopmentHandler
-     * @covers \Engelsystem\Exceptions\ExceptionsServiceProvider::addProductionHandler
-     * @covers \Engelsystem\Exceptions\ExceptionsServiceProvider::register
+     * @covers \Handtuchsystem\Exceptions\ExceptionsServiceProvider::addDevelopmentHandler
+     * @covers \Handtuchsystem\Exceptions\ExceptionsServiceProvider::addProductionHandler
+     * @covers \Handtuchsystem\Exceptions\ExceptionsServiceProvider::register
      */
     public function testRegister()
     {
@@ -78,8 +78,8 @@ class ExceptionsServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Exceptions\ExceptionsServiceProvider::boot
-     * @covers \Engelsystem\Exceptions\ExceptionsServiceProvider::addLogger
+     * @covers \Handtuchsystem\Exceptions\ExceptionsServiceProvider::boot
+     * @covers \Handtuchsystem\Exceptions\ExceptionsServiceProvider::addLogger
      */
     public function testBoot()
     {

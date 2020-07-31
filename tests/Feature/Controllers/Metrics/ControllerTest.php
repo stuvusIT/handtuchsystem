@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Feature\Controllers\Metrics;
+namespace Handtuchsystem\Test\Feature\Controllers\Metrics;
 
-use Engelsystem\Controllers\Metrics\Controller;
-use Engelsystem\Test\Feature\ApplicationFeatureTest;
+use Handtuchsystem\Controllers\Metrics\Controller;
+use Handtuchsystem\Test\Feature\ApplicationFeatureTest;
 
 class ControllerTest extends ApplicationFeatureTest
 {
     /**
-     * @covers \Engelsystem\Controllers\Metrics\Controller::metrics
+     * @covers \Handtuchsystem\Controllers\Metrics\Controller::metrics
      */
     public function testMetrics()
     {

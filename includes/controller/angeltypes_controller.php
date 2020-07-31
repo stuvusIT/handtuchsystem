@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\ShiftsFilter;
-use Engelsystem\ShiftsFilterRenderer;
+use Handtuchsystem\ShiftsFilter;
+use Handtuchsystem\ShiftsFilterRenderer;
 
 /**
  * Text for Angeltype related links.

@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\User\User;
 
 /**
  * Generates a hint, if user joined angeltypes that require a driving license and the user has no driver license

@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Test\Feature\Logger;
+namespace Handtuchsystem\Test\Feature\Logger;
 
-use Engelsystem\Logger\Logger;
-use Engelsystem\Models\LogEntry;
-use Engelsystem\Test\Feature\ApplicationFeatureTest;
+use Handtuchsystem\Logger\Logger;
+use Handtuchsystem\Models\LogEntry;
+use Handtuchsystem\Test\Feature\ApplicationFeatureTest;
 use Exception;
 use Psr\Log\InvalidArgumentException;
 use Psr\Log\LoggerInterface;
@@ -14,7 +14,7 @@ use stdClass;
 class LoggerTest extends ApplicationFeatureTest
 {
     /**
-     * @covers \Engelsystem\Logger\Logger::__construct
+     * @covers \Handtuchsystem\Logger\Logger::__construct
      * @return LoggerInterface
      */
     public function getLogger()
@@ -24,7 +24,7 @@ class LoggerTest extends ApplicationFeatureTest
     }
 
     /**
-     * @covers \Engelsystem\Logger\Logger::__construct
+     * @covers \Handtuchsystem\Logger\Logger::__construct
      */
     public function testImplements()
     {
@@ -49,7 +49,7 @@ class LoggerTest extends ApplicationFeatureTest
     }
 
     /**
-     * @covers       \Engelsystem\Logger\Logger::log
+     * @covers       \Handtuchsystem\Logger\Logger::log
      * @dataProvider provideLogLevels
      * @param string $level
      */
@@ -66,7 +66,7 @@ class LoggerTest extends ApplicationFeatureTest
     }
 
     /**
-     * @covers \Engelsystem\Logger\Logger::log
+     * @covers \Handtuchsystem\Logger\Logger::log
      */
     public function testContextReplacement()
     {
@@ -94,8 +94,8 @@ class LoggerTest extends ApplicationFeatureTest
     }
 
     /**
-     * @covers       \Engelsystem\Logger\Logger::interpolate
-     * @covers       \Engelsystem\Logger\Logger::log
+     * @covers       \Handtuchsystem\Logger\Logger::interpolate
+     * @covers       \Handtuchsystem\Logger\Logger::log
      * @dataProvider provideContextReplaceValues
      *
      * @param string   $message
@@ -112,7 +112,7 @@ class LoggerTest extends ApplicationFeatureTest
     }
 
     /**
-     * @covers \Engelsystem\Logger\Logger::log
+     * @covers \Handtuchsystem\Logger\Logger::log
      */
     public function testContextToString()
     {
@@ -134,8 +134,8 @@ class LoggerTest extends ApplicationFeatureTest
     }
 
     /**
-     * @covers \Engelsystem\Logger\Logger::checkLevel
-     * @covers \Engelsystem\Logger\Logger::log
+     * @covers \Handtuchsystem\Logger\Logger::checkLevel
+     * @covers \Handtuchsystem\Logger\Logger::log
      */
     public function testThrowExceptionOnInvalidLevel()
     {
@@ -146,8 +146,8 @@ class LoggerTest extends ApplicationFeatureTest
     }
 
     /**
-     * @covers \Engelsystem\Logger\Logger::formatException
-     * @covers \Engelsystem\Logger\Logger::log
+     * @covers \Handtuchsystem\Logger\Logger::formatException
+     * @covers \Handtuchsystem\Logger\Logger::log
      */
     public function testWithException()
     {

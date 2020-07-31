@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\Models\User\State;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\User\State;
+use Handtuchsystem\Models\User\User;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\JoinClause;
 

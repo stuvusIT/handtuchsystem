@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Container;
+namespace Handtuchsystem\Container;
 
-use Engelsystem\Application;
+use Handtuchsystem\Application;
 
 abstract class ServiceProvider
 {

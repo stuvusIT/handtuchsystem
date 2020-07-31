@@ -1,20 +1,20 @@
 <?php
 
-namespace Engelsystem\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Renderer\Twig\Extensions;
 
-use Engelsystem\Config\Config as EngelsystemConfig;
+use Handtuchsystem\Config\Config as HandtuchsystemConfig;
 use Twig\Extension\AbstractExtension as TwigExtension;
 use Twig\TwigFunction;
 
 class Config extends TwigExtension
 {
-    /** @var EngelsystemConfig */
+    /** @var HandtuchsystemConfig */
     protected $config;
 
     /**
-     * @param EngelsystemConfig $config
+     * @param HandtuchsystemConfig $config
      */
-    public function __construct(EngelsystemConfig $config)
+    public function __construct(HandtuchsystemConfig $config)
     {
         $this->config = $config;
     }

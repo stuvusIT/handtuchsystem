@@ -1,20 +1,20 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers;
+namespace Handtuchsystem\Test\Unit\Controllers;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
-use Engelsystem\Config\Config;
-use Engelsystem\Controllers\AuthController;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Exceptions\ValidationException;
-use Engelsystem\Http\Redirector;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Http\Validation\Validator;
-use Engelsystem\Models\User\Settings;
-use Engelsystem\Models\User\User;
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Controllers\AuthController;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Exceptions\ValidationException;
+use Handtuchsystem\Http\Redirector;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Http\Validation\Validator;
+use Handtuchsystem\Models\User\Settings;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
@@ -26,9 +26,9 @@ class AuthControllerTest extends TestCase
     use HasDatabase;
 
     /**
-     * @covers \Engelsystem\Controllers\AuthController::__construct
-     * @covers \Engelsystem\Controllers\AuthController::login
-     * @covers \Engelsystem\Controllers\AuthController::showLogin
+     * @covers \Handtuchsystem\Controllers\AuthController::__construct
+     * @covers \Handtuchsystem\Controllers\AuthController::login
+     * @covers \Handtuchsystem\Controllers\AuthController::showLogin
      */
     public function testLogin()
     {
@@ -55,7 +55,7 @@ class AuthControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\AuthController::postLogin
+     * @covers \Handtuchsystem\Controllers\AuthController::postLogin
      */
     public function testPostLogin()
     {
@@ -136,7 +136,7 @@ class AuthControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\AuthController::logout
+     * @covers \Handtuchsystem\Controllers\AuthController::logout
      */
     public function testLogout()
     {

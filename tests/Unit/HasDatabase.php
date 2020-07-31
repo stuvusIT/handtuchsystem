@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Test\Unit;
+namespace Handtuchsystem\Test\Unit;
 
-use Engelsystem\Database\Database;
-use Engelsystem\Database\Migration\Migrate;
-use Engelsystem\Database\Migration\MigrationServiceProvider;
+use Handtuchsystem\Database\Database;
+use Handtuchsystem\Database\Migration\Migrate;
+use Handtuchsystem\Database\Migration\MigrationServiceProvider;
 use Illuminate\Database\Capsule\Manager as CapsuleManager;
 use PDO;
 

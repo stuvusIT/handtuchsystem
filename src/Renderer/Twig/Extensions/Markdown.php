@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Renderer\Twig\Extensions;
 
 use Parsedown;
 use Twig\Extension\AbstractExtension as TwigExtension;

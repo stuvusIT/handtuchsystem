@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Migrations;
+namespace Handtuchsystem\Migrations;
 
-use Engelsystem\Database\Migration\Migration;
-use Engelsystem\Models\User\State;
+use Handtuchsystem\Database\Migration\Migration;
+use Handtuchsystem\Models\User\State;
 
 class FixMissingArrivalDates extends Migration
 {

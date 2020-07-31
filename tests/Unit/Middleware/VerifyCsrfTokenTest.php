@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Http\Exceptions\HttpAuthExpired;
-use Engelsystem\Middleware\VerifyCsrfToken;
+use Handtuchsystem\Http\Exceptions\HttpAuthExpired;
+use Handtuchsystem\Middleware\VerifyCsrfToken;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
@@ -14,8 +14,8 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 class VerifyCsrfTokenTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\VerifyCsrfToken::isReading
-     * @covers \Engelsystem\Middleware\VerifyCsrfToken::process
+     * @covers \Handtuchsystem\Middleware\VerifyCsrfToken::isReading
+     * @covers \Handtuchsystem\Middleware\VerifyCsrfToken::process
      */
     public function testProcess()
     {
@@ -57,8 +57,8 @@ class VerifyCsrfTokenTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\VerifyCsrfToken::__construct
-     * @covers \Engelsystem\Middleware\VerifyCsrfToken::tokensMatch
+     * @covers \Handtuchsystem\Middleware\VerifyCsrfToken::__construct
+     * @covers \Handtuchsystem\Middleware\VerifyCsrfToken::tokensMatch
      */
     public function testTokensMatch()
     {

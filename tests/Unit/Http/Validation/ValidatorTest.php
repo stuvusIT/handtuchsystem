@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation;
+namespace Handtuchsystem\Test\Unit\Http\Validation;
 
-use Engelsystem\Http\Validation\Validator;
+use Handtuchsystem\Http\Validation\Validator;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 class ValidatorTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Validation\Validator::validate
-     * @covers \Engelsystem\Http\Validation\Validator::getData
-     * @covers \Engelsystem\Http\Validation\Validator::getErrors
+     * @covers \Handtuchsystem\Http\Validation\Validator::validate
+     * @covers \Handtuchsystem\Http\Validation\Validator::getData
+     * @covers \Handtuchsystem\Http\Validation\Validator::getErrors
      */
     public function testValidate()
     {
@@ -34,7 +34,7 @@ class ValidatorTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Validation\Validator::validate
+     * @covers \Handtuchsystem\Http\Validation\Validator::validate
      */
     public function testValidateChaining()
     {
@@ -61,7 +61,7 @@ class ValidatorTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Validation\Validator::validate
+     * @covers \Handtuchsystem\Http\Validation\Validator::validate
      */
     public function testValidateNotImplemented()
     {
@@ -76,8 +76,8 @@ class ValidatorTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Validation\Validator::map
-     * @covers \Engelsystem\Http\Validation\Validator::mapBack
+     * @covers \Handtuchsystem\Http\Validation\Validator::map
+     * @covers \Handtuchsystem\Http\Validation\Validator::mapBack
      */
     public function testValidateMapping()
     {
@@ -107,7 +107,7 @@ class ValidatorTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Validation\Validator::validate
+     * @covers \Handtuchsystem\Http\Validation\Validator::validate
      */
     public function testValidateNesting()
     {

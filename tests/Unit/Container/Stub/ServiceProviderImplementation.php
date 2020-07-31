@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Container\Stub;
+namespace Handtuchsystem\Test\Unit\Container\Stub;
 
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Container\ServiceProvider;
 
 class ServiceProviderImplementation extends ServiceProvider
 {

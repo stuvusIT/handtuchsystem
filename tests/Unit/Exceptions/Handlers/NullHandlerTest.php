@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Exceptions\Handlers;
+namespace Handtuchsystem\Test\Unit\Exceptions\Handlers;
 
-use Engelsystem\Exceptions\Handlers\NullHandler;
-use Engelsystem\Http\Request;
+use Handtuchsystem\Exceptions\Handlers\NullHandler;
+use Handtuchsystem\Http\Request;
 use ErrorException;
 use PHPUnit\Framework\TestCase;
 
 class NullHandlerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Exceptions\Handlers\NullHandler::render
+     * @covers \Handtuchsystem\Exceptions\Handlers\NullHandler::render
      */
     public function testRender()
     {

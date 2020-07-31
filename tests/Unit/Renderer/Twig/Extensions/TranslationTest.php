@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
-use Engelsystem\Helpers\Translation\Translator;
-use Engelsystem\Renderer\Twig\Extensions\Translation;
+use Handtuchsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Renderer\Twig\Extensions\Translation;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class TranslationTest extends ExtensionTest
 {
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Translation::__construct
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Translation::getFilters
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Translation::__construct
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Translation::getFilters
      */
     public function testGeFilters()
     {
@@ -24,7 +24,7 @@ class TranslationTest extends ExtensionTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Translation::getFunctions
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Translation::getFunctions
      */
     public function testGetFunctions()
     {

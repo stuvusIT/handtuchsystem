@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Exceptions\Handlers;
+namespace Handtuchsystem\Test\Unit\Exceptions\Handlers;
 
-use Engelsystem\Exceptions\Handlers\LegacyDevelopment;
-use Engelsystem\Http\Request;
+use Handtuchsystem\Exceptions\Handlers\LegacyDevelopment;
+use Handtuchsystem\Http\Request;
 use ErrorException;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -11,8 +11,8 @@ use PHPUnit\Framework\TestCase;
 class LegacyDevelopmentTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Exceptions\Handlers\LegacyDevelopment::formatStackTrace()
-     * @covers \Engelsystem\Exceptions\Handlers\LegacyDevelopment::render()
+     * @covers \Handtuchsystem\Exceptions\Handlers\LegacyDevelopment::formatStackTrace()
+     * @covers \Handtuchsystem\Exceptions\Handlers\LegacyDevelopment::render()
      */
     public function testRender()
     {

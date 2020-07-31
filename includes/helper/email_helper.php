@@ -1,8 +1,8 @@
 <?php
 
-use Engelsystem\Helpers\Translation\Translator;
-use Engelsystem\Mail\EngelsystemMailer;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Mail\HandtuchsystemMailer;
+use Handtuchsystem\Models\User\User;
 use Psr\Log\LogLevel;
 
 /**
@@ -23,7 +23,7 @@ function engelsystem_email_to_user($recipientUser, $title, $message, $notIfItsMe
     $locale = $translator->getLocale();
 
     try {
-        /** @var EngelsystemMailer $mailer */
+        /** @var HandtuchsystemMailer $mailer */
         $mailer = app('mailer');
 
         $translator->setLocale($recipientUser->settings->language);

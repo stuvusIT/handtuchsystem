@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Mail\Transport\Stub;
+namespace Handtuchsystem\Test\Unit\Mail\Transport\Stub;
 
-use Engelsystem\Mail\Transport\Transport;
+use Handtuchsystem\Mail\Transport\Transport;
 use Swift_Mime_SimpleMessage as SimpleMessage;
 
 class TransportImplementation extends Transport

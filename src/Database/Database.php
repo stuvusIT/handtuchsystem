@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Database;
+namespace Handtuchsystem\Database;
 
 use Illuminate\Database\Connection as DatabaseConnection;
 use PDO;

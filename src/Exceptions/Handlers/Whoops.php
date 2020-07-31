@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Exceptions\Handlers;
+namespace Handtuchsystem\Exceptions\Handlers;
 
-use Engelsystem\Application;
-use Engelsystem\Container\Container;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Request;
+use Handtuchsystem\Application;
+use Handtuchsystem\Container\Container;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Request;
 use Throwable;
 use Whoops\Handler\JsonResponseHandler;
 use Whoops\Handler\PrettyPageHandler;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Middleware;
+namespace Handtuchsystem\Middleware;
 
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Container\ServiceProvider;
 
 class RequestHandlerServiceProvider extends ServiceProvider
 {

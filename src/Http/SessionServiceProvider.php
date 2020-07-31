@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Http;
+namespace Handtuchsystem\Http;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Http\SessionHandlers\DatabaseHandler;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Http\SessionHandlers\DatabaseHandler;
 use Illuminate\Support\Str;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;

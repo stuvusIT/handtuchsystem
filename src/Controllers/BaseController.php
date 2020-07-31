@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Controllers;
+namespace Handtuchsystem\Controllers;
 
-use Engelsystem\Http\Validation\ValidatesRequest;
+use Handtuchsystem\Http\Validation\ValidatesRequest;
 
 abstract class BaseController
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Renderer;
+namespace Handtuchsystem\Renderer;
 
 use Twig\Error\LoaderError as ErrorLoader;
 use Twig\Loader\FilesystemLoader as FilesystemLoader;

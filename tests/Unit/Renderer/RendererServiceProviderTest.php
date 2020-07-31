@@ -1,20 +1,20 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer;
+namespace Handtuchsystem\Test\Unit\Renderer;
 
-use Engelsystem\Renderer\EngineInterface;
-use Engelsystem\Renderer\HtmlEngine;
-use Engelsystem\Renderer\Renderer;
-use Engelsystem\Renderer\RendererServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Renderer\EngineInterface;
+use Handtuchsystem\Renderer\HtmlEngine;
+use Handtuchsystem\Renderer\Renderer;
+use Handtuchsystem\Renderer\RendererServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class RendererServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Renderer\RendererServiceProvider::register()
-     * @covers \Engelsystem\Renderer\RendererServiceProvider::registerHtmlEngine()
-     * @covers \Engelsystem\Renderer\RendererServiceProvider::registerRenderer()
+     * @covers \Handtuchsystem\Renderer\RendererServiceProvider::register()
+     * @covers \Handtuchsystem\Renderer\RendererServiceProvider::registerHtmlEngine()
+     * @covers \Handtuchsystem\Renderer\RendererServiceProvider::registerRenderer()
      */
     public function testRegister()
     {
@@ -53,7 +53,7 @@ class RendererServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\RendererServiceProvider::boot()
+     * @covers \Handtuchsystem\Renderer\RendererServiceProvider::boot()
      */
     public function testBoot()
     {

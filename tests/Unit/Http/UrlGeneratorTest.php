@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\UrlGenerator;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\UrlGenerator;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class UrlGeneratorTest extends TestCase
 {
@@ -23,8 +23,8 @@ class UrlGeneratorTest extends TestCase
 
     /**
      * @dataProvider provideLinksTo
-     * @covers       \Engelsystem\Http\UrlGenerator::to
-     * @covers       \Engelsystem\Http\UrlGenerator::generateUrl
+     * @covers       \Handtuchsystem\Http\UrlGenerator::to
+     * @covers       \Handtuchsystem\Http\UrlGenerator::generateUrl
      *
      * @param string   $path
      * @param string   $willReturn
@@ -50,7 +50,7 @@ class UrlGeneratorTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\UrlGenerator::to
+     * @covers \Handtuchsystem\Http\UrlGenerator::to
      */
     public function testToWithValidUrl()
     {
@@ -64,8 +64,8 @@ class UrlGeneratorTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\UrlGenerator::to
-     * @covers \Engelsystem\Http\UrlGenerator::generateUrl
+     * @covers \Handtuchsystem\Http\UrlGenerator::to
+     * @covers \Handtuchsystem\Http\UrlGenerator::generateUrl
      */
     public function testToWithApplicationURL()
     {
@@ -83,7 +83,7 @@ class UrlGeneratorTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\UrlGenerator::isValidUrl
+     * @covers \Handtuchsystem\Http\UrlGenerator::isValidUrl
      */
     public function testIsValidUrl()
     {

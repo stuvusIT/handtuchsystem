@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Config;
+namespace Handtuchsystem\Test\Unit\Config;
 
 use FastRoute\RouteCollector;
 use PHPUnit\Framework\MockObject\MockObject;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit;
+namespace Handtuchsystem\Test\Unit;
 
-use Engelsystem\Application;
+use Handtuchsystem\Application;
 use PHPUnit\Framework\MockObject\MockObject;
 
 abstract class ServiceProviderTest extends TestCase

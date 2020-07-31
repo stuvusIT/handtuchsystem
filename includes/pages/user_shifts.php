@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\Database\DB;
-use Engelsystem\ShiftsFilter;
+use Handtuchsystem\Database\DB;
+use Handtuchsystem\ShiftsFilter;
 
 /**
  * @return string

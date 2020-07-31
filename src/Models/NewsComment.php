@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Engelsystem\Models;
+namespace Handtuchsystem\Models;
 
 use Carbon\Carbon;
-use Engelsystem\Models\User\UsesUserModel;
+use Handtuchsystem\Models\User\UsesUserModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 

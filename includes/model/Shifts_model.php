@@ -1,9 +1,9 @@
 <?php
 
-use Engelsystem\Database\DB;
-use Engelsystem\Models\User\User;
-use Engelsystem\ShiftsFilter;
-use Engelsystem\ShiftSignupState;
+use Handtuchsystem\Database\DB;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\ShiftsFilter;
+use Handtuchsystem\ShiftSignupState;
 
 /**
  * @param array $angeltype

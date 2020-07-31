@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\User\User;
 
 /**
  * Display a hint for team/angeltype supporters if there are unconfirmed users for his angeltype.

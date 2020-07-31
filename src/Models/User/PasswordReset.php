@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Models\User;
+namespace Handtuchsystem\Models\User;
 
 use Carbon\Carbon;
 use Illuminate\Database\Query\Builder as QueryBuilder;

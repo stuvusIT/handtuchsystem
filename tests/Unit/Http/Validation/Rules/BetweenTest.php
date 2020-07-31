@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation\Rules;
+namespace Handtuchsystem\Test\Unit\Http\Validation\Rules;
 
-use Engelsystem\Http\Validation\Rules\Between;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Http\Validation\Rules\Between;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class BetweenTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Validation\Rules\Between
+     * @covers \Handtuchsystem\Http\Validation\Rules\Between
      */
     public function testValidate()
     {

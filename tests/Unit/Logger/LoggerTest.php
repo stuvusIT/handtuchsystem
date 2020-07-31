@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Logger;
+namespace Handtuchsystem\Test\Unit\Logger;
 
-use Engelsystem\Logger\Logger;
-use Engelsystem\Models\LogEntry;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Logger\Logger;
+use Handtuchsystem\Models\LogEntry;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use InvalidArgumentException;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Log\LogLevel;
@@ -12,8 +12,8 @@ use Psr\Log\LogLevel;
 class LoggerTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Logger\Logger::__construct
-     * @covers \Engelsystem\Logger\Logger::log
+     * @covers \Handtuchsystem\Logger\Logger::__construct
+     * @covers \Handtuchsystem\Logger\Logger::log
      */
     public function testLog()
     {
@@ -31,8 +31,8 @@ class LoggerTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Logger\Logger::log
-     * @covers \Engelsystem\Logger\Logger::checkLevel
+     * @covers \Handtuchsystem\Logger\Logger::log
+     * @covers \Handtuchsystem\Logger\Logger::checkLevel
      */
     public function testCheckLevel()
     {
@@ -45,7 +45,7 @@ class LoggerTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Logger\Logger::interpolate
+     * @covers \Handtuchsystem\Logger\Logger::interpolate
      */
     public function testInterpolate()
     {

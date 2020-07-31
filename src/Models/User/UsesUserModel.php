@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Models\User;
+namespace Handtuchsystem\Models\User;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Query\Builder as QueryBuilder;

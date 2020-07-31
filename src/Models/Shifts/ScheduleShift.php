@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Models\Shifts;
+namespace Handtuchsystem\Models\Shifts;
 
-use Engelsystem\Models\BaseModel;
+use Handtuchsystem\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 

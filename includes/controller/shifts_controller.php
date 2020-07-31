@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\Http\Exceptions\HttpForbidden;
-use Engelsystem\ShiftSignupState;
+use Handtuchsystem\Http\Exceptions\HttpForbidden;
+use Handtuchsystem\ShiftSignupState;
 
 /**
  * @param array $shift

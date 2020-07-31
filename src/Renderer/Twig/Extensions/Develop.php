@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Renderer\Twig\Extensions;
 
-use Engelsystem\Config\Config;
+use Handtuchsystem\Config\Config;
 use Symfony\Component\VarDumper\VarDumper;
 use Twig\Extension\AbstractExtension as TwigExtension;
 use Twig\TwigFunction;

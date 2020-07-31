@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
-use Engelsystem\Test\Unit\Http\Stub\MessageTraitResponseImplementation;
+use Handtuchsystem\Test\Unit\Http\Stub\MessageTraitResponseImplementation;
 use Nyholm\Psr7\Stream;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\MessageInterface;
@@ -15,7 +15,7 @@ class MessageTraitResponseTest extends TestCase
     use ArraySubsetAsserts;
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait
+     * @covers \Handtuchsystem\Http\MessageTrait
      */
     public function testCreate()
     {
@@ -25,8 +25,8 @@ class MessageTraitResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::getProtocolVersion
-     * @covers \Engelsystem\Http\MessageTrait::withProtocolVersion
+     * @covers \Handtuchsystem\Http\MessageTrait::getProtocolVersion
+     * @covers \Handtuchsystem\Http\MessageTrait::withProtocolVersion
      */
     public function testGetProtocolVersion()
     {
@@ -37,7 +37,7 @@ class MessageTraitResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::getHeaders
+     * @covers \Handtuchsystem\Http\MessageTrait::getHeaders
      */
     public function testGetHeaders()
     {
@@ -52,7 +52,7 @@ class MessageTraitResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::hasHeader
+     * @covers \Handtuchsystem\Http\MessageTrait::hasHeader
      */
     public function testHasHeader()
     {
@@ -65,7 +65,7 @@ class MessageTraitResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::getHeader
+     * @covers \Handtuchsystem\Http\MessageTrait::getHeader
      */
     public function testGetHeader()
     {
@@ -82,7 +82,7 @@ class MessageTraitResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::getHeaderLine
+     * @covers \Handtuchsystem\Http\MessageTrait::getHeaderLine
      */
     public function testGetHeaderLine()
     {
@@ -94,7 +94,7 @@ class MessageTraitResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::withHeader
+     * @covers \Handtuchsystem\Http\MessageTrait::withHeader
      */
     public function testWithHeader()
     {
@@ -109,7 +109,7 @@ class MessageTraitResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::withAddedHeader
+     * @covers \Handtuchsystem\Http\MessageTrait::withAddedHeader
      */
     public function testWithAddedHeader()
     {
@@ -124,7 +124,7 @@ class MessageTraitResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::withoutHeader
+     * @covers \Handtuchsystem\Http\MessageTrait::withoutHeader
      */
     public function testWithoutHeader()
     {
@@ -137,7 +137,7 @@ class MessageTraitResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::getBody
+     * @covers \Handtuchsystem\Http\MessageTrait::getBody
      */
     public function testGetBody()
     {
@@ -149,7 +149,7 @@ class MessageTraitResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\MessageTrait::withBody
+     * @covers \Handtuchsystem\Http\MessageTrait::withBody
      */
     public function testWithBody()
     {

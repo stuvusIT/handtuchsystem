@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Stub;
+namespace Handtuchsystem\Test\Unit\Helpers\Stub;
 
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\User\User;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use InvalidArgumentException;

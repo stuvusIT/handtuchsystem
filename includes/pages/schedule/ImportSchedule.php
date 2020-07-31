@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Engelsystem\Controllers\Admin\Schedule;
+namespace Handtuchsystem\Controllers\Admin\Schedule;
 
 use Carbon\Carbon;
-use Engelsystem\Controllers\BaseController;
-use Engelsystem\Helpers\Schedule\Event;
-use Engelsystem\Helpers\Schedule\Room;
-use Engelsystem\Helpers\Schedule\Schedule;
-use Engelsystem\Helpers\Schedule\XmlParser;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Models\Shifts\Schedule as ScheduleUrl;
-use Engelsystem\Models\Shifts\ScheduleShift;
+use Handtuchsystem\Controllers\BaseController;
+use Handtuchsystem\Helpers\Schedule\Event;
+use Handtuchsystem\Helpers\Schedule\Room;
+use Handtuchsystem\Helpers\Schedule\Schedule;
+use Handtuchsystem\Helpers\Schedule\XmlParser;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Models\Shifts\Schedule as ScheduleUrl;
+use Handtuchsystem\Models\Shifts\ScheduleShift;
 use ErrorException;
 use GuzzleHttp\Client as GuzzleClient;
 use Illuminate\Database\Connection as DatabaseConnection;

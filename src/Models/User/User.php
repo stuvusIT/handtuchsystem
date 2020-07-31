@@ -1,13 +1,13 @@
 <?php
 
-namespace Engelsystem\Models\User;
+namespace Handtuchsystem\Models\User;
 
 use Carbon\Carbon;
-use Engelsystem\Models\BaseModel;
-use Engelsystem\Models\Message;
-use Engelsystem\Models\News;
-use Engelsystem\Models\NewsComment;
-use Engelsystem\Models\Question;
+use Handtuchsystem\Models\BaseModel;
+use Handtuchsystem\Models\Message;
+use Handtuchsystem\Models\News;
+use Handtuchsystem\Models\NewsComment;
+use Handtuchsystem\Models\Question;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;

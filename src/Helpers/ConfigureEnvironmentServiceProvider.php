@@ -1,12 +1,12 @@
 <?php
 
-namespace Engelsystem\Helpers;
+namespace Handtuchsystem\Helpers;
 
 use Carbon\CarbonTimeZone;
-use Engelsystem\Config\Config;
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Exceptions\Handler;
-use Engelsystem\Exceptions\Handlers\HandlerInterface;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Exceptions\Handler;
+use Handtuchsystem\Exceptions\Handlers\HandlerInterface;
 
 class ConfigureEnvironmentServiceProvider extends ServiceProvider
 {

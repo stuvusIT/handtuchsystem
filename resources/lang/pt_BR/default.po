@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Engelsystem 2.0\n"
+"Project-Id-Version: Handtuchsystem 2.0\n"
 "POT-Creation-Date: 2017-04-25 05:23+0200\n"
 "PO-Revision-Date: 2018-11-27 00:29+0100\n"
 "Last-Translator: samba <samba@autistici.org>\n"

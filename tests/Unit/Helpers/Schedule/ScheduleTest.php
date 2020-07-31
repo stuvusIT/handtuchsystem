@@ -1,24 +1,24 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Schedule;
+namespace Handtuchsystem\Test\Unit\Helpers\Schedule;
 
 use Carbon\Carbon;
-use Engelsystem\Helpers\Schedule\Conference;
-use Engelsystem\Helpers\Schedule\Day;
-use Engelsystem\Helpers\Schedule\Room;
-use Engelsystem\Helpers\Schedule\Schedule;
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Helpers\Schedule\Conference;
+use Handtuchsystem\Helpers\Schedule\Day;
+use Handtuchsystem\Helpers\Schedule\Room;
+use Handtuchsystem\Helpers\Schedule\Schedule;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class ScheduleTest extends TestCase
 {
     use HasDatabase;
 
     /**
-     * @covers \Engelsystem\Helpers\Schedule\Schedule::__construct
-     * @covers \Engelsystem\Helpers\Schedule\Schedule::getVersion
-     * @covers \Engelsystem\Helpers\Schedule\Schedule::getConference
-     * @covers \Engelsystem\Helpers\Schedule\Schedule::getDay
+     * @covers \Handtuchsystem\Helpers\Schedule\Schedule::__construct
+     * @covers \Handtuchsystem\Helpers\Schedule\Schedule::getVersion
+     * @covers \Handtuchsystem\Helpers\Schedule\Schedule::getConference
+     * @covers \Handtuchsystem\Helpers\Schedule\Schedule::getDay
      */
     public function testCreate()
     {
@@ -32,7 +32,7 @@ class ScheduleTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Schedule\Schedule::getRooms
+     * @covers \Handtuchsystem\Helpers\Schedule\Schedule::getRooms
      */
     public function testGetRooms()
     {
@@ -65,8 +65,8 @@ class ScheduleTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Schedule\Schedule::getStartDateTime
-     * @covers \Engelsystem\Helpers\Schedule\Schedule::getEndDateTime
+     * @covers \Handtuchsystem\Helpers\Schedule\Schedule::getStartDateTime
+     * @covers \Handtuchsystem\Helpers\Schedule\Schedule::getEndDateTime
      */
     public function testGetDateTimes()
     {

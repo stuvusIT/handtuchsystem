@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers\Stub;
+namespace Handtuchsystem\Test\Unit\Controllers\Stub;
 
-use Engelsystem\Controllers\HasUserNotifications;
+use Handtuchsystem\Controllers\HasUserNotifications;
 
 class HasUserNotificationsImplementation
 {

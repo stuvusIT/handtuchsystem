@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
-use Engelsystem\Renderer\Twig\Extensions\Markdown;
+use Handtuchsystem\Renderer\Twig\Extensions\Markdown;
 use Parsedown;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class MarkdownTest extends ExtensionTest
 {
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Markdown::getFilters
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Markdown::getFilters
      */
     public function testGeFilters()
     {
@@ -24,8 +24,8 @@ class MarkdownTest extends ExtensionTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Markdown::__construct
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Markdown::render
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Markdown::__construct
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Markdown::render
      */
     public function testRender()
     {

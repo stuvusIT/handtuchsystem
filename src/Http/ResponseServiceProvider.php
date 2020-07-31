@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Http;
+namespace Handtuchsystem\Http;
 
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Container\ServiceProvider;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 
 class ResponseServiceProvider extends ServiceProvider

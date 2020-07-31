@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer;
+namespace Handtuchsystem\Test\Unit\Renderer;
 
-use Engelsystem\Renderer\TwigEngine;
+use Handtuchsystem\Renderer\TwigEngine;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Twig\Environment as Twig;
@@ -11,8 +11,8 @@ use Twig\Loader\LoaderInterface as LoaderInterface;
 class TwigEngineTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Renderer\TwigEngine::__construct
-     * @covers \Engelsystem\Renderer\TwigEngine::get
+     * @covers \Handtuchsystem\Renderer\TwigEngine::__construct
+     * @covers \Handtuchsystem\Renderer\TwigEngine::get
      */
     public function testGet()
     {
@@ -34,7 +34,7 @@ class TwigEngineTest extends TestCase
 
 
     /**
-     * @covers \Engelsystem\Renderer\TwigEngine::canRender
+     * @covers \Handtuchsystem\Renderer\TwigEngine::canRender
      */
     public function testCanRender()
     {

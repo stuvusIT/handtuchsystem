@@ -1,19 +1,19 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\SessionHandlers;
+namespace Handtuchsystem\Test\Unit\Http\SessionHandlers;
 
-use Engelsystem\Http\SessionHandlers\DatabaseHandler;
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Http\SessionHandlers\DatabaseHandler;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class DatabaseHandlerTest extends TestCase
 {
     use HasDatabase;
 
     /**
-     * @covers \Engelsystem\Http\SessionHandlers\DatabaseHandler::__construct
-     * @covers \Engelsystem\Http\SessionHandlers\DatabaseHandler::getQuery
-     * @covers \Engelsystem\Http\SessionHandlers\DatabaseHandler::read
+     * @covers \Handtuchsystem\Http\SessionHandlers\DatabaseHandler::__construct
+     * @covers \Handtuchsystem\Http\SessionHandlers\DatabaseHandler::getQuery
+     * @covers \Handtuchsystem\Http\SessionHandlers\DatabaseHandler::read
      */
     public function testRead()
     {
@@ -25,8 +25,8 @@ class DatabaseHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\SessionHandlers\DatabaseHandler::getCurrentTimestamp
-     * @covers \Engelsystem\Http\SessionHandlers\DatabaseHandler::write
+     * @covers \Handtuchsystem\Http\SessionHandlers\DatabaseHandler::getCurrentTimestamp
+     * @covers \Handtuchsystem\Http\SessionHandlers\DatabaseHandler::write
      */
     public function testWrite()
     {
@@ -44,7 +44,7 @@ class DatabaseHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\SessionHandlers\DatabaseHandler::destroy
+     * @covers \Handtuchsystem\Http\SessionHandlers\DatabaseHandler::destroy
      */
     public function testDestroy()
     {
@@ -67,7 +67,7 @@ class DatabaseHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\SessionHandlers\DatabaseHandler::gc
+     * @covers \Handtuchsystem\Http\SessionHandlers\DatabaseHandler::gc
      */
     public function testGc()
     {

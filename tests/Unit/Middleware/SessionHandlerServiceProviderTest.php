@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Middleware\SessionHandler;
-use Engelsystem\Middleware\SessionHandlerServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Middleware\SessionHandler;
+use Handtuchsystem\Middleware\SessionHandlerServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use Illuminate\Contracts\Container\ContextualBindingBuilder;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class SessionHandlerServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Middleware\SessionHandlerServiceProvider::register()
+     * @covers \Handtuchsystem\Middleware\SessionHandlerServiceProvider::register()
      */
     public function testRegister()
     {

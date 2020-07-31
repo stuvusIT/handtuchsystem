@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Database;
+namespace Handtuchsystem\Test\Unit\Database;
 
-use Engelsystem\Database\Database;
+use Handtuchsystem\Database\Database;
 use Illuminate\Database\Capsule\Manager as CapsuleManager;
 use Illuminate\Database\Connection as DatabaseConnection;
 use PDO;
@@ -15,9 +15,9 @@ class DatabaseTest extends TestCase
     protected $connection;
 
     /**
-     * @covers \Engelsystem\Database\Database::__construct()
-     * @covers \Engelsystem\Database\Database::getConnection()
-     * @covers \Engelsystem\Database\Database::getPdo()
+     * @covers \Handtuchsystem\Database\Database::__construct()
+     * @covers \Handtuchsystem\Database\Database::getConnection()
+     * @covers \Handtuchsystem\Database\Database::getPdo()
      */
     public function testInit()
     {
@@ -42,7 +42,7 @@ class DatabaseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Database\Database::select()
+     * @covers \Handtuchsystem\Database\Database::select()
      */
     public function testSelect()
     {
@@ -56,7 +56,7 @@ class DatabaseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Database\Database::selectOne()
+     * @covers \Handtuchsystem\Database\Database::selectOne()
      */
     public function testSelectOne()
     {
@@ -73,7 +73,7 @@ class DatabaseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Database\Database::insert()
+     * @covers \Handtuchsystem\Database\Database::insert()
      */
     public function testInsert()
     {
@@ -84,7 +84,7 @@ class DatabaseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Database\Database::update()
+     * @covers \Handtuchsystem\Database\Database::update()
      */
     public function testUpdate()
     {
@@ -98,7 +98,7 @@ class DatabaseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Database\Database::delete()
+     * @covers \Handtuchsystem\Database\Database::delete()
      */
     public function testDelete()
     {

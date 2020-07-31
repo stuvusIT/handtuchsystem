@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Models;
+namespace Handtuchsystem\Test\Unit\Models;
 
 use Carbon\Carbon;
-use Engelsystem\Models\EventConfig;
+use Handtuchsystem\Models\EventConfig;
 
 class EventConfigTest extends ModelTest
 {
     /**
-     * @covers \Engelsystem\Models\EventConfig::setValueAttribute
+     * @covers \Handtuchsystem\Models\EventConfig::setValueAttribute
      */
     public function testSetValueAttribute()
     {
@@ -48,7 +48,7 @@ class EventConfigTest extends ModelTest
     }
 
     /**
-     * @covers \Engelsystem\Models\EventConfig::getValueAttribute
+     * @covers \Handtuchsystem\Models\EventConfig::getValueAttribute
      */
     public function testGetValueAttribute()
     {
@@ -81,7 +81,7 @@ class EventConfigTest extends ModelTest
     }
 
     /**
-     * @covers \Engelsystem\Models\EventConfig::getValueCast
+     * @covers \Handtuchsystem\Models\EventConfig::getValueCast
      */
     public function testGetValueCast()
     {

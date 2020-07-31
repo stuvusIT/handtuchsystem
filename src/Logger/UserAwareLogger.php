@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Logger;
+namespace Handtuchsystem\Logger;
 
-use Engelsystem\Helpers\Authenticator;
+use Handtuchsystem\Helpers\Authenticator;
 use Psr\Log\InvalidArgumentException;
 
 class UserAwareLogger extends Logger

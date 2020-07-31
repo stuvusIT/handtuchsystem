@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Middleware;
+namespace Handtuchsystem\Middleware;
 
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Helpers\Translation\Translator;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

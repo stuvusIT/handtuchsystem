@@ -1,10 +1,10 @@
 <?php
 
-use Engelsystem\Database\DB;
-use Engelsystem\Models\User\State;
-use Engelsystem\Models\User\User;
-use Engelsystem\ShiftCalendarRenderer;
-use Engelsystem\ShiftsFilter;
+use Handtuchsystem\Database\DB;
+use Handtuchsystem\Models\User\State;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\ShiftCalendarRenderer;
+use Handtuchsystem\ShiftsFilter;
 use Illuminate\Database\Eloquent\Collection;
 
 /**

@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Renderer\Twig\Extensions;
 
-use Engelsystem\Http\UrlGeneratorInterface;
+use Handtuchsystem\Http\UrlGeneratorInterface;
 use Twig\Extension\AbstractExtension as TwigExtension;
 use Twig\TwigFunction;
 

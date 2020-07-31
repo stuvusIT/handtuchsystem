@@ -1,13 +1,13 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Application;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Exceptions\HttpForbidden;
-use Engelsystem\Middleware\CallableHandler;
-use Engelsystem\Middleware\RequestHandler;
-use Engelsystem\Test\Unit\Middleware\Stub\ControllerImplementation;
+use Handtuchsystem\Application;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Exceptions\HttpForbidden;
+use Handtuchsystem\Middleware\CallableHandler;
+use Handtuchsystem\Middleware\RequestHandler;
+use Handtuchsystem\Test\Unit\Middleware\Stub\ControllerImplementation;
 use InvalidArgumentException;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -20,7 +20,7 @@ use ReflectionClass as Reflection;
 class RequestHandlerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\RequestHandler::__construct
+     * @covers \Handtuchsystem\Middleware\RequestHandler::__construct
      */
     public function testInit()
     {
@@ -37,7 +37,7 @@ class RequestHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\RequestHandler::process
+     * @covers \Handtuchsystem\Middleware\RequestHandler::process
      */
     public function testProcess()
     {
@@ -89,7 +89,7 @@ class RequestHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\RequestHandler::resolveRequestHandler
+     * @covers \Handtuchsystem\Middleware\RequestHandler::resolveRequestHandler
      */
     public function testResolveRequestHandler()
     {
@@ -100,7 +100,7 @@ class RequestHandlerTest extends TestCase
         /** @var MiddlewareInterface|MockObject $middlewareInterface */
         list($container, $request, $handler, $response, $middlewareInterface) = $this->getMocks();
 
-        $className = 'Engelsystem\\Controllers\\FooBarTestController';
+        $className = 'Handtuchsystem\\Controllers\\FooBarTestController';
 
         $request->expects($this->exactly(1))
             ->method('getAttribute')
@@ -136,8 +136,8 @@ class RequestHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Middleware\RequestHandler::checkPermissions
-     * @covers \Engelsystem\Middleware\RequestHandler::process
+     * @covers \Handtuchsystem\Middleware\RequestHandler::checkPermissions
+     * @covers \Handtuchsystem\Middleware\RequestHandler::process
      */
     public function testCheckPermissions()
     {

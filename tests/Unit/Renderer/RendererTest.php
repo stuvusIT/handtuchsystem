@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer;
+namespace Handtuchsystem\Test\Unit\Renderer;
 
-use Engelsystem\Renderer\EngineInterface;
-use Engelsystem\Renderer\Renderer;
+use Handtuchsystem\Renderer\EngineInterface;
+use Handtuchsystem\Renderer\Renderer;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -11,8 +11,8 @@ use Psr\Log\LoggerInterface;
 class RendererTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Renderer\Renderer::render
-     * @covers \Engelsystem\Renderer\Renderer::addRenderer
+     * @covers \Handtuchsystem\Renderer\Renderer::render
+     * @covers \Handtuchsystem\Renderer\Renderer::addRenderer
      */
     public function testGet()
     {
@@ -46,7 +46,7 @@ class RendererTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Renderer\Renderer::render
+     * @covers \Handtuchsystem\Renderer\Renderer::render
      */
     public function testError()
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Middleware;
+namespace Handtuchsystem\Middleware;
 
-use Engelsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Helpers\Translation\Translator;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;

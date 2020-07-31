@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
-use Engelsystem\Http\Response;
-use Engelsystem\Http\ResponseServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Http\ResponseServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 
 class ResponseServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Http\ResponseServiceProvider::register()
+     * @covers \Handtuchsystem\Http\ResponseServiceProvider::register()
      */
     public function testRegister()
     {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
-use Engelsystem\Renderer\Twig\Extensions\Session;
+use Handtuchsystem\Renderer\Twig\Extensions\Session;
 use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Component\HttpFoundation\Session\Session as SymfonySession;
 
 class SessionTest extends ExtensionTest
 {
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Session::__construct
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Session::getFunctions
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Session::__construct
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Session::getFunctions
      */
     public function testGetGlobals()
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Helpers\Translation;
+namespace Handtuchsystem\Helpers\Translation;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Container\ServiceProvider;
 use Gettext\Loader\MoLoader;
 use Gettext\Loader\PoLoader;
 use Gettext\Translations;

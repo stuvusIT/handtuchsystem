@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Exceptions;
+namespace Handtuchsystem\Test\Unit\Http\Exceptions;
 
-use Engelsystem\Http\Exceptions\ValidationException;
-use Engelsystem\Http\Validation\Validator;
+use Handtuchsystem\Http\Exceptions\ValidationException;
+use Handtuchsystem\Http\Validation\Validator;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 class ValidationExceptionTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Exceptions\ValidationException::__construct
-     * @covers \Engelsystem\Http\Exceptions\ValidationException::getValidator
+     * @covers \Handtuchsystem\Http\Exceptions\ValidationException::__construct
+     * @covers \Handtuchsystem\Http\Exceptions\ValidationException::getValidator
      */
     public function testConstruct()
     {

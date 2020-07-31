@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Translation;
+namespace Handtuchsystem\Test\Unit\Helpers\Translation;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Helpers\Translation\TranslationServiceProvider;
-use Engelsystem\Helpers\Translation\Translator;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Helpers\Translation\TranslationServiceProvider;
+use Handtuchsystem\Helpers\Translation\Translator;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 class TranslationServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Helpers\Translation\TranslationServiceProvider::register
+     * @covers \Handtuchsystem\Helpers\Translation\TranslationServiceProvider::register
      */
     public function testRegister(): void
     {
@@ -76,7 +76,7 @@ class TranslationServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Translation\TranslationServiceProvider::getTranslator
+     * @covers \Handtuchsystem\Helpers\Translation\TranslationServiceProvider::getTranslator
      */
     public function testGetTranslator(): void
     {
@@ -95,8 +95,8 @@ class TranslationServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Helpers\Translation\TranslationServiceProvider::getTranslator
-     * @covers \Engelsystem\Helpers\Translation\TranslationServiceProvider::getFile
+     * @covers \Handtuchsystem\Helpers\Translation\TranslationServiceProvider::getTranslator
+     * @covers \Handtuchsystem\Helpers\Translation\TranslationServiceProvider::getFile
      */
     public function testGetTranslatorFromPo(): void
     {

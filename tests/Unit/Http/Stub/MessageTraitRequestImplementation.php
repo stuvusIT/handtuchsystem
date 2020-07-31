@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Stub;
+namespace Handtuchsystem\Test\Unit\Http\Stub;
 
-use Engelsystem\Http\MessageTrait;
+use Handtuchsystem\Http\MessageTrait;
 use Psr\Http\Message\MessageInterface;
 use Symfony\Component\HttpFoundation\Request;
 

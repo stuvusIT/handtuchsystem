@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Feature\Database;
+namespace Handtuchsystem\Test\Feature\Database;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Database\Database;
-use Engelsystem\Database\DatabaseServiceProvider;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Database\Database;
+use Handtuchsystem\Database\DatabaseServiceProvider;
 
 class DatabaseServiceProviderTest extends DatabaseTest
 {
     /**
-     * @covers \Engelsystem\Database\DatabaseServiceProvider::register()
+     * @covers \Handtuchsystem\Database\DatabaseServiceProvider::register()
      */
     public function testRegister()
     {

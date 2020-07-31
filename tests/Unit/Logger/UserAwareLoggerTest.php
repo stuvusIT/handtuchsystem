@@ -1,20 +1,20 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Logger;
+namespace Handtuchsystem\Test\Unit\Logger;
 
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Logger\UserAwareLogger;
-use Engelsystem\Models\LogEntry;
-use Engelsystem\Models\User\User;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Logger\UserAwareLogger;
+use Handtuchsystem\Models\LogEntry;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Log\LogLevel;
 
 class UserAwareLoggerTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Logger\UserAwareLogger::log
-     * @covers \Engelsystem\Logger\UserAwareLogger::setAuth
+     * @covers \Handtuchsystem\Logger\UserAwareLogger::log
+     * @covers \Handtuchsystem\Logger\UserAwareLogger::setAuth
      */
     public function testLog()
     {

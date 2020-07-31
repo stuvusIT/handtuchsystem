@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit;
+namespace Handtuchsystem\Test\Unit;
 
-use Engelsystem\Application;
+use Handtuchsystem\Application;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\MockObject\Rule\InvocationOrder;
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;

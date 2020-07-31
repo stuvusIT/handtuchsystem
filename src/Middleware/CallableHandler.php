@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Middleware;
+namespace Handtuchsystem\Middleware;
 
-use Engelsystem\Container\Container;
-use Engelsystem\Http\Response;
+use Handtuchsystem\Container\Container;
+use Handtuchsystem\Http\Response;
 use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

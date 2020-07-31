@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Models\User;
+namespace Handtuchsystem\Test\Unit\Models\User;
 
-use Engelsystem\Models\BaseModel;
-use Engelsystem\Models\User\UsesUserModel;
-use Engelsystem\Test\Unit\Models\ModelTest;
+use Handtuchsystem\Models\BaseModel;
+use Handtuchsystem\Models\User\UsesUserModel;
+use Handtuchsystem\Test\Unit\Models\ModelTest;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class UsesUserModelTest extends ModelTest
 {
     /**
-     * @covers \Engelsystem\Models\User\UsesUserModel::user
+     * @covers \Handtuchsystem\Models\User\UsesUserModel::user
      */
     public function testHasOneRelations()
     {

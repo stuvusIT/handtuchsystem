@@ -1,22 +1,22 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Schedule;
+namespace Handtuchsystem\Test\Unit\Helpers\Schedule;
 
-use Engelsystem\Helpers\Schedule\Conference;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Helpers\Schedule\Conference;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class ConferenceTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Helpers\Schedule\Conference::__construct
-     * @covers \Engelsystem\Helpers\Schedule\Conference::getTitle
-     * @covers \Engelsystem\Helpers\Schedule\Conference::getAcronym
-     * @covers \Engelsystem\Helpers\Schedule\Conference::getStart
-     * @covers \Engelsystem\Helpers\Schedule\Conference::getEnd
-     * @covers \Engelsystem\Helpers\Schedule\Conference::getDays
-     * @covers \Engelsystem\Helpers\Schedule\Conference::getTimeslotDuration
-     * @covers \Engelsystem\Helpers\Schedule\Conference::getTimeslotDurationSeconds
-     * @covers \Engelsystem\Helpers\Schedule\Conference::getBaseUrl
+     * @covers \Handtuchsystem\Helpers\Schedule\Conference::__construct
+     * @covers \Handtuchsystem\Helpers\Schedule\Conference::getTitle
+     * @covers \Handtuchsystem\Helpers\Schedule\Conference::getAcronym
+     * @covers \Handtuchsystem\Helpers\Schedule\Conference::getStart
+     * @covers \Handtuchsystem\Helpers\Schedule\Conference::getEnd
+     * @covers \Handtuchsystem\Helpers\Schedule\Conference::getDays
+     * @covers \Handtuchsystem\Helpers\Schedule\Conference::getTimeslotDuration
+     * @covers \Handtuchsystem\Helpers\Schedule\Conference::getTimeslotDurationSeconds
+     * @covers \Handtuchsystem\Helpers\Schedule\Conference::getBaseUrl
      */
     public function testCreate()
     {

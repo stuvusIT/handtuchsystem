@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Middleware;
+namespace Handtuchsystem\Middleware;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Container\ServiceProvider;
 use FastRoute\Dispatcher as FastRouteDispatcher;
 use FastRoute\RouteCollector;
 use Psr\Http\Server\MiddlewareInterface;

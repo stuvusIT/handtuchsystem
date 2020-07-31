@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer;
+namespace Handtuchsystem\Test\Unit\Renderer;
 
-use Engelsystem\Renderer\HtmlEngine;
+use Handtuchsystem\Renderer\HtmlEngine;
 use PHPUnit\Framework\TestCase;
 
 class HtmlEngineTest extends TestCase
@@ -11,7 +11,7 @@ class HtmlEngineTest extends TestCase
     protected $tmpFileNames = [];
 
     /**
-     * @covers \Engelsystem\Renderer\HtmlEngine::get
+     * @covers \Handtuchsystem\Renderer\HtmlEngine::get
      */
     public function testGet()
     {
@@ -25,7 +25,7 @@ class HtmlEngineTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Renderer\HtmlEngine::canRender
+     * @covers \Handtuchsystem\Renderer\HtmlEngine::canRender
      */
     public function testCanRender()
     {
@@ -47,7 +47,7 @@ class HtmlEngineTest extends TestCase
      */
     protected function createTempFile($content = '', $extension = '.html')
     {
-        $tmpFileName = tempnam(sys_get_temp_dir(), 'EngelsystemUnitTest');
+        $tmpFileName = tempnam(sys_get_temp_dir(), 'HandtuchsystemUnitTest');
 
         $fileName = $tmpFileName . $extension;
         rename($tmpFileName, $fileName);

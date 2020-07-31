@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Models\Question;
+use Handtuchsystem\Models\Question;
 
 /**
  * @return string

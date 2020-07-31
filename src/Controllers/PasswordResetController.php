@@ -1,13 +1,13 @@
 <?php
 
-namespace Engelsystem\Controllers;
+namespace Handtuchsystem\Controllers;
 
-use Engelsystem\Http\Exceptions\HttpNotFound;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Mail\EngelsystemMailer;
-use Engelsystem\Models\User\PasswordReset;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Http\Exceptions\HttpNotFound;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Mail\HandtuchsystemMailer;
+use Handtuchsystem\Models\User\PasswordReset;
+use Handtuchsystem\Models\User\User;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
@@ -18,7 +18,7 @@ class PasswordResetController extends BaseController
     /** @var LoggerInterface */
     protected $log;
 
-    /** @var EngelsystemMailer */
+    /** @var HandtuchsystemMailer */
     protected $mail;
 
     /** @var Response */
@@ -38,13 +38,13 @@ class PasswordResetController extends BaseController
     /**
      * @param Response          $response
      * @param SessionInterface  $session
-     * @param EngelsystemMailer $mail
+     * @param HandtuchsystemMailer $mail
      * @param LoggerInterface   $log
      */
     public function __construct(
         Response $response,
         SessionInterface $session,
-        EngelsystemMailer $mail,
+        HandtuchsystemMailer $mail,
         LoggerInterface $log
     ) {
         $this->log = $log;

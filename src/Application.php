@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem;
+namespace Handtuchsystem;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Container\Container;
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Container\Container;
+use Handtuchsystem\Container\ServiceProvider;
 use Illuminate\Container\Container as IlluminateContainer;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Server\MiddlewareInterface;

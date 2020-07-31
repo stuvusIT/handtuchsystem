@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
-use Engelsystem\Http\Response;
-use Engelsystem\Renderer\Renderer;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Renderer\Renderer;
 use InvalidArgumentException;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -18,7 +18,7 @@ class ResponseTest extends TestCase
     use ArraySubsetAsserts;
 
     /**
-     * @covers \Engelsystem\Http\Response
+     * @covers \Handtuchsystem\Http\Response
      */
     public function testCreate()
     {
@@ -28,8 +28,8 @@ class ResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Response::getReasonPhrase
-     * @covers \Engelsystem\Http\Response::withStatus
+     * @covers \Handtuchsystem\Http\Response::getReasonPhrase
+     * @covers \Handtuchsystem\Http\Response::withStatus
      */
     public function testWithStatus()
     {
@@ -44,7 +44,7 @@ class ResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Response::withContent
+     * @covers \Handtuchsystem\Http\Response::withContent
      */
     public function testWithContent()
     {
@@ -56,8 +56,8 @@ class ResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Response::withView
-     * @covers \Engelsystem\Http\Response::setRenderer
+     * @covers \Handtuchsystem\Http\Response::withView
+     * @covers \Handtuchsystem\Http\Response::setRenderer
      */
     public function testWithView()
     {
@@ -90,7 +90,7 @@ class ResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Response::withView
+     * @covers \Handtuchsystem\Http\Response::withView
      */
     public function testWithViewNoRenderer()
     {
@@ -101,7 +101,7 @@ class ResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Response::redirectTo
+     * @covers \Handtuchsystem\Http\Response::redirectTo
      */
     public function testRedirectTo()
     {
@@ -120,7 +120,7 @@ class ResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Response::with
+     * @covers \Handtuchsystem\Http\Response::with
      */
     public function testWith()
     {
@@ -138,7 +138,7 @@ class ResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Response::with
+     * @covers \Handtuchsystem\Http\Response::with
      */
     public function testWithNoSession()
     {
@@ -149,7 +149,7 @@ class ResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Response::withInput
+     * @covers \Handtuchsystem\Http\Response::withInput
      */
     public function testWithInput()
     {
@@ -164,7 +164,7 @@ class ResponseTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Http\Response::withInput
+     * @covers \Handtuchsystem\Http\Response::withInput
      */
     public function testWithInputNoSession()
     {

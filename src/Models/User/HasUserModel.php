@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Models\User;
+namespace Handtuchsystem\Models\User;
 
-use Engelsystem\Models\BaseModel;
+use Handtuchsystem\Models\BaseModel;
 
 abstract class HasUserModel extends BaseModel
 {

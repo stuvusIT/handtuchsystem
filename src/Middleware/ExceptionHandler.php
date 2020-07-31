@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Middleware;
+namespace Handtuchsystem\Middleware;
 
-use Engelsystem\Exceptions\Handler as ExceptionsHandler;
+use Handtuchsystem\Exceptions\Handler as ExceptionsHandler;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

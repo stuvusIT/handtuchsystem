@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Models;
+namespace Handtuchsystem\Test\Unit\Models;
 
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\TestCase;
 
 abstract class ModelTest extends TestCase
 {

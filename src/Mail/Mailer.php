@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Mail;
+namespace Handtuchsystem\Mail;
 
 use Swift_Mailer as SwiftMailer;
 use Swift_Message as SwiftMessage;

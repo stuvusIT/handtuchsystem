@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Engelsystem\Test\Unit\Models;
+namespace Handtuchsystem\Test\Unit\Models;
 
-use Engelsystem\Models\Message;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\Message;
+use Handtuchsystem\Models\User\User;
 
 /**
  * This class provides tests covering the Message model and its relations.
@@ -71,7 +71,7 @@ class MessageTest extends ModelTest
     /**
      * Tests that loading Messages works.
      *
-     * @covers \Engelsystem\Models\Message::__construct
+     * @covers \Handtuchsystem\Models\Message::__construct
      *
      * @return void
      */
@@ -93,7 +93,7 @@ class MessageTest extends ModelTest
     /**
      * Tests that the Messages have the correct senders.
      *
-     * @covers \Engelsystem\Models\Message::user
+     * @covers \Handtuchsystem\Models\Message::user
      *
      * @return void
      */
@@ -107,7 +107,7 @@ class MessageTest extends ModelTest
     /**
      * Tests that the Messages have the correct receivers.
      *
-     * @covers \Engelsystem\Models\Message::receiver
+     * @covers \Handtuchsystem\Models\Message::receiver
      *
      * @return void
      */
@@ -121,7 +121,7 @@ class MessageTest extends ModelTest
     /**
      * Tests that the Users have the correct sent Messages.
      *
-     * @covers \Engelsystem\Models\User\User::messagesSent
+     * @covers \Handtuchsystem\Models\User\User::messagesSent
      *
      * @return void
      */
@@ -140,7 +140,7 @@ class MessageTest extends ModelTest
     /**
      * Tests that the Users have the correct received Messages.
      *
-     * @covers \Engelsystem\Models\User\User::messagesReceived
+     * @covers \Handtuchsystem\Models\User\User::messagesReceived
      *
      * @return void
      */
@@ -159,7 +159,7 @@ class MessageTest extends ModelTest
     /**
      * Tests that the user have the correct Messages.
      *
-     * @covers \Engelsystem\Models\User\User::messages
+     * @covers \Handtuchsystem\Models\User\User::messages
      */
     public function testUserMessages(): void
     {

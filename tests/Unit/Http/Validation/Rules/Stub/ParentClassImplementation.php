@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation\Rules\Stub;
+namespace Handtuchsystem\Test\Unit\Http\Validation\Rules\Stub;
 
 class ParentClassImplementation
 {

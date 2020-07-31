@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\SessionHandlers\Stub;
+namespace Handtuchsystem\Test\Unit\Http\SessionHandlers\Stub;
 
-use Engelsystem\Http\SessionHandlers\AbstractHandler;
+use Handtuchsystem\Http\SessionHandlers\AbstractHandler;
 
 class ArrayHandler extends AbstractHandler
 {

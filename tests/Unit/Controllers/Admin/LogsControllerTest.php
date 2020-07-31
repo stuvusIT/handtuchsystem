@@ -1,13 +1,13 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers\Admin;
+namespace Handtuchsystem\Test\Unit\Controllers\Admin;
 
-use Engelsystem\Controllers\Admin\LogsController;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Models\LogEntry;
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Controllers\Admin\LogsController;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Models\LogEntry;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\TestCase;
 use Illuminate\Database\Eloquent\Collection;
 use Psr\Log\LogLevel;
 
@@ -16,8 +16,8 @@ class LogsControllerTest extends TestCase
     use HasDatabase;
 
     /**
-     * @covers \Engelsystem\Controllers\Admin\LogsController::index
-     * @covers \Engelsystem\Controllers\Admin\LogsController::__construct
+     * @covers \Handtuchsystem\Controllers\Admin\LogsController::index
+     * @covers \Handtuchsystem\Controllers\Admin\LogsController::__construct
      */
     public function testIndex()
     {

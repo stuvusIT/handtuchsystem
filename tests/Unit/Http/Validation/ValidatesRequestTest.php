@@ -1,19 +1,19 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation;
+namespace Handtuchsystem\Test\Unit\Http\Validation;
 
-use Engelsystem\Http\Exceptions\ValidationException;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Validation\Validator;
-use Engelsystem\Test\Unit\Http\Validation\Stub\ValidatesRequestImplementation;
+use Handtuchsystem\Http\Exceptions\ValidationException;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Validation\Validator;
+use Handtuchsystem\Test\Unit\Http\Validation\Stub\ValidatesRequestImplementation;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 class ValidatesRequestTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Validation\ValidatesRequest::validate
-     * @covers \Engelsystem\Http\Validation\ValidatesRequest::setValidator
+     * @covers \Handtuchsystem\Http\Validation\ValidatesRequest::validate
+     * @covers \Handtuchsystem\Http\Validation\ValidatesRequest::setValidator
      */
     public function testValidate()
     {

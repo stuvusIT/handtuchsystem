@@ -1,13 +1,13 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Config;
+namespace Handtuchsystem\Test\Unit\Config;
 
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
-use Engelsystem\Application;
-use Engelsystem\Config\Config;
-use Engelsystem\Config\ConfigServiceProvider;
-use Engelsystem\Models\EventConfig;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Application;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Config\ConfigServiceProvider;
+use Handtuchsystem\Models\EventConfig;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use Exception;
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\QueryException;
@@ -18,8 +18,8 @@ class ConfigServiceProviderTest extends ServiceProviderTest
     use ArraySubsetAsserts;
 
     /**
-     * @covers \Engelsystem\Config\ConfigServiceProvider::getConfigPath
-     * @covers \Engelsystem\Config\ConfigServiceProvider::register
+     * @covers \Handtuchsystem\Config\ConfigServiceProvider::getConfigPath
+     * @covers \Handtuchsystem\Config\ConfigServiceProvider::register
      */
     public function testRegister()
     {
@@ -48,7 +48,7 @@ class ConfigServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Config\ConfigServiceProvider::register
+     * @covers \Handtuchsystem\Config\ConfigServiceProvider::register
      */
     public function testRegisterException()
     {
@@ -66,8 +66,8 @@ class ConfigServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Config\ConfigServiceProvider::__construct
-     * @covers \Engelsystem\Config\ConfigServiceProvider::boot
+     * @covers \Handtuchsystem\Config\ConfigServiceProvider::__construct
+     * @covers \Handtuchsystem\Config\ConfigServiceProvider::boot
      */
     public function testBoot()
     {

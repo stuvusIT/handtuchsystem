@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Engelsystem\Helpers\Schedule;
+namespace Handtuchsystem\Helpers\Schedule;
 
 trait CalculatesTime
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation\Rules;
+namespace Handtuchsystem\Test\Unit\Http\Validation\Rules;
 
-use Engelsystem\Http\Validation\Rules\Checked;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Http\Validation\Rules\Checked;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class CheckedTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Validation\Rules\Checked::validate
+     * @covers \Handtuchsystem\Http\Validation\Rules\Checked::validate
      */
     public function testValidate()
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers\Stub;
+namespace Handtuchsystem\Test\Unit\Controllers\Stub;
 
-use Engelsystem\Controllers\BaseController;
+use Handtuchsystem\Controllers\BaseController;
 
 class ControllerImplementation extends BaseController
 {

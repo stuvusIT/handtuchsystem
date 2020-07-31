@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Database\DB;
+use Handtuchsystem\Database\DB;
 
 /**
  * @param int $user_id

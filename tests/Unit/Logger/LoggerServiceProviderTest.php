@@ -1,19 +1,19 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Logger;
+namespace Handtuchsystem\Test\Unit\Logger;
 
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Logger\Logger;
-use Engelsystem\Logger\LoggerServiceProvider;
-use Engelsystem\Logger\UserAwareLogger;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Logger\Logger;
+use Handtuchsystem\Logger\LoggerServiceProvider;
+use Handtuchsystem\Logger\UserAwareLogger;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Log\LoggerInterface;
 
 class LoggerServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Logger\LoggerServiceProvider::register
+     * @covers \Handtuchsystem\Logger\LoggerServiceProvider::register
      */
     public function testRegister()
     {
@@ -27,7 +27,7 @@ class LoggerServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Logger\LoggerServiceProvider::boot
+     * @covers \Handtuchsystem\Logger\LoggerServiceProvider::boot
      */
     public function testBoot()
     {

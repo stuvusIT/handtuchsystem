@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem;
+namespace Handtuchsystem;
 
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\User\User;
 
 /**
  * Renders a single shift for the shift calendar

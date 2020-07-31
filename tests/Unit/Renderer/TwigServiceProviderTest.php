@@ -1,13 +1,13 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer;
+namespace Handtuchsystem\Test\Unit\Renderer;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Renderer\Twig\Extensions\Develop;
-use Engelsystem\Renderer\TwigEngine;
-use Engelsystem\Renderer\TwigLoader;
-use Engelsystem\Renderer\TwigServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Renderer\Twig\Extensions\Develop;
+use Handtuchsystem\Renderer\TwigEngine;
+use Handtuchsystem\Renderer\TwigLoader;
+use Handtuchsystem\Renderer\TwigServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use ReflectionClass as Reflection;
 use ReflectionException;
@@ -22,8 +22,8 @@ use Twig\Loader\LoaderInterface as TwigLoaderInterface;
 class TwigServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Renderer\TwigServiceProvider::register
-     * @covers \Engelsystem\Renderer\TwigServiceProvider::registerTwigExtensions
+     * @covers \Handtuchsystem\Renderer\TwigServiceProvider::register
+     * @covers \Handtuchsystem\Renderer\TwigServiceProvider::registerTwigExtensions
      */
     public function testRegister()
     {
@@ -62,7 +62,7 @@ class TwigServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\TwigServiceProvider::boot
+     * @covers \Handtuchsystem\Renderer\TwigServiceProvider::boot
      */
     public function testBoot()
     {
@@ -105,7 +105,7 @@ class TwigServiceProviderTest extends ServiceProviderTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\TwigServiceProvider::registerTwigEngine
+     * @covers \Handtuchsystem\Renderer\TwigServiceProvider::registerTwigEngine
      */
     public function testRegisterTwigEngine()
     {

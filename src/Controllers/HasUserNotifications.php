@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Controllers;
+namespace Handtuchsystem\Controllers;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

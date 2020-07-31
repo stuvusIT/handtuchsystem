@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Helpers;
+namespace Handtuchsystem\Helpers;
 
-use Engelsystem\Config\Config;
+use Handtuchsystem\Config\Config;
 
 class Version
 {

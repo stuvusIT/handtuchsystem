@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Http;
+namespace Handtuchsystem\Http;
 
 /**
  * To switch between different URL schemes.

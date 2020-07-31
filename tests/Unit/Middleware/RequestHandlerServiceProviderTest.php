@@ -1,16 +1,16 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Middleware\RequestHandler;
-use Engelsystem\Middleware\RequestHandlerServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Middleware\RequestHandler;
+use Handtuchsystem\Middleware\RequestHandlerServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class RequestHandlerServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Middleware\RequestHandlerServiceProvider::register()
+     * @covers \Handtuchsystem\Middleware\RequestHandlerServiceProvider::register()
      */
     public function testRegister()
     {

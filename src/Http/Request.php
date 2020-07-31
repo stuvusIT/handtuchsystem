@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Http;
+namespace Handtuchsystem\Http;
 
 use Nyholm\Psr7\UploadedFile;
 use Nyholm\Psr7\Uri;

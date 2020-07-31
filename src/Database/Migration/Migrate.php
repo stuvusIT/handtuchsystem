@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Database\Migration;
+namespace Handtuchsystem\Database\Migration;
 
-use Engelsystem\Application;
+use Handtuchsystem\Application;
 use Exception;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Schema\Blueprint;
@@ -173,7 +173,7 @@ class Migrate
 
         $className = Str::studly(preg_replace('/\d+_/', '', $migration));
         /** @var Migration $class */
-        $class = $this->app->make('Engelsystem\\Migrations\\' . $className);
+        $class = $this->app->make('Handtuchsystem\\Migrations\\' . $className);
 
         if (method_exists($class, $type)) {
             $class->{$type}();

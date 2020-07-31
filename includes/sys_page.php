@@ -1,8 +1,8 @@
 <?php
 
 use Carbon\Carbon;
-use Engelsystem\Http\Exceptions\HttpTemporaryRedirect;
-use Engelsystem\ValidationResult;
+use Handtuchsystem\Http\Exceptions\HttpTemporaryRedirect;
+use Handtuchsystem\ValidationResult;
 
 /**
  * Provide page/request helper functions

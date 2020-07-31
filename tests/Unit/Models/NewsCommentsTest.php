@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Engelsystem\Test\Unit\Models;
+namespace Handtuchsystem\Test\Unit\Models;
 
-use Engelsystem\Models\News;
-use Engelsystem\Models\NewsComment;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Models\News;
+use Handtuchsystem\Models\NewsComment;
+use Handtuchsystem\Models\User\User;
 
 /**
  * This class provides tests for the NewsComments model.
@@ -52,7 +52,7 @@ class NewsCommentsTest extends ModelTest
     /**
      * Tests that a NewsComment can be created and loaded.
      *
-     * @covers \Engelsystem\Models\NewsComment
+     * @covers \Handtuchsystem\Models\NewsComment
      */
     public function testCreate(): void
     {
@@ -68,7 +68,7 @@ class NewsCommentsTest extends ModelTest
     /**
      * Tests that accessing the User of a NewsComment works.
      *
-     * @covers \Engelsystem\Models\NewsComment::user
+     * @covers \Handtuchsystem\Models\NewsComment::user
      */
     public function testUser(): void
     {
@@ -80,7 +80,7 @@ class NewsCommentsTest extends ModelTest
     /**
      * Tests that accessing the News of a NewsComment works.
      *
-     * @covers \Engelsystem\Models\NewsComment::news
+     * @covers \Handtuchsystem\Models\NewsComment::news
      */
     public function testNews(): void
     {

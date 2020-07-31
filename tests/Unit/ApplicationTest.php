@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Test\Unit;
+namespace Handtuchsystem\Test\Unit;
 
-use Engelsystem\Application;
-use Engelsystem\Config\Config;
-use Engelsystem\Container\Container;
-use Engelsystem\Container\ServiceProvider;
+use Handtuchsystem\Application;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Container\Container;
+use Handtuchsystem\Container\ServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
@@ -15,8 +15,8 @@ use ReflectionClass;
 class ApplicationTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Application::__construct
-     * @covers \Engelsystem\Application::registerBaseBindings
+     * @covers \Handtuchsystem\Application::__construct
+     * @covers \Handtuchsystem\Application::registerBaseBindings
      */
     public function testConstructor()
     {
@@ -34,9 +34,9 @@ class ApplicationTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Application::path
-     * @covers \Engelsystem\Application::registerPaths
-     * @covers \Engelsystem\Application::setAppPath
+     * @covers \Handtuchsystem\Application::path
+     * @covers \Handtuchsystem\Application::registerPaths
+     * @covers \Handtuchsystem\Application::setAppPath
      */
     public function testAppPath()
     {
@@ -64,7 +64,7 @@ class ApplicationTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Application::register
+     * @covers \Handtuchsystem\Application::register
      */
     public function testRegister()
     {
@@ -87,7 +87,7 @@ class ApplicationTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Application::register
+     * @covers \Handtuchsystem\Application::register
      */
     public function testRegisterBoot()
     {
@@ -104,7 +104,7 @@ class ApplicationTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Application::register
+     * @covers \Handtuchsystem\Application::register
      */
     public function testRegisterClassName()
     {
@@ -124,9 +124,9 @@ class ApplicationTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Application::bootstrap
-     * @covers \Engelsystem\Application::getMiddleware
-     * @covers \Engelsystem\Application::isBooted
+     * @covers \Handtuchsystem\Application::bootstrap
+     * @covers \Handtuchsystem\Application::getMiddleware
+     * @covers \Handtuchsystem\Application::isBooted
      */
     public function testBootstrap()
     {

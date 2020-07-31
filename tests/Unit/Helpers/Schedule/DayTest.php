@@ -1,21 +1,21 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Schedule;
+namespace Handtuchsystem\Test\Unit\Helpers\Schedule;
 
 use Carbon\Carbon;
-use Engelsystem\Helpers\Schedule\Day;
-use Engelsystem\Helpers\Schedule\Room;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Helpers\Schedule\Day;
+use Handtuchsystem\Helpers\Schedule\Room;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class DayTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Helpers\Schedule\Day::__construct
-     * @covers \Engelsystem\Helpers\Schedule\Day::getDate
-     * @covers \Engelsystem\Helpers\Schedule\Day::getStart
-     * @covers \Engelsystem\Helpers\Schedule\Day::getEnd
-     * @covers \Engelsystem\Helpers\Schedule\Day::getIndex
-     * @covers \Engelsystem\Helpers\Schedule\Day::getRoom
+     * @covers \Handtuchsystem\Helpers\Schedule\Day::__construct
+     * @covers \Handtuchsystem\Helpers\Schedule\Day::getDate
+     * @covers \Handtuchsystem\Helpers\Schedule\Day::getStart
+     * @covers \Handtuchsystem\Helpers\Schedule\Day::getEnd
+     * @covers \Handtuchsystem\Helpers\Schedule\Day::getIndex
+     * @covers \Handtuchsystem\Helpers\Schedule\Day::getRoom
      */
     public function testCreate()
     {

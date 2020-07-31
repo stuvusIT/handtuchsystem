@@ -1,13 +1,13 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Middleware;
+namespace Handtuchsystem\Test\Unit\Middleware;
 
-use Engelsystem\Application;
-use Engelsystem\Exceptions\Handler;
-use Engelsystem\Http\Response;
-use Engelsystem\Middleware\ExceptionHandler;
-use Engelsystem\Test\Unit\Middleware\Stub\ExceptionMiddlewareHandler;
-use Engelsystem\Test\Unit\Middleware\Stub\ReturnResponseMiddlewareHandler;
+use Handtuchsystem\Application;
+use Handtuchsystem\Exceptions\Handler;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Middleware\ExceptionHandler;
+use Handtuchsystem\Test\Unit\Middleware\Stub\ExceptionMiddlewareHandler;
+use Handtuchsystem\Test\Unit\Middleware\Stub\ReturnResponseMiddlewareHandler;
 use Illuminate\Contracts\Container\Container as ContainerInterface;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -17,8 +17,8 @@ use Psr\Http\Message\ServerRequestInterface;
 class ExceptionHandlerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Middleware\ExceptionHandler::__construct
-     * @covers \Engelsystem\Middleware\ExceptionHandler::process
+     * @covers \Handtuchsystem\Middleware\ExceptionHandler::__construct
+     * @covers \Handtuchsystem\Middleware\ExceptionHandler::process
      */
     public function testRegister()
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Helpers\Translation;
+namespace Handtuchsystem\Helpers\Translation;
 
 class Translator
 {

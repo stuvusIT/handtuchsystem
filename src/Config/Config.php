@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Config;
+namespace Handtuchsystem\Config;
 
 use Illuminate\Support\Fluent;
 

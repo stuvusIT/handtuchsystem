@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Models\Question;
+use Handtuchsystem\Models\Question;
 
 /**
  * @param Question[] $open_questions

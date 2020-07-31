@@ -1,20 +1,20 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers\Admin;
+namespace Handtuchsystem\Test\Unit\Controllers\Admin;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Controllers\Admin\NewsController;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Exceptions\ValidationException;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Http\UrlGenerator;
-use Engelsystem\Http\UrlGeneratorInterface;
-use Engelsystem\Http\Validation\Validator;
-use Engelsystem\Models\News;
-use Engelsystem\Models\User\User;
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Controllers\Admin\NewsController;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Exceptions\ValidationException;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Http\UrlGenerator;
+use Handtuchsystem\Http\UrlGeneratorInterface;
+use Handtuchsystem\Http\Validation\Validator;
+use Handtuchsystem\Models\News;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\TestCase;
 use Illuminate\Support\Collection;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Http\Message\ServerRequestInterface;
@@ -50,7 +50,7 @@ class NewsControllerTest extends TestCase
     protected $request;
 
     /**
-     * @covers \Engelsystem\Controllers\Admin\NewsController::edit
+     * @covers \Handtuchsystem\Controllers\Admin\NewsController::edit
      */
     public function testEditHtmlWarning()
     {
@@ -77,8 +77,8 @@ class NewsControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Admin\NewsController::__construct
-     * @covers \Engelsystem\Controllers\Admin\NewsController::edit
+     * @covers \Handtuchsystem\Controllers\Admin\NewsController::__construct
+     * @covers \Handtuchsystem\Controllers\Admin\NewsController::edit
      */
     public function testEdit()
     {
@@ -107,7 +107,7 @@ class NewsControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Admin\NewsController::edit
+     * @covers \Handtuchsystem\Controllers\Admin\NewsController::edit
      */
     public function testEditIsMeeting()
     {
@@ -143,7 +143,7 @@ class NewsControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Admin\NewsController::save
+     * @covers \Handtuchsystem\Controllers\Admin\NewsController::save
      */
     public function testSaveCreateInvalid()
     {
@@ -169,7 +169,7 @@ class NewsControllerTest extends TestCase
     }
 
     /**
-     * @covers       \Engelsystem\Controllers\Admin\NewsController::save
+     * @covers       \Handtuchsystem\Controllers\Admin\NewsController::save
      * @dataProvider saveCreateEditProvider
      *
      * @param string $text
@@ -225,7 +225,7 @@ class NewsControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Admin\NewsController::save
+     * @covers \Handtuchsystem\Controllers\Admin\NewsController::save
      */
     public function testSaveDelete()
     {

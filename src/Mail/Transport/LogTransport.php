@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Mail\Transport;
+namespace Handtuchsystem\Mail\Transport;
 
 use Psr\Log\LoggerInterface;
 use Swift_Mime_SimpleMessage as SimpleMessage;

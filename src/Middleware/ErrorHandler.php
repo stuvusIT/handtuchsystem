@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Middleware;
+namespace Handtuchsystem\Middleware;
 
-use Engelsystem\Http\Exceptions\HttpException;
-use Engelsystem\Http\Exceptions\ValidationException;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
+use Handtuchsystem\Http\Exceptions\HttpException;
+use Handtuchsystem\Http\Exceptions\ValidationException;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Arr;
 use Psr\Http\Message\ResponseInterface;

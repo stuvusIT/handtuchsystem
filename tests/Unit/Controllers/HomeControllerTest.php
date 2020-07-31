@@ -1,20 +1,20 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers;
+namespace Handtuchsystem\Test\Unit\Controllers;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Controllers\HomeController;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Redirector;
-use Engelsystem\Http\Response;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Controllers\HomeController;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Redirector;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Test\Unit\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class HomeControllerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Controllers\HomeController::__construct
-     * @covers \Engelsystem\Controllers\HomeController::index
+     * @covers \Handtuchsystem\Controllers\HomeController::__construct
+     * @covers \Handtuchsystem\Controllers\HomeController::index
      */
     public function testIndex()
     {

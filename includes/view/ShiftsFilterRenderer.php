@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem;
+namespace Handtuchsystem;
 
 class ShiftsFilterRenderer
 {

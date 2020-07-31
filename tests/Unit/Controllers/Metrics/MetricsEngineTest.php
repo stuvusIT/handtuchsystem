@@ -1,19 +1,19 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers\Metrics;
+namespace Handtuchsystem\Test\Unit\Controllers\Metrics;
 
-use Engelsystem\Controllers\Metrics\MetricsEngine;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Controllers\Metrics\MetricsEngine;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class MetricsEngineTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Controllers\Metrics\MetricsEngine::escape
-     * @covers \Engelsystem\Controllers\Metrics\MetricsEngine::formatData
-     * @covers \Engelsystem\Controllers\Metrics\MetricsEngine::formatValue
-     * @covers \Engelsystem\Controllers\Metrics\MetricsEngine::get
-     * @covers \Engelsystem\Controllers\Metrics\MetricsEngine::renderLabels
-     * @covers \Engelsystem\Controllers\Metrics\MetricsEngine::renderValue
+     * @covers \Handtuchsystem\Controllers\Metrics\MetricsEngine::escape
+     * @covers \Handtuchsystem\Controllers\Metrics\MetricsEngine::formatData
+     * @covers \Handtuchsystem\Controllers\Metrics\MetricsEngine::formatValue
+     * @covers \Handtuchsystem\Controllers\Metrics\MetricsEngine::get
+     * @covers \Handtuchsystem\Controllers\Metrics\MetricsEngine::renderLabels
+     * @covers \Handtuchsystem\Controllers\Metrics\MetricsEngine::renderValue
      */
     public function testGet()
     {
@@ -56,7 +56,7 @@ class MetricsEngineTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\MetricsEngine::canRender
+     * @covers \Handtuchsystem\Controllers\Metrics\MetricsEngine::canRender
      */
     public function testCanRender()
     {
@@ -68,7 +68,7 @@ class MetricsEngineTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\Metrics\MetricsEngine::share
+     * @covers \Handtuchsystem\Controllers\Metrics\MetricsEngine::share
      */
     public function testShare()
     {

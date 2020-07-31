@@ -1,8 +1,8 @@
 <?php
 
 use Carbon\Carbon;
-use Engelsystem\Database\Db;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Database\Db;
+use Handtuchsystem\Models\User\User;
 
 /**
  * Load a single work log entry.

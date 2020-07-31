@@ -9,7 +9,7 @@ Please also read the [CONTRIBUTING.md](CONTRIBUTING.md).
  * PHP Composer (Development/Building only)
 
 ## Local build
-The following instructions explain how to get, build and run the latest Engelsystem version directly from the git master branch (may be unstable!).
+The following instructions explain how to get, build and run the latest Handtuchsystem version directly from the git master branch (may be unstable!).
 
 * Clone the master branch: `git clone https://github.com/engelsystem/engelsystem.git`
 * Install [Composer](https://getcomposer.org/download/) and [Yarn](https://yarnpkg.com/en/docs/install) (which requires [Node.js](https://nodejs.org/en/download/package-manager/))
@@ -23,7 +23,7 @@ The following instructions explain how to get, build and run the latest Engelsys
   composer install --no-dev
   composer dump-autoload --optimize
   ```
-  to install the Engelsystem
+  to install the Handtuchsystem
 * Build the frontend assets
 ```bash
 yarn build
@@ -40,7 +40,7 @@ To run the unit tests use
 vendor/bin/phpunit --testsuite Unit
 ``` 
 
-If a database is configured and the Engelsystem is allowed to mess around with some files, you can run feature tests.
+If a database is configured and the Handtuchsystem is allowed to mess around with some files, you can run feature tests.
 The tests can potentially delete some database entries, so they should never be run on a production system!
 ```bash
 vendor/bin/phpunit --testsuite Feature
@@ -71,7 +71,7 @@ composer run phpcbf
 
 ## CI & Build Pipeline
 
-The Engelsystem can be tested and automatically deployed to a testing/staging/production environment.
+The Handtuchsystem can be tested and automatically deployed to a testing/staging/production environment.
 This functionality requires a [GitLab](https://about.gitlab.com/) server with a working docker runner.
 
 To use the deployment features the following secret variables need to be defined (if undefined the step will be skipped):

@@ -1,17 +1,17 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Test\Unit\Renderer\Twig\Extensions;
 
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Models\User\User;
-use Engelsystem\Renderer\Twig\Extensions\Authentication;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Renderer\Twig\Extensions\Authentication;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class AuthenticationTest extends ExtensionTest
 {
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Authentication::__construct
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Authentication::getFunctions
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Authentication::__construct
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Authentication::getFunctions
      */
     public function testGetFunctions()
     {
@@ -27,8 +27,8 @@ class AuthenticationTest extends ExtensionTest
     }
 
     /**
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Authentication::isAuthenticated
-     * @covers \Engelsystem\Renderer\Twig\Extensions\Authentication::isGuest
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Authentication::isAuthenticated
+     * @covers \Handtuchsystem\Renderer\Twig\Extensions\Authentication::isGuest
      */
     public function testIsAuthenticated()
     {

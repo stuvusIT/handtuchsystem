@@ -1,19 +1,19 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers;
+namespace Handtuchsystem\Test\Unit\Controllers;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Controllers\CreditsController;
-use Engelsystem\Helpers\Version;
-use Engelsystem\Http\Response;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Controllers\CreditsController;
+use Handtuchsystem\Helpers\Version;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Test\Unit\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 
 class CreditsControllerTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Controllers\CreditsController::__construct
-     * @covers \Engelsystem\Controllers\CreditsController::index
+     * @covers \Handtuchsystem\Controllers\CreditsController::__construct
+     * @covers \Handtuchsystem\Controllers\CreditsController::index
      */
     public function testIndex()
     {

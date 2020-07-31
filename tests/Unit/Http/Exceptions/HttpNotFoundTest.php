@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Exceptions;
+namespace Handtuchsystem\Test\Unit\Http\Exceptions;
 
-use Engelsystem\Http\Exceptions\HttpNotFound;
+use Handtuchsystem\Http\Exceptions\HttpNotFound;
 use PHPUnit\Framework\TestCase;
 
 class HttpNotFoundTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Exceptions\HttpNotFound::__construct
+     * @covers \Handtuchsystem\Http\Exceptions\HttpNotFound::__construct
      */
     public function testConstruct()
     {

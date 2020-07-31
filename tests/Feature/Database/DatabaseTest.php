@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Test\Feature\Database;
+namespace Handtuchsystem\Test\Feature\Database;
 
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Test\Unit\TestCase;
 
 abstract class DatabaseTest extends TestCase
 {

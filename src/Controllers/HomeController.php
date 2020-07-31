@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Controllers;
+namespace Handtuchsystem\Controllers;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Redirector;
-use Engelsystem\Http\Response;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Redirector;
+use Handtuchsystem\Http\Response;
 
 class HomeController extends BaseController
 {

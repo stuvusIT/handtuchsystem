@@ -18,7 +18,7 @@ return [
     'maintenance'             => (bool)env('MAINTENANCE', false),
 
     // Application name (not the event name!)
-    'app_name'                => env('APP_NAME', 'Engelsystem'),
+    'app_name'                => env('APP_NAME', 'Handtuchsystem'),
 
     // Set to development to enable debugging messages
     'environment'             => env('ENVIRONMENT', 'production'),
@@ -51,7 +51,7 @@ return [
         'from'   => [
             // From address of all emails
             'address' => env('MAIL_FROM_ADDRESS', 'noreply@engelsystem.de'),
-            'name'    => env('MAIL_FROM_NAME', env('APP_NAME', 'Engelsystem')),
+            'name'    => env('MAIL_FROM_NAME', env('APP_NAME', 'Handtuchsystem')),
         ],
 
         'host'       => env('MAIL_HOST', 'localhost'),
@@ -68,19 +68,19 @@ return [
 
     // Available themes
     'available_themes'        => [
-        '12' => 'Engelsystem 36c3 (2019)',
-        '10' => 'Engelsystem cccamp19 green (2019)',
-        '9'  => 'Engelsystem cccamp19 yellow (2019)',
-        '8'  => 'Engelsystem cccamp19 blue (2019)',
-        '7'  => 'Engelsystem 35c3 dark (2018)',
-        '6'  => 'Engelsystem 34c3 dark (2017)',
-        '5'  => 'Engelsystem 34c3 light (2017)',
-        '4'  => 'Engelsystem 33c3 (2016)',
-        '3'  => 'Engelsystem 32c3 (2015)',
-        '2'  => 'Engelsystem cccamp15',
-        '11' => 'Engelsystem high contrast',
-        '0'  => 'Engelsystem light',
-        '1'  => 'Engelsystem dark',
+        '12' => 'Handtuchsystem 36c3 (2019)',
+        '10' => 'Handtuchsystem cccamp19 green (2019)',
+        '9'  => 'Handtuchsystem cccamp19 yellow (2019)',
+        '8'  => 'Handtuchsystem cccamp19 blue (2019)',
+        '7'  => 'Handtuchsystem 35c3 dark (2018)',
+        '6'  => 'Handtuchsystem 34c3 dark (2017)',
+        '5'  => 'Handtuchsystem 34c3 light (2017)',
+        '4'  => 'Handtuchsystem 33c3 (2016)',
+        '3'  => 'Handtuchsystem 32c3 (2015)',
+        '2'  => 'Handtuchsystem cccamp15',
+        '11' => 'Handtuchsystem high contrast',
+        '0'  => 'Handtuchsystem light',
+        '1'  => 'Handtuchsystem dark',
     ],
 
     // Redirect to this site after logging in or when pressing the top-left button

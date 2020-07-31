@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem;
+namespace Handtuchsystem;
 
 /**
  * BO that represents the result of an entity attribute validation.

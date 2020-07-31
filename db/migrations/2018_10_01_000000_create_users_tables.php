@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Migrations;
+namespace Handtuchsystem\Migrations;
 
 use Carbon\Carbon;
-use Engelsystem\Database\Migration\Migration;
-use Engelsystem\Models\User\Contact;
-use Engelsystem\Models\User\PasswordReset;
-use Engelsystem\Models\User\PersonalData;
-use Engelsystem\Models\User\Settings;
-use Engelsystem\Models\User\State;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Database\Migration\Migration;
+use Handtuchsystem\Models\User\Contact;
+use Handtuchsystem\Models\User\PasswordReset;
+use Handtuchsystem\Models\User\PersonalData;
+use Handtuchsystem\Models\User\Settings;
+use Handtuchsystem\Models\User\State;
+use Handtuchsystem\Models\User\User;
 use Illuminate\Database\Schema\Blueprint;
 use stdClass;
 

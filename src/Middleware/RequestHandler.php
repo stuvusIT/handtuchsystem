@@ -1,11 +1,11 @@
 <?php
 
-namespace Engelsystem\Middleware;
+namespace Handtuchsystem\Middleware;
 
-use Engelsystem\Application;
-use Engelsystem\Controllers\BaseController;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Exceptions\HttpForbidden;
+use Handtuchsystem\Application;
+use Handtuchsystem\Controllers\BaseController;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Exceptions\HttpForbidden;
 use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -70,7 +70,7 @@ class RequestHandler implements MiddlewareInterface
         if (is_string($handler) && mb_strpos($handler, '@') !== false) {
             list($class, $method) = explode('@', $handler, 2);
             if (!class_exists($class) && !$this->container->has($class)) {
-                $class = sprintf('Engelsystem\\Controllers\\%s', $class);
+                $class = sprintf('Handtuchsystem\\Controllers\\%s', $class);
             }
 
             $handler = [$class, $method];

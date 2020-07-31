@@ -1,8 +1,8 @@
 <?php
 
 use Carbon\Carbon;
-use Engelsystem\Database\DB;
-use Engelsystem\Models\User\User;
+use Handtuchsystem\Database\DB;
+use Handtuchsystem\Models\User\User;
 
 /**
  * Returns an array with the attributes of shift entries.

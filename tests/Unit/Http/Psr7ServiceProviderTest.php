@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
-use Engelsystem\Application;
-use Engelsystem\Http\Psr7ServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Application;
+use Handtuchsystem\Http\Psr7ServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestFactoryInterface;
@@ -16,7 +16,7 @@ use Symfony\Bridge\PsrHttpMessage\HttpMessageFactoryInterface;
 class Psr7ServiceProviderTest extends ServiceProviderTest
 {
     /**
-     * @covers \Engelsystem\Http\Psr7ServiceProvider::register()
+     * @covers \Handtuchsystem\Http\Psr7ServiceProvider::register()
      */
     public function testRegister()
     {

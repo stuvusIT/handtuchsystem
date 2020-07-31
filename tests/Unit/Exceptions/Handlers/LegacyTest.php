@@ -1,9 +1,9 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Exceptions\Handlers;
+namespace Handtuchsystem\Test\Unit\Exceptions\Handlers;
 
-use Engelsystem\Exceptions\Handlers\Legacy;
-use Engelsystem\Http\Request;
+use Handtuchsystem\Exceptions\Handlers\Legacy;
+use Handtuchsystem\Http\Request;
 use ErrorException;
 use Exception;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -13,7 +13,7 @@ use Psr\Log\Test\TestLogger;
 class LegacyTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Exceptions\Handlers\Legacy::render
+     * @covers \Handtuchsystem\Exceptions\Handlers\Legacy::render
      */
     public function testRender()
     {
@@ -29,9 +29,9 @@ class LegacyTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Exceptions\Handlers\Legacy::report
-     * @covers \Engelsystem\Exceptions\Handlers\Legacy::setLogger
-     * @covers \Engelsystem\Exceptions\Handlers\Legacy::stripBasePath
+     * @covers \Handtuchsystem\Exceptions\Handlers\Legacy::report
+     * @covers \Handtuchsystem\Exceptions\Handlers\Legacy::setLogger
+     * @covers \Handtuchsystem\Exceptions\Handlers\Legacy::stripBasePath
      */
     public function testReport()
     {

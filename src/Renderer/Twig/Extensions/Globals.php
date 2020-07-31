@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Renderer\Twig\Extensions;
+namespace Handtuchsystem\Renderer\Twig\Extensions;
 
-use Engelsystem\Helpers\Authenticator;
+use Handtuchsystem\Helpers\Authenticator;
 use Twig\Extension\AbstractExtension as TwigExtension;
 use Twig\Extension\GlobalsInterface as GlobalsInterface;
 

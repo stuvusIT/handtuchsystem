@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Helpers;
+namespace Handtuchsystem\Helpers;
 
 use Carbon\Carbon;
-use Engelsystem\Models\User\User;
-use Engelsystem\Models\User\User as UserRepository;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Models\User\User as UserRepository;
 use Psr\Http\Message\ServerRequestInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
 

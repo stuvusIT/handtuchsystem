@@ -1,8 +1,8 @@
 <?php
 
-use Engelsystem\Models\User\User;
-use Engelsystem\ShiftCalendarRenderer;
-use Engelsystem\ShiftsFilterRenderer;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\ShiftCalendarRenderer;
+use Handtuchsystem\ShiftsFilterRenderer;
 
 /**
  * AngelTypes

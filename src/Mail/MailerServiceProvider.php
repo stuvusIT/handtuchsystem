@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Mail;
+namespace Handtuchsystem\Mail;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Mail\Transport\LogTransport;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Mail\Transport\LogTransport;
 use InvalidArgumentException;
 use Swift_Mailer as SwiftMailer;
 use Swift_SendmailTransport as SendmailTransport;
@@ -28,15 +28,15 @@ class MailerServiceProvider extends ServiceProvider
         $this->app->instance(SwiftMailer::class, $swiftMailer);
         $this->app->instance('mailer.swift', $swiftMailer);
 
-        /** @var EngelsystemMailer $mailer */
-        $mailer = $this->app->make(EngelsystemMailer::class);
+        /** @var HandtuchsystemMailer $mailer */
+        $mailer = $this->app->make(HandtuchsystemMailer::class);
         $mailer->setFromAddress($mailConfig['from']['address']);
         $mailer->setSubjectPrefix($config->get('app_name'));
         if (!empty($mailConfig['from']['name'])) {
             $mailer->setFromName($mailConfig['from']['name']);
         }
 
-        $this->app->instance(EngelsystemMailer::class, $mailer);
+        $this->app->instance(HandtuchsystemMailer::class, $mailer);
         $this->app->instance(Mailer::class, $mailer);
         $this->app->instance('mailer', $mailer);
     }

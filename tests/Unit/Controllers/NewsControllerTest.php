@@ -1,21 +1,21 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Controllers;
+namespace Handtuchsystem\Test\Unit\Controllers;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Controllers\NewsController;
-use Engelsystem\Helpers\Authenticator;
-use Engelsystem\Http\Exceptions\ValidationException;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\Response;
-use Engelsystem\Http\UrlGenerator;
-use Engelsystem\Http\UrlGeneratorInterface;
-use Engelsystem\Http\Validation\Validator;
-use Engelsystem\Models\News;
-use Engelsystem\Models\NewsComment;
-use Engelsystem\Models\User\User;
-use Engelsystem\Test\Unit\HasDatabase;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Controllers\NewsController;
+use Handtuchsystem\Helpers\Authenticator;
+use Handtuchsystem\Http\Exceptions\ValidationException;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\Response;
+use Handtuchsystem\Http\UrlGenerator;
+use Handtuchsystem\Http\UrlGeneratorInterface;
+use Handtuchsystem\Http\Validation\Validator;
+use Handtuchsystem\Models\News;
+use Handtuchsystem\Models\NewsComment;
+use Handtuchsystem\Models\User\User;
+use Handtuchsystem\Test\Unit\HasDatabase;
+use Handtuchsystem\Test\Unit\TestCase;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Collection;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -82,11 +82,11 @@ class NewsControllerTest extends TestCase
     protected $request;
 
     /**
-     * @covers \Engelsystem\Controllers\NewsController::__construct
-     * @covers \Engelsystem\Controllers\NewsController::index
-     * @covers \Engelsystem\Controllers\NewsController::meetings
-     * @covers \Engelsystem\Controllers\NewsController::showOverview
-     * @covers \Engelsystem\Controllers\NewsController::renderView
+     * @covers \Handtuchsystem\Controllers\NewsController::__construct
+     * @covers \Handtuchsystem\Controllers\NewsController::index
+     * @covers \Handtuchsystem\Controllers\NewsController::meetings
+     * @covers \Handtuchsystem\Controllers\NewsController::showOverview
+     * @covers \Handtuchsystem\Controllers\NewsController::renderView
      */
     public function testIndex()
     {
@@ -139,7 +139,7 @@ class NewsControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\NewsController::show
+     * @covers \Handtuchsystem\Controllers\NewsController::show
      */
     public function testShow()
     {
@@ -156,7 +156,7 @@ class NewsControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\NewsController::show
+     * @covers \Handtuchsystem\Controllers\NewsController::show
      */
     public function testShowNotFound()
     {
@@ -170,7 +170,7 @@ class NewsControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\NewsController::comment
+     * @covers \Handtuchsystem\Controllers\NewsController::comment
      */
     public function testCommentInvalid()
     {
@@ -183,7 +183,7 @@ class NewsControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\NewsController::comment
+     * @covers \Handtuchsystem\Controllers\NewsController::comment
      */
     public function testCommentNewsNotFound()
     {
@@ -200,7 +200,7 @@ class NewsControllerTest extends TestCase
     }
 
     /**
-     * @covers \Engelsystem\Controllers\NewsController::comment
+     * @covers \Handtuchsystem\Controllers\NewsController::comment
      */
     public function testComment()
     {

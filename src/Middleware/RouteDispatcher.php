@@ -1,8 +1,8 @@
 <?php
 
-namespace Engelsystem\Middleware;
+namespace Handtuchsystem\Middleware;
 
-use Engelsystem\Http\Request;
+use Handtuchsystem\Http\Request;
 use FastRoute\Dispatcher as FastRouteDispatcher;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

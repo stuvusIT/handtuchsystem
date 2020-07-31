@@ -1,12 +1,12 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http;
+namespace Handtuchsystem\Test\Unit\Http;
 
-use Engelsystem\Config\Config;
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Http\Request;
-use Engelsystem\Http\RequestServiceProvider;
-use Engelsystem\Test\Unit\ServiceProviderTest;
+use Handtuchsystem\Config\Config;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Http\Request;
+use Handtuchsystem\Http\RequestServiceProvider;
+use Handtuchsystem\Test\Unit\ServiceProviderTest;
 use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 
@@ -30,7 +30,7 @@ class RequestServiceProviderTest extends ServiceProviderTest
 
     /**
      * @dataProvider provideRegister
-     * @covers       \Engelsystem\Http\RequestServiceProvider::register()
+     * @covers       \Handtuchsystem\Http\RequestServiceProvider::register()
      *
      * @param string|array $configuredProxies
      * @param array        $trustedProxies

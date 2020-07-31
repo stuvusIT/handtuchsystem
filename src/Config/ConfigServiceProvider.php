@@ -1,10 +1,10 @@
 <?php
 
-namespace Engelsystem\Config;
+namespace Handtuchsystem\Config;
 
-use Engelsystem\Application;
-use Engelsystem\Container\ServiceProvider;
-use Engelsystem\Models\EventConfig;
+use Handtuchsystem\Application;
+use Handtuchsystem\Container\ServiceProvider;
+use Handtuchsystem\Models\EventConfig;
 use Exception;
 use Illuminate\Database\QueryException;
 

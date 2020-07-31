@@ -1,6 +1,6 @@
 <?php
 
-namespace Engelsystem\Test\Feature;
+namespace Handtuchsystem\Test\Feature;
 
 use PHPUnit\Framework\TestCase;
 

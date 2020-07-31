@@ -1,18 +1,18 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Schedule;
+namespace Handtuchsystem\Test\Unit\Helpers\Schedule;
 
-use Engelsystem\Helpers\Schedule\Event;
-use Engelsystem\Helpers\Schedule\Room;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Helpers\Schedule\Event;
+use Handtuchsystem\Helpers\Schedule\Room;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class RoomTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Helpers\Schedule\Room::__construct
-     * @covers \Engelsystem\Helpers\Schedule\Room::getName
-     * @covers \Engelsystem\Helpers\Schedule\Room::getEvent
-     * @covers \Engelsystem\Helpers\Schedule\Room::setEvent
+     * @covers \Handtuchsystem\Helpers\Schedule\Room::__construct
+     * @covers \Handtuchsystem\Helpers\Schedule\Room::getName
+     * @covers \Handtuchsystem\Helpers\Schedule\Room::getEvent
+     * @covers \Handtuchsystem\Helpers\Schedule\Room::setEvent
      */
     public function testCreate()
     {

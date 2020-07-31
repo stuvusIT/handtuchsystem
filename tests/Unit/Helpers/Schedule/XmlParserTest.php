@@ -1,23 +1,23 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Helpers\Schedule;
+namespace Handtuchsystem\Test\Unit\Helpers\Schedule;
 
-use Engelsystem\Helpers\Schedule\Day;
-use Engelsystem\Helpers\Schedule\Event;
-use Engelsystem\Helpers\Schedule\Room;
-use Engelsystem\Helpers\Schedule\XmlParser;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Helpers\Schedule\Day;
+use Handtuchsystem\Helpers\Schedule\Event;
+use Handtuchsystem\Helpers\Schedule\Room;
+use Handtuchsystem\Helpers\Schedule\XmlParser;
+use Handtuchsystem\Test\Unit\TestCase;
 use Illuminate\Support\Arr;
 
 class XmlParserTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Helpers\Schedule\XmlParser::load
-     * @covers \Engelsystem\Helpers\Schedule\XmlParser::parseXml
-     * @covers \Engelsystem\Helpers\Schedule\XmlParser::parseEvents
-     * @covers \Engelsystem\Helpers\Schedule\XmlParser::getFirstXpathContent
-     * @covers \Engelsystem\Helpers\Schedule\XmlParser::getListFromSequence
-     * @covers \Engelsystem\Helpers\Schedule\XmlParser::getSchedule
+     * @covers \Handtuchsystem\Helpers\Schedule\XmlParser::load
+     * @covers \Handtuchsystem\Helpers\Schedule\XmlParser::parseXml
+     * @covers \Handtuchsystem\Helpers\Schedule\XmlParser::parseEvents
+     * @covers \Handtuchsystem\Helpers\Schedule\XmlParser::getFirstXpathContent
+     * @covers \Handtuchsystem\Helpers\Schedule\XmlParser::getListFromSequence
+     * @covers \Handtuchsystem\Helpers\Schedule\XmlParser::getSchedule
      */
     public function testLoad()
     {

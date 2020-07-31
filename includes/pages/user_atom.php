@@ -1,7 +1,7 @@
 <?php
 
-use Engelsystem\Http\Exceptions\HttpForbidden;
-use Engelsystem\Models\News;
+use Handtuchsystem\Http\Exceptions\HttpForbidden;
+use Handtuchsystem\Models\News;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Collection as SupportCollection;
 

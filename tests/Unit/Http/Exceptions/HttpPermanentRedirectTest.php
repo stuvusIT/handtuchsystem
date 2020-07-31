@@ -1,15 +1,15 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Exceptions;
+namespace Handtuchsystem\Test\Unit\Http\Exceptions;
 
-use Engelsystem\Http\Exceptions\HttpPermanentRedirect;
-use Engelsystem\Http\Exceptions\HttpRedirect;
+use Handtuchsystem\Http\Exceptions\HttpPermanentRedirect;
+use Handtuchsystem\Http\Exceptions\HttpRedirect;
 use PHPUnit\Framework\TestCase;
 
 class HttpPermanentRedirectTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Exceptions\HttpPermanentRedirect::__construct
+     * @covers \Handtuchsystem\Http\Exceptions\HttpPermanentRedirect::__construct
      */
     public function testConstruct()
     {

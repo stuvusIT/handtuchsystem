@@ -1,14 +1,14 @@
 <?php
 
-namespace Engelsystem\Test\Unit\Http\Validation\Rules;
+namespace Handtuchsystem\Test\Unit\Http\Validation\Rules;
 
-use Engelsystem\Http\Validation\Rules\Min;
-use Engelsystem\Test\Unit\TestCase;
+use Handtuchsystem\Http\Validation\Rules\Min;
+use Handtuchsystem\Test\Unit\TestCase;
 
 class MinTest extends TestCase
 {
     /**
-     * @covers \Engelsystem\Http\Validation\Rules\Min
+     * @covers \Handtuchsystem\Http\Validation\Rules\Min
      */
     public function testValidate()
     {
