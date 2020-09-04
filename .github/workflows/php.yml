@@ -26,12 +26,18 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-php-
 
-    - name: Install dependencies
+    - name: Install dependencies (composer)
       if: steps.composer-cache.outputs.cache-hit != 'true'
       run: composer install --prefer-dist --no-progress --no-suggest
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
+    - name: Install dependencies (yarn)
+      run: yarn
 
-    # - name: Run test suite
-    #   run: composer run-script test
+    - name: Build frontend assets
+      run: yarn build
+
+    - name: Run test suite
+      run: vendor/bin/phpunit --testsuite Unit
+
+    - name: Check code style
+      run: composer run phpcs
