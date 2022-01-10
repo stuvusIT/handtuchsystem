@@ -50,6 +50,8 @@
                 <div class="col-md-12">
                     {{ f.textarea('text', __('news.edit.message'), {'required': true, 'rows': 10, 'value': news ? news.text : ''}) }}
 
+                    <p>{{ m.info(__('news.edit.hint')) }}</p>
+
                     {{ f.submit() }}
 
                     {{ f.submit(m.icon('eye'), {'name': 'preview', 'btn_type': 'info', 'title': __('form.preview')}) }}
@@ -71,7 +73,7 @@
                                 {{ news.title }}
                             </div>
                             <div class="card-body bg-body">
-                                {{ news.text|raw|markdown(false) }}
+                                {{ news.text|markdown }}
                             </div>
                         </div>
                     </div>

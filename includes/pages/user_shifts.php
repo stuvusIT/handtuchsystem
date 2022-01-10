@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Database\DB;
+use Engelsystem\Database\Db;
 use Engelsystem\Models\Room;
 use Engelsystem\ShiftsFilter;
 use Illuminate\Support\Collection;
@@ -49,7 +49,10 @@ function update_ShiftsFilter_timerange(ShiftsFilter $shiftsFilter, $days)
 {
     $start_time = $shiftsFilter->getStartTime();
     if (is_null($start_time)) {
-        $first_day = DateTime::createFromFormat('Y-m-d', $days[0])->getTimestamp();
+        $first_day = DateTime::createFromFormat(
+            'Y-m-d',
+            $days[0] ?? (new DateTime())->format('Y-m-d')
+        )->getTimestamp();
         if(time() < $first_day) {
             $start_time = $first_day;
         } else {
