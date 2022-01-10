@@ -53,6 +53,9 @@ trait HasDatabase
                     ['migration' => '2020_04_07_000000_change_mysql_database_encoding_to_utf8mb4'],
                     ['migration' => '2020_09_12_000000_create_welcome_angel_permissions_group'],
                     ['migration' => '2020_12_28_000000_oauth_set_identifier_binary'],
+                    ['migration' => '2021_08_26_000000_add_shirt_edit_permissions'],
+                    ['migration' => '2021_10_12_000000_add_shifts_description'],
+                    ['migration' => '2021_12_30_000000_remove_admin_news_html_privilege'],
                 ]
             );
 

@@ -1,6 +1,6 @@
 <?php
 
-use Engelsystem\Database\DB;
+use Engelsystem\Database\Db;
 use Engelsystem\Models\User\User;
 
 /**
@@ -140,6 +140,21 @@ function UserAngelTypes_confirm_all($angeltype_id, $confirm_user_id)
         WHERE `angeltype_id`=?
         AND `confirm_user_id` IS NULL
     ', [$confirm_user_id, $angeltype_id]);
+}
+
+/**
+ * Get all unconfirmed Users for given Angeltype
+ *
+ * @param int $angeltype_id
+ */
+function UserAngelTypes_all_unconfirmed($angeltype_id)
+{
+    return DB::select('
+        SELECT *
+        FROM `UserAngelTypes`
+        WHERE `angeltype_id`=?
+        AND `confirm_user_id` IS NULL
+    ', [$angeltype_id]);
 }
 
 /**

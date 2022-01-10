@@ -19,7 +19,6 @@ use Engelsystem\Controllers\SettingsController;
  * @param int   $teardown_end_date  Unix timestamp
  * @param bool  $enable_tshirt_size
  * @param array $tshirt_sizes
- * @param array $oauth2_providers
  *
  * @return string
  */
@@ -30,14 +29,14 @@ function User_settings_view(
     $buildup_start_date,
     $teardown_end_date,
     $enable_tshirt_size,
-    $tshirt_sizes,
-    $oauth2_providers
+    $tshirt_sizes
 ) {
     $personalData = $user_source->personalData;
     $enable_user_name = config('enable_user_name');
     $enable_pronoun = config('enable_pronoun');
     $enable_dect = config('enable_dect');
     $enable_planned_arrival = config('enable_planned_arrival');
+    $enable_goody = config('enable_goody');
 
     /** @var Renderer $renderer */
     $renderer = app(Renderer::class);
@@ -100,9 +99,15 @@ function User_settings_view(
                             ),
                             form_checkbox(
                                 'email_by_human_allowed',
-                                __('Humans are allowed to send me an email (e.g. for ticket vouchers)'),
+                                __('Allow heaven angels to contact you by e-mail.'),
                                 $user_source->settings->email_human
                             ),
+                            $enable_goody ? form_checkbox(
+                                'email_goody',
+                                __('To receive vouchers, give consent that nick, email address, worked hours and shirt size will be stored until the next similar event.')
+                                . (config('privacy_email') ? ' ' . __('To withdraw your approval, send an email to <a href="mailto:%s">%1$s</a>.', [config('privacy_email')]) : ''),
+                                $user_source->settings->email_goody
+                            ) : '',
                             $enable_tshirt_size ? form_select(
                                 'tshirt_size',
                                 __('Shirt size'),
@@ -600,7 +605,7 @@ function User_view(
                 'actions'    => __('Action')
             ], $my_shifts);
         } elseif ($user_source->state->force_active) {
-            $myshifts_table = success(__('You have done enough to get a t-shirt.'), true);
+            $myshifts_table = success(__('You have done enough.'), true);
         }
     }
 
@@ -618,6 +623,10 @@ function User_view(
             div('row', [
                 div('col-md-12', [
                     buttons([
+                        $auth->can('user.edit.shirt') ? button(
+                            url('/admin/user/' . $user_source->id . '/shirt'),
+                            icon('person') . __('Shirt')
+                        ) : '',
                         $admin_user_privilege ? button(
                             page_link_to('admin_user', ['id' => $user_source->id]),
                             icon('pencil-square') . __('edit')
@@ -666,7 +675,7 @@ function User_view(
                     ])
                 ])
             ]),
-            div('row', [
+            div('row user-info', [
                 div('col-md-2', [
                     heading(icon('phone')
                         . '<a href="tel:' . $user_source->contact->dect . '">'
@@ -859,6 +868,10 @@ function User_oauth_render(User $user)
             ? $config[$oauth->provider]['name']
             : Str::ucfirst($oauth->provider)
         );
+    }
+
+    if (!$output) {
+        return '';
     }
 
     return div('col-md-2', [

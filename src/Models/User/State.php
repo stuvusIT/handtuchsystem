@@ -28,6 +28,25 @@ class State extends HasUserModel
     /** @var string The table associated with the model */
     protected $table = 'users_state';
 
+    /** @var array Default attributes */
+    protected $attributes = [
+        'arrived'      => false,
+        'active'       => false,
+        'force_active' => false,
+        'got_shirt'    => false,
+        'got_voucher'  => 0,
+    ];
+
+    /** @var array */
+    protected $casts = [
+        'user_id'      => 'integer',
+        'arrived'      => 'boolean',
+        'active'       => 'boolean',
+        'force_active' => 'boolean',
+        'got_shirt'    => 'boolean',
+        'got_voucher'  => 'integer',
+    ];
+
     /** @var array The attributes that should be mutated to dates */
     protected $dates = [
         'arrival_date',

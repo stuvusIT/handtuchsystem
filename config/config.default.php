@@ -49,7 +49,7 @@ return [
 
     // Email config
     'email'                   => [
-        // Can be mail, smtp, sendmail or log
+        // Can be mail, smtp, sendmail or log or an symfony mailer dsn string like smtps://[usr]:[pass]@smtp.foo.bar:465
         'driver' => env('MAIL_DRIVER', 'mail'),
         'from'   => [
             // From address of all emails
@@ -59,12 +59,15 @@ return [
 
         'host'       => env('MAIL_HOST', 'localhost'),
         'port'       => env('MAIL_PORT', 587),
-        // Transport encryption like tls (for starttls) or ssl
-        'encryption' => env('MAIL_ENCRYPTION', null),
+        // If tls transport encryption should be used
+        'tls'        => env('MAIL_TLS', null),
         'username'   => env('MAIL_USERNAME'),
         'password'   => env('MAIL_PASSWORD'),
         'sendmail'   => env('MAIL_SENDMAIL', '/usr/sbin/sendmail -bs'),
     ],
+
+    # Your privacy@ contact address
+    'privacy_email' => '',
 
     // Initial admin password
     'setup_admin_password'    => env('SETUP_ADMIN_PASSWORD', null),
@@ -96,12 +99,25 @@ return [
             'first_name' => 'first-name',
             // Info last name field (optional)
             'last_name' => 'last-name',
-            // User URL to provider, shown on provider settings page (optional)
+            // User URL to provider, linked on provider settings page (optional)
             'url' => '[provider page]',
+            // Whether info attributes are nested arrays (optional)
+            // For example {"user":{"name":"foo"}} can be accessed using user.name
+            'nested_info' => false,
             // Only show after clicking the page title (optional)
             'hidden' => false,
             // Mark user as arrived when using this provider (optional)
             'mark_arrived' => false,
+            // Allow registration even if disabled in config (optional)
+            'allow_registration' => null,
+            // Auto join teams
+            // Info groups field (optional)
+            'groups' => 'groups',
+            // Groups to team (angeltype) mapping (optional)
+            'teams' => [
+                '/Lorem' => 4, // 4 being the ID of the angeltype
+                '/Foo Mod' => ['id' => 5, 'supporter' => true], // 5 being the ID of the angeltype
+            ],
         ],
         */
     ],
@@ -110,6 +126,11 @@ return [
     'theme'                   => env('THEME', 1),
 
     'themes' => [
+        15 => [
+            'name' => 'Engelsystem rC3 (2021)',
+            'type' => 'dark',
+            'navbar_classes' => 'navbar-dark',
+        ],
         14 => [
             'name' => 'Engelsystem rC3 teal (2020)',
             'type' => 'dark',
@@ -242,6 +263,9 @@ return [
 
     // Enables the T-Shirt configuration on signup and profile
     'enable_tshirt_size'      => (bool)env('ENABLE_TSHIRT_SIZE', true),
+
+    // Enables the goody/voucher configuration on signup and profile
+    'enable_goody'            => (bool)env('ENABLE_GOODY', false),
 
     // Number of shifts to freeload until angel is locked for shift signup.
     'max_freeloadable_shifts' => env('MAX_FREELOADABLE_SHIFTS', 2),
